@@ -2,6 +2,7 @@ $govuk-show-breakpoints: true;
 $govuk-new-link-styles: true;
 
 @import "../../../src/govuk/all";
+@import "node_modules/govuk-frontend/govuk/all";
 @import "partials/app";
 @import "partials/banner";
 @import "partials/prose";
