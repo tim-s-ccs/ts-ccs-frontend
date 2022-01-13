@@ -15,5 +15,5 @@ function initAll (options) {
 
 export {
   initAll,
-  CCSHeader,
+  CCSHeader
 }
