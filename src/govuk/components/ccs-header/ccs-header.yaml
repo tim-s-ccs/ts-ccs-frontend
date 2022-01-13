@@ -7,10 +7,6 @@ params:
   type: string
   required: false
   description: The public path for the assets folder. If not provided it defaults to /assets/images
-- name: productName
-  type: string
-  required: false
-  description: Product name, used when the product name follows on directly from ‘GOV.UK’. For example, GOV.UK Pay or GOV.UK Design System. In most circumstances, you should use `serviceName`.
 - name: serviceName
   type: string
   required: false
@@ -19,10 +15,35 @@ params:
   type: string
   required: false
   description: URL for the service name anchor.
-- name: navigation
+- name: navigation_primary
   type: array
   required: false
-  description: An array of navigation item objects.
+  description: An array of navigation item objects. Is placed on the bottom of the header.
+  params:
+  - name: text
+    type: string
+    required: true
+    description: Text for the navigation item. If `html` is provided, the `text` argument will be ignored.
+  - name: html
+    type: string
+    required: true
+    description: HTML for the navigation item. If `html` is provided, the `text` argument will be ignored.
+  - name: href
+    type: string
+    required: false
+    description: URL of the navigation item anchor.
+  - name: active
+    type: boolean
+    required: false
+    description: Flag to mark the navigation item as active or not.
+  - name: attributes
+    type: object
+    required: false
+    description: HTML attributes (for example data attributes) to add to the navigation item anchor.
+- name: navigation_secondary
+  type: array
+  required: false
+  description: An array of navigation item objects. Is placed on the second row of the header or the bottom if no primary navigation.
   params:
   - name: text
     type: string
@@ -103,21 +124,26 @@ examples:
 
 - name: with navigation
   data:
-    navigation:
+    navigation_primary:
       - href: '#1'
-        text: Navigation item 1
+        text: Navigation primary item 1
         active: true
       - href: '#2'
-        text: Navigation item 2
+        text: Navigation primary item 2
       - href: '#3'
-        text: Navigation item 3
-      - href: '#4'
-        text: Navigation item 4
+        text: Navigation primary item 3
+    navigation_secondary:
+      - href: '#1'
+        text: Navigation secondary item 1
+      - href: '#2'
+        text: Navigation secondary item 2
+      - href: '#3'
+        text: Navigation secondary item
 
 - name: with custom navigation label
   data:
     navigationLabel: Custom navigation label
-    navigation:
+    navigation_primary:
       - href: '#1'
         text: Navigation item 1
         active: true
@@ -131,7 +157,7 @@ examples:
 - name: with custom menu button label
   data:
     menuButtonLabel: Custom button label
-    navigation:
+    navigation_primary:
       - href: '#1'
         text: Navigation item 1
         active: true
@@ -147,7 +173,7 @@ examples:
   data:
     serviceName: Service Name
     serviceUrl: '/components/header'
-    navigation:
+    navigation_primary:
       - href: '#1'
         text: Navigation item 1
         active: true
@@ -161,7 +187,7 @@ examples:
 - name: with large navigation
   description: An edge case example with a large number of navitation items with long names used to test wrapping
   data:
-    navigation:
+    navigation_primary:
       - href: '/browse/benefits'
         text: Benefits
       - href: '/browse/births-deaths-marriages'
@@ -180,6 +206,7 @@ examples:
         text: Driving and transport
       - href: '/browse/education'
         text: Education and learning
+    navigation_secondary:
       - href: '/browse/employing-people'
         text: Employing people
       - href: '/browse/environment-countryside'
@@ -195,23 +222,16 @@ examples:
       - href: '/browse/working'
         text: Working, jobs and pensions
 
-- name: with product name
-  data:
-    navigationClasses: govuk-header__navigation--end
-    productName: Product Name
-
 - name: full width
   data:
     containerClasses: govuk-header__container--full-width
     navigationClasses: govuk-header__navigation--end
-    productName: Product Name
 
 - name: full width with navigation
   data:
     containerClasses: govuk-header__container--full-width
     navigationClasses: govuk-header__navigation--end
-    productName: Product Name
-    navigation:
+    navigation_primary:
       - href: '#1'
         text: Navigation item 1
         active: true
@@ -224,7 +244,7 @@ examples:
   data:
     serviceName: Service Name
     serviceUrl: '/components/header'
-    navigation:
+    navigation_primary:
       - href: '#1'
         html: <em>Navigation item 1</em>
         active: true
@@ -237,7 +257,7 @@ examples:
   data:
     serviceName: Service Name
     serviceUrl: '/components/header'
-    navigation:
+    navigation_primary:
       - text: Navigation item 1
       - text: Navigation item 2
       - text: Navigation item 3
@@ -253,25 +273,28 @@ examples:
   hidden: true
   data:
     classes: app-header--custom-modifier
+
 - name: custom homepage url
   hidden: true
   data:
     homepageUrl: /
+
 - name: navigation item with attributes
   hidden: true
   data:
-    navigation:
+    navigation_primary:
       - href: /link
         text: Item
         attributes:
           data-attribute: my-attribute
           data-attribute-2: my-attribute-2
+
 - name: navigation item with html as text
   hidden: true
   data:
     serviceName: Service Name
     serviceUrl: '/components/header'
-    navigation:
+    navigation_primary:
       - href: '#1'
         text: <em>Navigation item 1</em>
         active: true
@@ -279,12 +302,13 @@ examples:
         text: <em>Navigation item 2</em>
       - href: '#3'
         text: <em>Navigation item 3</em>
+
 - name: navigation item with html without link
   hidden: true
   data:
     serviceName: Service Name
     serviceUrl: '/components/header'
-    navigation:
+    navigation_primary:
       - html: <em>Navigation item 1</em>
         active: true
       - html: <em>Navigation item 2</em>

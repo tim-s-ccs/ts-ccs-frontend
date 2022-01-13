@@ -4,7 +4,7 @@
   $ccs-header-border-width: govuk-spacing(2);
   $ccs-header-text: govuk-colour("white");
   $ccs-header-link-active-border-color: govuk-colour("white");
-  $ccs-header-nav-item-border-color: #2e3133;
+  $ccs-header-nav-item-border-color: #85163d;
   $ccs-header-link-underline-thickness: 3px;
 
   .ccs-header {
@@ -66,11 +66,6 @@
     height: 32px;
     border: 0;
     vertical-align: bottom;
-  }
-
-  .ccs-header__product-name {
-    @include govuk-font($size: 24, $line-height: 1);
-    display: inline-table;
   }
 
   .ccs-header__link {
@@ -156,15 +151,16 @@
   }
 
   .ccs-header__content {
-    text-align: right;
+    text-align: left;
 
     @include govuk-media-query ($from: desktop) {
       width: 66.66%;
       padding-left: $govuk-gutter-half;
       float: left;
+      text-align: right;
     }
   }
-
+  // text-align: right;
   .ccs-header__menu-button {
     @include govuk-font($size: 16);
     display: none;
@@ -221,6 +217,10 @@
     list-style: none;
   }
 
+  .ccs-header__navigation--no-second-list {
+    padding-top: govuk-spacing(7);
+  }
+
   .js-enabled {
     .ccs-header__menu-button {
       display: block;
@@ -229,16 +229,14 @@
       }
     }
 
-    .ccs-header__navigation-primary-list,
-    .ccs-header__navigation-secondary-list {
+    .ccs-header__navigation-lists {
       display: none;
       @include govuk-media-query ($from: desktop) {
         display: block;
       }
     }
 
-    .ccs-header__navigation-primary-list--open,
-    .ccs-header__navigation-secondary-list--open {
+    .ccs-header__navigation-lists--open {
       display: block;
     }
   }
@@ -299,9 +297,19 @@
     }
   }
 
-  .ccs-header__navigation-item:last-child {
+  .ccs-header__navigation-primary-list .ccs-header__navigation-item:last-child {
     margin-right: 0;
     border-bottom: 0;
+  }
+
+  .ccs-header__navigation-secondary-list .ccs-header__navigation-item:last-child {
+    margin-right: govuk-spacing(3);
+    border-bottom: 1px solid $ccs-header-nav-item-border-color;
+
+    @include govuk-media-query ($from: desktop) {
+      margin-right: 0;
+      border-bottom: 0;
+    }
   }
 
   @include govuk-media-query($media-type: print) {
