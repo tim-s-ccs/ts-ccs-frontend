@@ -156,6 +156,8 @@
   }
 
   .ccs-header__content {
+    text-align: right;
+
     @include govuk-media-query ($from: desktop) {
       width: 66.66%;
       padding-left: $govuk-gutter-half;
@@ -211,7 +213,8 @@
     }
   }
 
-  .ccs-header__navigation-list {
+  .ccs-header__navigation-primary-list,
+  .ccs-header__navigation-secondary-list {
     // Reset user-agent default list styles
     margin: 0;
     padding: 0;
@@ -226,14 +229,16 @@
       }
     }
 
-    .ccs-header__navigation-list {
+    .ccs-header__navigation-primary-list,
+    .ccs-header__navigation-secondary-list {
       display: none;
       @include govuk-media-query ($from: desktop) {
         display: block;
       }
     }
 
-    .ccs-header__navigation-list--open {
+    .ccs-header__navigation-primary-list--open,
+    .ccs-header__navigation-secondary-list--open {
       display: block;
     }
   }
@@ -248,6 +253,14 @@
 
   .ccs-header__navigation--no-service-name {
     padding-top: govuk-spacing(7);
+  }
+
+  .ccs-header__navigation-secondary-list {
+    .ccs-header__navigation-item {
+      a {
+        @include govuk-font($size: 16, $weight: regular);
+      }
+    }
   }
 
   .ccs-header__navigation-item {
