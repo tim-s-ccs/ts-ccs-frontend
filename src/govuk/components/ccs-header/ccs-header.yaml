@@ -122,7 +122,7 @@ examples:
     serviceName: Service Name
     serviceUrl: '/components/header'
 
-- name: with navigation
+- name: with both navigation
   data:
     navigation_primary:
       - href: '#1'
@@ -138,11 +138,39 @@ examples:
       - href: '#2'
         text: Navigation secondary item 2
       - href: '#3'
-        text: Navigation secondary item
+        text: Navigation secondary item 3
+
+- name: with only primary navigation
+  data:
+    navigation_primary:
+      - href: '#1'
+        text: Navigation item 1
+        active: true
+      - href: '#2'
+        text: Navigation item 2
+      - href: '#3'
+        text: Navigation item 3
+      - href: '#4'
+        text: Navigation item 4
+
+
+- name: with only secondary navigation
+  data:
+    navigation_secondary:
+      - href: '#1'
+        text: Navigation item 1
+        active: true
+      - href: '#2'
+        text: Navigation item 2
+      - href: '#3'
+        text: Navigation item 3
+      - href: '#4'
+        text: Navigation item 4
+
 
 - name: with custom navigation label
   data:
-    navigationLabel: Custom navigation label
+    navigationLabel: Custom navigation label, to help with accessibility.
     navigation_primary:
       - href: '#1'
         text: Navigation item 1
@@ -156,7 +184,7 @@ examples:
 
 - name: with custom menu button label
   data:
-    menuButtonLabel: Custom button label
+    menuButtonLabel: Custom button label, to help with accessibility.
     navigation_primary:
       - href: '#1'
         text: Navigation item 1
@@ -221,6 +249,36 @@ examples:
         text: Visas and immigration
       - href: '/browse/working'
         text: Working, jobs and pensions
+
+- name: full example from CCS website
+  description: A full example based on CCS website's current header
+  data:
+    navigation_primary:
+      - href: "https://www.crowncommercial.gov.uk/agreements"
+        text: "Search agreements"
+      - href: "https://www.crowncommercial.gov.uk/suppliers"
+        text: "Search suppliers"
+      - href: "https://www.crowncommercial.gov.uk/agreements/upcoming"
+        text: "Upcoming deals"
+      - href: "https://www.crowncommercial.gov.uk/products-and-services"
+        text: "Products and Services"
+      - href: "https://www.crowncommercial.gov.uk/sectors"
+        text: "Sectors"
+    navigation_secondary:
+      - href: 'https://www.crowncommercial.gov.uk/buy-and-supply/carbon-net-zero'
+        text: 'Carbon Net Zero'
+      - href: "https://www.crowncommercial.gov.uk/about-ccs"
+        text: "About"
+      - href: "https://www.crowncommercial.gov.uk/contact"
+        text: "Contact"
+      - href: "https://www.crowncommercial.gov.uk/events"
+        text: "Events"
+      - href: "https://www.crowncommercial.gov.uk/news"
+        text: "News"
+      - href: "https://www.crowncommercial.gov.uk/buy-and-supply"
+        text: "Buy and supply"
+      - href: "tel:0345%20410%202222"
+        text: "call us: 0345 410 2222"
 
 - name: full width
   data:

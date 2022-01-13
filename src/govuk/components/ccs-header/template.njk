@@ -2,7 +2,7 @@
         {%- for attribute, value in params.attributes %} {{attribute}}="{{value}}"{% endfor %}>
   <div class="ccs-header__container {{ params.containerClasses | default('govuk-width-container') }}">
     <div class="ccs-header__logo">
-      <a href="{{ params.homepageUrl | default('/') }}" class="ccs-header__link ccs-header__link--homepage">
+      <a href="{{ params.homepageUrl | default('https://www.crowncommercial.gov.uk') }}" class="ccs-header__link ccs-header__link--homepage">
         <span class="ccs-header__logotype">
           <!--[if gt IE 8]><!-->
           {#- We use an inline SVG for the crown so that we can cascade the
