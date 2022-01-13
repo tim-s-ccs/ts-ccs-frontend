@@ -120,7 +120,7 @@ examples:
   description: If your service is more than a few pages long, you can help users understand where they are by adding the service name.
   data:
     serviceName: Service Name
-    serviceUrl: '/components/header'
+    serviceUrl: '/components/ccs-header'
 
 - name: with both navigation
   data:
@@ -200,7 +200,7 @@ examples:
   description: If you need to include basic navigation, contact or account management links.
   data:
     serviceName: Service Name
-    serviceUrl: '/components/header'
+    serviceUrl: '/components/ccs-header'
     navigation_primary:
       - href: '#1'
         text: Navigation item 1
@@ -301,7 +301,7 @@ examples:
 - name: navigation item with html
   data:
     serviceName: Service Name
-    serviceUrl: '/components/header'
+    serviceUrl: '/components/ccs-header'
     navigation_primary:
       - href: '#1'
         html: <em>Navigation item 1</em>
@@ -314,7 +314,7 @@ examples:
 - name: navigation item with text without link
   data:
     serviceName: Service Name
-    serviceUrl: '/components/header'
+    serviceUrl: '/components/ccs-header'
     navigation_primary:
       - text: Navigation item 1
       - text: Navigation item 2
@@ -351,7 +351,7 @@ examples:
   hidden: true
   data:
     serviceName: Service Name
-    serviceUrl: '/components/header'
+    serviceUrl: '/components/ccs-header'
     navigation_primary:
       - href: '#1'
         text: <em>Navigation item 1</em>
@@ -365,7 +365,7 @@ examples:
   hidden: true
   data:
     serviceName: Service Name
-    serviceUrl: '/components/header'
+    serviceUrl: '/components/ccs-header'
     navigation_primary:
       - html: <em>Navigation item 1</em>
         active: true

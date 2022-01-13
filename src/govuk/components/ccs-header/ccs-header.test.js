@@ -15,7 +15,7 @@ describe('Header navigation', () => {
   describe('when JavaScript is unavailable or fails', () => {
     beforeAll(async () => {
       await page.setJavaScriptEnabled(false)
-      await page.goto(`${baseUrl}/components/header/with-navigation/preview`, {
+      await page.goto(`${baseUrl}/components/ccs-header/with-navigation/preview`, {
         waitUntil: 'load'
       })
     })
@@ -36,7 +36,7 @@ describe('Header navigation', () => {
     describe('when no navigation is present', () => {
       it('exits gracefully with no errors', async () => {
         // Errors logged to the console will cause this test to fail
-        await page.goto(`${baseUrl}/components/header/preview`, {
+        await page.goto(`${baseUrl}/components/ccs-header/preview`, {
           waitUntil: 'load'
         })
       })
@@ -44,7 +44,7 @@ describe('Header navigation', () => {
 
     describe('on page load', () => {
       beforeAll(async () => {
-        await page.goto(`${baseUrl}/components/header/with-navigation/preview`, {
+        await page.goto(`${baseUrl}/components/ccs-header/with-navigation/preview`, {
           waitUntil: 'load'
         })
       })
@@ -60,7 +60,7 @@ describe('Header navigation', () => {
 
     describe('when menu button is pressed', () => {
       beforeAll(async () => {
-        await page.goto(`${baseUrl}/components/header/with-navigation/preview`, {
+        await page.goto(`${baseUrl}/components/ccs-header/with-navigation/preview`, {
           waitUntil: 'load'
         })
         await page.click('.ccs-js-header-toggle')
@@ -93,7 +93,7 @@ describe('Header navigation', () => {
 
     describe('when menu button is pressed twice', () => {
       beforeAll(async () => {
-        await page.goto(`${baseUrl}/components/header/with-navigation/preview`, {
+        await page.goto(`${baseUrl}/components/ccs-header/with-navigation/preview`, {
           waitUntil: 'load'
         })
         await page.click('.ccs-js-header-toggle')

@@ -93,7 +93,7 @@ describe('header', () => {
 
       const $component = $('.ccs-header')
       const $serviceName = $component.find('.ccs-header__link--service-name')
-      expect($serviceName.attr('href')).toEqual('/components/header')
+      expect($serviceName.attr('href')).toEqual('/components/ccs-header')
     })
   })
 
