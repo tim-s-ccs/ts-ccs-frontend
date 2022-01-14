@@ -231,71 +231,89 @@ examples:
           - href: '#3'
             text: Navigation item 3
 
-- name: Full GDS example
-  description: A full example based on GOV.UK's current footer
+- name: Full CCS example
+  description: A full example based on the CCS website's current footer
   data:
     navigation:
-      - title: Coronavirus (COVID-19)
-        width: two-thirds
-        items:
-          - href: '/coronavirus'
-            text: 'Coronavirus (COVID-19): guidance and support'
-      - title: Brexit
+      - title: Sitemap
         width: one-third
         items:
-          - href: '/brexit'
-            text: Check what you need to do
-      - title: Services and information
-        width: two-thirds
-        columns: 2
-        items:
-          - href: '/browse/benefits'
-            text: Benefits
-          - href: '/browse/births-deaths-marriages'
-            text: Births, deaths, marriages and care
-          - href: '/browse/business'
-            text: Business and self-employed
-          - href: '/browse/childcare-parenting'
-            text: Childcare and parenting
-          - href: '/browse/citizenship'
-            text: Citizenship and living in the UK
-          - href: '/browse/justice'
-            text: Crime, justice and the law
-          - href: '/browse/disabilities'
-            text: Disabled people
-          - href: '/browse/driving'
-            text: Driving and transport
-          - href: '/browse/education'
-            text: Education and learning
-          - href: '/browse/employing-people'
-            text: Employing people
-          - href: '/browse/environment-countryside'
-            text: Environment and countryside
-          - href: '/browse/housing-local-services'
-            text: Housing and local services
-          - href: '/browse/tax'
-            text: Money and tax
-          - href: '/browse/abroad'
-            text: Passports, travel and living abroad
-          - href: '/browse/visas-immigration'
-            text: Visas and immigration
-          - href: '/browse/working'
-            text: Working, jobs and pensions
-      - title: Departments and policy
+          - href: 'https://www.crowncommercial.gov.uk/agreements'
+            text: Search agreements
+          - href: 'https://www.crowncommercial.gov.uk/suppliers'
+            text: Search suppliers
+          - href: 'https://www.crowncommercial.gov.uk/agreements/upcoming'
+            text: Upcoming deals
+          - href: 'https://www.crowncommercial.gov.uk/buy-and-supply/how-to-buy/'
+            text: Buy through CCS
+          - href: 'https://www.crowncommercial.gov.uk/buy-and-supply/'
+            text: Buy and supply
+          - href: 'https://www.crowncommercial.gov.uk/about-ccs/'
+            text: About CCS
+          - href: 'https://www.crowncommercial.gov.uk/contact'
+            text: Contact us
+          - href: 'https://www.crowncommercial.gov.uk/news'
+            text: News
+          - href: 'https://www.crowncommercial.gov.uk/about-ccs/press-office/'
+            text: Press Office
+      - title: Quick links
         width: one-third
         items:
-          - href: '/government/how-government-works'
-            text: How government works
-          - href: '/government/organisations'
-            text: Departments
-          - href: '/world'
-            text: Worldwide
-          - href: '/government/policies'
-            text: Policies
-          - href: '/government/publications'
-            text: Publications
-          - href: '/government/announcements'
-            text: Announcements
+          - href: 'https://purchasingplatform.crowncommercial.gov.uk/mp-welcome'
+            text: Purchasing platform
+          - href: 'https://www.digitalmarketplace.service.gov.uk/'
+            text: Digital marketplace
+          - href: 'https://buyers.procserveonline.com/admin/login/auth?marketplace=bootstrap-gem'
+            text: eMarketplace login
+          - href: 'https://www.crowncommercial.gov.uk/emarketplace-registration-form/'
+            text: eMarketplace registration
+          - href: 'https://fleetportal.crowncommercial.gov.uk/login.mth'
+            text: Fleet
+          - href: 'https://travel.crowncommercial.gov.uk/'
+            text: Travel
+          - href: 'https://www.gov.uk/contracts-finder'
+            text: Contracts Finder
+          - href: 'https://www.crowncommercial.gov.uk/esourcing-register'
+            text: eSourcing
+          - href: 'https://www.crowncommercial.gov.uk/esourcing-training'
+            text: Register for eSourcing training
+          - href: 'https://www.find-tender.service.gov.uk/'
+            text: Find a Tender
+          - href: 'http://ted.europa.eu/TED/main/HomePage.do'
+            text: Tenders Electronic Daily (TED)
+          - href: 'https://www.reportmi.crowncommercial.gov.uk/'
+            text: Submit your MI returns
+          - href: 'https://status.crowncommercial.gov.uk/'
+            text: Service Status
+          - href: 'https://www.crowncommercial.gov.uk/newsletter'
+            text: Sign up to our buyer newsletter
+      - title: About and contact
+        width: one-third
+        items:
+          - href: 'https://www.crowncommercial.gov.uk/about-ccs/'
+            text: About CCS
+          - href: 'https://www.crowncommercial.gov.uk/contact'
+            text: Contact CCS
+          - href: 'https://www.crowncommercial.gov.uk/make-a-complaint/'
+            text: Make a complaint
+          - href: 'https://www.crowncommercial.gov.uk/careers-with-ccs/'
+            text: Careers with CCS
+          - href: 'https://www.crowncommercial.gov.uk/terms-and-conditions/'
+            text: Terms and conditions
+          - href: 'https://www.crowncommercial.gov.uk/cookie-policy/'
+            text: Cookie policy
+          - href: 'https://www.crowncommercial.gov.uk/cookie-settings/'
+            text: Cookie settings
+          - href: 'https://www.gov.uk/government/organisations/crown-commercial-service'
+            text: Corporate information
+          - href: 'https://www.gov.uk/government/publications/crown-commercial-service-privacy-notice'
+            text: Privacy notice
+          - href: 'https://www.crowncommercial.gov.uk/accessibility-statement'
+            text: Accessibility
+          - href: 'https://www.crowncommercial.gov.uk/public-sector-equality-duty-psed/'
+            text: Public Sector Equality Duty (PSED)
+          - href: 'https://www.crowncommercial.gov.uk/about-ccs/vulnerability-disclosure-policy/'
+            text: Vulnerability disclosure policy
     meta:
       items:
         - href: '/help'
