@@ -1,4 +1,3 @@
-TODO: UPDATE WITH NEW URLs
 # Footer
 
 ## Installation

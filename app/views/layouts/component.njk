@@ -1,4 +1,4 @@
-{% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
+{% from "govuk-frontend/govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
 {% from "macros/showExamples.njk" import showExamples %}
 
 {% extends "full-width.njk" %}
@@ -8,7 +8,7 @@
 {% endset %}
 
 {% set componentName = componentPath %}
-{% set componentNameHuman = componentName | replace("-", " ") %}
+{% set componentNameHuman = "CCS " + (componentName | replace("ccs-", "") | capitalize) %}
 
 {% set htmlMarkup %}
   {% include componentName +"/"+ componentName +".njk" ignore missing %}
@@ -17,8 +17,8 @@
 {% block beforeContent %}
   {{ govukBreadcrumbs({
     "items": [
-    { text: 'GOV.UK Frontend', href: '/' + legacyQuery },
-    { text: componentNameHuman | capitalize }
+    { text: 'CCS Components', href: '/' + legacyQuery },
+    { text: componentNameHuman }
     ]
   }) }}
 {% endblock %}
@@ -27,7 +27,7 @@
   <div class="govuk-width-container">
     <h1 class="govuk-heading-xl">
       {% block componentName %}
-        {{ componentNameHuman | capitalize }}
+        {{ componentNameHuman }}
       {% endblock %}
     </h1>
   </div>

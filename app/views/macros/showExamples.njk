@@ -1,4 +1,4 @@
-{% from "details/macro.njk" import govukDetails %}
+{% from "govuk-frontend/govuk/components/details/macro.njk" import govukDetails %}
 
 {% macro showExamples(componentSlug, componentName, data, legacyQuery) %}
 
@@ -7,10 +7,10 @@
   {% set iframePathQuery = legacyQuery + '&iframe=true' if legacyQuery != '' else '?iframe=true' %}
 
   {% if example.name == 'default' %}
-    {% set heading = componentName | capitalize %}
+    {% set heading = componentName %}
     {% set path = '/components/' + componentSlug + "/preview" %}
   {% else %}
-    {% set heading %}{{ componentName | capitalize }} {{ example.name }}{% endset %}
+    {% set heading %}{{ componentName }} {{ example.name }}{% endset %}
     {% set path = '/components/' + componentSlug + '/' + exampleSlug + "/preview" %}
   {% endif %}
 
