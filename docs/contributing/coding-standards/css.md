@@ -460,4 +460,4 @@ We document SCSS using [SassDoc](http://sassdoc.com/). This includes most of the
 
 The SassDoc comments are used to generate the [Sass API reference in the GOV.UK Frontend docs](https://frontend.design-system.service.gov.uk/sass-api-reference/).
 
-See [colour.scss](../../../src/govuk/helpers/_colour.scss) for an example of SassDoc syntax.
+See [colour.scss](../../../src/ccs/helpers/_colour.scss) for an example of SassDoc syntax.

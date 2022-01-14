@@ -198,10 +198,10 @@ gulp.task('js:compile', (done) => {
   srcFiles.forEach(function (file) {
     // This is combined with desinationPath in gulp.dest()
     // so the files are output to the correct folders
-    const newDirectoryPath = path.dirname(file).replace('src/govuk', '')
+    const newDirectoryPath = path.dirname(file).replace('src/ccs', '')
 
     // We only want to give component JavaScript a unique module name
-    let moduleName = 'GOVUKFrontend'
+    let moduleName = 'CCSComponents'
     if (path.dirname(file).includes('/components/')) {
       moduleName = componentNameToJavaScriptModuleName(path.parse(file).name)
     }

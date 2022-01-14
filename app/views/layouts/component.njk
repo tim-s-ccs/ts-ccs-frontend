@@ -8,7 +8,7 @@
 {% endset %}
 
 {% set componentName = componentPath %}
-{% set componentNameHuman = "CCS " + (componentName | replace("ccs-", "") | capitalize) %}
+{% set componentNameHuman = componentName | replace("-", " ") %}
 
 {% set htmlMarkup %}
   {% include componentName +"/"+ componentName +".njk" ignore missing %}
@@ -18,7 +18,7 @@
   {{ govukBreadcrumbs({
     "items": [
     { text: 'CCS Components', href: '/' + legacyQuery },
-    { text: componentNameHuman }
+    { text: componentNameHuman | capitalize }
     ]
   }) }}
 {% endblock %}
@@ -27,7 +27,7 @@
   <div class="govuk-width-container">
     <h1 class="govuk-heading-xl">
       {% block componentName %}
-        {{ componentNameHuman }}
+        {{ componentNameHuman | capitalize }}
       {% endblock %}
     </h1>
   </div>

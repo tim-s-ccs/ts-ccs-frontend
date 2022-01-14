@@ -7,10 +7,10 @@
   {% set iframePathQuery = legacyQuery + '&iframe=true' if legacyQuery != '' else '?iframe=true' %}
 
   {% if example.name == 'default' %}
-    {% set heading = componentName %}
+    {% set heading = componentName | capitalize %}
     {% set path = '/components/' + componentSlug + "/preview" %}
   {% else %}
-    {% set heading %}{{ componentName }} {{ example.name }}{% endset %}
+    {% set heading %}{{ componentName | capitalize }} {{ example.name }}{% endset %}
     {% set path = '/components/' + componentSlug + '/' + exampleSlug + "/preview" %}
   {% endif %}
 
