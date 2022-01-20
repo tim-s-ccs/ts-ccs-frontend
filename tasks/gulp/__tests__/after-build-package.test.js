@@ -15,7 +15,7 @@ const { renderSass } = require('../../../lib/jest-helpers')
 
 const readFile = util.promisify(fs.readFile)
 const componentNames = lib.allComponents.slice()
-const componentsWithJavaScript = glob.sync(configPaths.package + 'govuk/components/' + '**/!(*.test).js')
+const componentsWithJavaScript = glob.sync(configPaths.package + 'ccs/components/' + '**/!(*.test).js')
 
 describe('package/', () => {
   it('should contain the expected files', () => {
@@ -43,7 +43,7 @@ describe('package/', () => {
         '*.test.js',
         '*.yaml',
         '*.snap',
-        '*/govuk/README.md'
+        '*/ccs/README.md'
       ]
 
       const additionalFilesNotInSrc = [
@@ -98,14 +98,14 @@ describe('package/', () => {
 
   describe('all.scss', () => {
     it('should compile without throwing an exception', async () => {
-      const allScssFile = path.join(configPaths.package, 'govuk', 'all.scss')
+      const allScssFile = path.join(configPaths.package, 'ccs', 'all.scss')
       await renderSass({ file: allScssFile })
     })
   })
 
   describe('all.js', () => {
     it('should have correct module name', async () => {
-      const allJsFile = path.join(configPaths.package, 'govuk', 'all.js')
+      const allJsFile = path.join(configPaths.package, 'ccs', 'all.js')
       return readFile(allJsFile, 'utf8')
         .then((data) => {
           expect(data).toContain("typeof define === 'function' && define.amd ? define('CCSComponents', ['exports'], factory)")
@@ -118,7 +118,7 @@ describe('package/', () => {
 
   describe('component', () => {
     it.each(componentNames)('\'%s\' should have macro-options.json that contains JSON', (name) => {
-      const filePath = path.join(configPaths.package, 'govuk', 'components', name, 'macro-options.json')
+      const filePath = path.join(configPaths.package, 'ccs', 'components', name, 'macro-options.json')
       return readFile(filePath, 'utf8')
         .then((data) => {
           var parsedData = JSON.parse(data)
@@ -158,7 +158,7 @@ describe('package/', () => {
 
   describe('fixtures', () => {
     it.each(componentNames)('\'%s\' should have fixtures.json that contains JSON', (name) => {
-      const filePath = path.join(configPaths.package, 'govuk', 'components', name, 'fixtures.json')
+      const filePath = path.join(configPaths.package, 'ccs', 'components', name, 'fixtures.json')
       return readFile(filePath, 'utf8')
         .then((data) => {
           var parsedData = JSON.parse(data)
