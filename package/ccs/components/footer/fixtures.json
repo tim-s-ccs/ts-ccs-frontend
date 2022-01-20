@@ -1,0 +1,642 @@
+{
+    "component": "footer",
+    "fixtures": [
+        {
+            "name": "default",
+            "options": {},
+            "html": "<footer class=\"ccs-footer \" role=\"contentinfo\">\n  <div class=\"govuk-width-container \">\n    \n    <div class=\"ccs-footer__meta\">\n      <div class=\"ccs-footer__meta-item ccs-footer__meta-item--grow\">\n        \n        <svg\n          aria-hidden=\"true\"\n          focusable=\"false\"\n          class=\"ccs-footer__licence-logo\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 0 483.2 195.7\"\n          height=\"17\"\n          width=\"41\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145\"\n          />\n        </svg>\n        <span class=\"ccs-footer__licence-description\">\n          All content is available under the\n          <a\n            class=\"ccs-footer__link\"\n            href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\"\n            rel=\"license\"\n          >Open Government Licence v3.0</a>, except where otherwise stated\n        </span>\n      </div>\n      <div class=\"ccs-footer__meta-item\">\n        <a\n          class=\"ccs-footer__link ccs-footer__copyright-logo\"\n          href=\"https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/\"\n        >© Crown copyright</a>\n      </div>\n    </div>\n  </div>\n</footer>",
+            "hidden": false
+        },
+        {
+            "name": "with meta",
+            "options": {
+                "meta": {
+                    "visuallyHiddenTitle": "Items",
+                    "items": [
+                        {
+                            "href": "#1",
+                            "text": "Item 1"
+                        },
+                        {
+                            "href": "#2",
+                            "text": "Item 2"
+                        },
+                        {
+                            "href": "#3",
+                            "text": "Item 3"
+                        }
+                    ]
+                }
+            },
+            "html": "<footer class=\"ccs-footer \" role=\"contentinfo\">\n  <div class=\"govuk-width-container \">\n    \n    <div class=\"ccs-footer__meta\">\n      <div class=\"ccs-footer__meta-item ccs-footer__meta-item--grow\">\n        \n          <h2 class=\"govuk-visually-hidden\">Items</h2>\n          \n            <ul class=\"ccs-footer__inline-list\">\n              \n                <li class=\"ccs-footer__inline-list-item\">\n                  <a class=\"ccs-footer__link\" href=\"#1\">\n                    Item 1\n                  </a>\n                </li>\n              \n                <li class=\"ccs-footer__inline-list-item\">\n                  <a class=\"ccs-footer__link\" href=\"#2\">\n                    Item 2\n                  </a>\n                </li>\n              \n                <li class=\"ccs-footer__inline-list-item\">\n                  <a class=\"ccs-footer__link\" href=\"#3\">\n                    Item 3\n                  </a>\n                </li>\n              \n            </ul>\n          \n          \n        \n        <svg\n          aria-hidden=\"true\"\n          focusable=\"false\"\n          class=\"ccs-footer__licence-logo\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 0 483.2 195.7\"\n          height=\"17\"\n          width=\"41\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145\"\n          />\n        </svg>\n        <span class=\"ccs-footer__licence-description\">\n          All content is available under the\n          <a\n            class=\"ccs-footer__link\"\n            href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\"\n            rel=\"license\"\n          >Open Government Licence v3.0</a>, except where otherwise stated\n        </span>\n      </div>\n      <div class=\"ccs-footer__meta-item\">\n        <a\n          class=\"ccs-footer__link ccs-footer__copyright-logo\"\n          href=\"https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/\"\n        >© Crown copyright</a>\n      </div>\n    </div>\n  </div>\n</footer>",
+            "hidden": false
+        },
+        {
+            "name": "with custom meta",
+            "options": {
+                "meta": {
+                    "text": "GOV.UK Prototype Kit v7.0.1"
+                }
+            },
+            "html": "<footer class=\"ccs-footer \" role=\"contentinfo\">\n  <div class=\"govuk-width-container \">\n    \n    <div class=\"ccs-footer__meta\">\n      <div class=\"ccs-footer__meta-item ccs-footer__meta-item--grow\">\n        \n          <h2 class=\"govuk-visually-hidden\">Support links</h2>\n          \n          \n            <div class=\"ccs-footer__meta-custom\">\n              GOV.UK Prototype Kit v7.0.1\n            </div>\n          \n        \n        <svg\n          aria-hidden=\"true\"\n          focusable=\"false\"\n          class=\"ccs-footer__licence-logo\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 0 483.2 195.7\"\n          height=\"17\"\n          width=\"41\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145\"\n          />\n        </svg>\n        <span class=\"ccs-footer__licence-description\">\n          All content is available under the\n          <a\n            class=\"ccs-footer__link\"\n            href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\"\n            rel=\"license\"\n          >Open Government Licence v3.0</a>, except where otherwise stated\n        </span>\n      </div>\n      <div class=\"ccs-footer__meta-item\">\n        <a\n          class=\"ccs-footer__link ccs-footer__copyright-logo\"\n          href=\"https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/\"\n        >© Crown copyright</a>\n      </div>\n    </div>\n  </div>\n</footer>",
+            "hidden": false
+        },
+        {
+            "name": "with meta links and meta content",
+            "options": {
+                "meta": {
+                    "items": [
+                        {
+                            "href": "#1",
+                            "text": "Bibendum Ornare"
+                        },
+                        {
+                            "href": "#2",
+                            "text": "Nullam"
+                        },
+                        {
+                            "href": "#3",
+                            "text": "Tortor Fringilla"
+                        },
+                        {
+                            "href": "#4",
+                            "text": "Tellus"
+                        },
+                        {
+                            "href": "#5",
+                            "text": "Egestas Nullam"
+                        },
+                        {
+                            "href": "#6",
+                            "text": "Euismod Etiam"
+                        },
+                        {
+                            "href": "#7",
+                            "text": "Fusce Sollicitudin"
+                        },
+                        {
+                            "href": "#8",
+                            "text": "Ligula Nullam Ultricies"
+                        }
+                    ],
+                    "html": "Built by the <a href=\"#\" class=\"govuk-footer__link\">Department of Magical Law Enforcement</a>"
+                }
+            },
+            "html": "<footer class=\"ccs-footer \" role=\"contentinfo\">\n  <div class=\"govuk-width-container \">\n    \n    <div class=\"ccs-footer__meta\">\n      <div class=\"ccs-footer__meta-item ccs-footer__meta-item--grow\">\n        \n          <h2 class=\"govuk-visually-hidden\">Support links</h2>\n          \n            <ul class=\"ccs-footer__inline-list\">\n              \n                <li class=\"ccs-footer__inline-list-item\">\n                  <a class=\"ccs-footer__link\" href=\"#1\">\n                    Bibendum Ornare\n                  </a>\n                </li>\n              \n                <li class=\"ccs-footer__inline-list-item\">\n                  <a class=\"ccs-footer__link\" href=\"#2\">\n                    Nullam\n                  </a>\n                </li>\n              \n                <li class=\"ccs-footer__inline-list-item\">\n                  <a class=\"ccs-footer__link\" href=\"#3\">\n                    Tortor Fringilla\n                  </a>\n                </li>\n              \n                <li class=\"ccs-footer__inline-list-item\">\n                  <a class=\"ccs-footer__link\" href=\"#4\">\n                    Tellus\n                  </a>\n                </li>\n              \n                <li class=\"ccs-footer__inline-list-item\">\n                  <a class=\"ccs-footer__link\" href=\"#5\">\n                    Egestas Nullam\n                  </a>\n                </li>\n              \n                <li class=\"ccs-footer__inline-list-item\">\n                  <a class=\"ccs-footer__link\" href=\"#6\">\n                    Euismod Etiam\n                  </a>\n                </li>\n              \n                <li class=\"ccs-footer__inline-list-item\">\n                  <a class=\"ccs-footer__link\" href=\"#7\">\n                    Fusce Sollicitudin\n                  </a>\n                </li>\n              \n                <li class=\"ccs-footer__inline-list-item\">\n                  <a class=\"ccs-footer__link\" href=\"#8\">\n                    Ligula Nullam Ultricies\n                  </a>\n                </li>\n              \n            </ul>\n          \n          \n            <div class=\"ccs-footer__meta-custom\">\n              Built by the <a href=\"#\" class=\"govuk-footer__link\">Department of Magical Law Enforcement</a>\n            </div>\n          \n        \n        <svg\n          aria-hidden=\"true\"\n          focusable=\"false\"\n          class=\"ccs-footer__licence-logo\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 0 483.2 195.7\"\n          height=\"17\"\n          width=\"41\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145\"\n          />\n        </svg>\n        <span class=\"ccs-footer__licence-description\">\n          All content is available under the\n          <a\n            class=\"ccs-footer__link\"\n            href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\"\n            rel=\"license\"\n          >Open Government Licence v3.0</a>, except where otherwise stated\n        </span>\n      </div>\n      <div class=\"ccs-footer__meta-item\">\n        <a\n          class=\"ccs-footer__link ccs-footer__copyright-logo\"\n          href=\"https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/\"\n        >© Crown copyright</a>\n      </div>\n    </div>\n  </div>\n</footer>",
+            "hidden": false
+        },
+        {
+            "name": "with custom meta",
+            "options": {
+                "meta": {
+                    "text": "GOV.UK Prototype Kit v7.0.1"
+                }
+            },
+            "html": "<footer class=\"ccs-footer \" role=\"contentinfo\">\n  <div class=\"govuk-width-container \">\n    \n    <div class=\"ccs-footer__meta\">\n      <div class=\"ccs-footer__meta-item ccs-footer__meta-item--grow\">\n        \n          <h2 class=\"govuk-visually-hidden\">Support links</h2>\n          \n          \n            <div class=\"ccs-footer__meta-custom\">\n              GOV.UK Prototype Kit v7.0.1\n            </div>\n          \n        \n        <svg\n          aria-hidden=\"true\"\n          focusable=\"false\"\n          class=\"ccs-footer__licence-logo\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 0 483.2 195.7\"\n          height=\"17\"\n          width=\"41\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145\"\n          />\n        </svg>\n        <span class=\"ccs-footer__licence-description\">\n          All content is available under the\n          <a\n            class=\"ccs-footer__link\"\n            href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\"\n            rel=\"license\"\n          >Open Government Licence v3.0</a>, except where otherwise stated\n        </span>\n      </div>\n      <div class=\"ccs-footer__meta-item\">\n        <a\n          class=\"ccs-footer__link ccs-footer__copyright-logo\"\n          href=\"https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/\"\n        >© Crown copyright</a>\n      </div>\n    </div>\n  </div>\n</footer>",
+            "hidden": false
+        },
+        {
+            "name": "with default width navigation (one column)",
+            "options": {
+                "navigation": [
+                    {
+                        "title": "Navigation section",
+                        "items": [
+                            {
+                                "href": "#1",
+                                "text": "Navigation item 1"
+                            },
+                            {
+                                "href": "#2",
+                                "text": "Navigation item 2"
+                            },
+                            {
+                                "href": "#3",
+                                "text": "Navigation item 3"
+                            },
+                            {
+                                "href": "#4",
+                                "text": "Navigation item 4"
+                            },
+                            {
+                                "href": "#5",
+                                "text": "Navigation item 5"
+                            },
+                            {
+                                "href": "#6",
+                                "text": "Navigation item 6"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "html": "<footer class=\"ccs-footer \" role=\"contentinfo\">\n  <div class=\"govuk-width-container \">\n    \n      <div class=\"ccs-footer__navigation\">\n        \n          <div class=\"ccs-footer__section govuk-grid-column-full\">\n            <h2 class=\"ccs-footer__heading govuk-heading-m\">Navigation section</h2>\n            \n              \n              <ul class=\"ccs-footer__list \">\n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#1\">\n                        Navigation item 1\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#2\">\n                        Navigation item 2\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#3\">\n                        Navigation item 3\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#4\">\n                        Navigation item 4\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#5\">\n                        Navigation item 5\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#6\">\n                        Navigation item 6\n                      </a>\n                    </li>\n                  \n                \n              </ul>\n            \n          </div>\n        \n      </div>\n      <hr class=\"ccs-footer__section-break\">\n    \n    <div class=\"ccs-footer__meta\">\n      <div class=\"ccs-footer__meta-item ccs-footer__meta-item--grow\">\n        \n        <svg\n          aria-hidden=\"true\"\n          focusable=\"false\"\n          class=\"ccs-footer__licence-logo\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 0 483.2 195.7\"\n          height=\"17\"\n          width=\"41\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145\"\n          />\n        </svg>\n        <span class=\"ccs-footer__licence-description\">\n          All content is available under the\n          <a\n            class=\"ccs-footer__link\"\n            href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\"\n            rel=\"license\"\n          >Open Government Licence v3.0</a>, except where otherwise stated\n        </span>\n      </div>\n      <div class=\"ccs-footer__meta-item\">\n        <a\n          class=\"ccs-footer__link ccs-footer__copyright-logo\"\n          href=\"https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/\"\n        >© Crown copyright</a>\n      </div>\n    </div>\n  </div>\n</footer>",
+            "hidden": false
+        },
+        {
+            "name": "with default width navigation (two columns)",
+            "options": {
+                "navigation": [
+                    {
+                        "title": "Navigation section",
+                        "columns": 2,
+                        "items": [
+                            {
+                                "href": "#1",
+                                "text": "Navigation item 1"
+                            },
+                            {
+                                "href": "#2",
+                                "text": "Navigation item 2"
+                            },
+                            {
+                                "href": "#3",
+                                "text": "Navigation item 3"
+                            },
+                            {
+                                "href": "#4",
+                                "text": "Navigation item 4"
+                            },
+                            {
+                                "href": "#5",
+                                "text": "Navigation item 5"
+                            },
+                            {
+                                "href": "#6",
+                                "text": "Navigation item 6"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "html": "<footer class=\"ccs-footer \" role=\"contentinfo\">\n  <div class=\"govuk-width-container \">\n    \n      <div class=\"ccs-footer__navigation\">\n        \n          <div class=\"ccs-footer__section govuk-grid-column-full\">\n            <h2 class=\"ccs-footer__heading govuk-heading-m\">Navigation section</h2>\n            \n              \n              <ul class=\"ccs-footer__list ccs-footer__list--columns-2\">\n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#1\">\n                        Navigation item 1\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#2\">\n                        Navigation item 2\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#3\">\n                        Navigation item 3\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#4\">\n                        Navigation item 4\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#5\">\n                        Navigation item 5\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#6\">\n                        Navigation item 6\n                      </a>\n                    </li>\n                  \n                \n              </ul>\n            \n          </div>\n        \n      </div>\n      <hr class=\"ccs-footer__section-break\">\n    \n    <div class=\"ccs-footer__meta\">\n      <div class=\"ccs-footer__meta-item ccs-footer__meta-item--grow\">\n        \n        <svg\n          aria-hidden=\"true\"\n          focusable=\"false\"\n          class=\"ccs-footer__licence-logo\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 0 483.2 195.7\"\n          height=\"17\"\n          width=\"41\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145\"\n          />\n        </svg>\n        <span class=\"ccs-footer__licence-description\">\n          All content is available under the\n          <a\n            class=\"ccs-footer__link\"\n            href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\"\n            rel=\"license\"\n          >Open Government Licence v3.0</a>, except where otherwise stated\n        </span>\n      </div>\n      <div class=\"ccs-footer__meta-item\">\n        <a\n          class=\"ccs-footer__link ccs-footer__copyright-logo\"\n          href=\"https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/\"\n        >© Crown copyright</a>\n      </div>\n    </div>\n  </div>\n</footer>",
+            "hidden": false
+        },
+        {
+            "name": "with navigation",
+            "options": {
+                "navigation": [
+                    {
+                        "title": "Two column list",
+                        "width": "two-thirds",
+                        "columns": 2,
+                        "items": [
+                            {
+                                "href": "#1",
+                                "text": "Navigation item 1"
+                            },
+                            {
+                                "href": "#2",
+                                "text": "Navigation item 2"
+                            },
+                            {
+                                "href": "#3",
+                                "text": "Navigation item 3"
+                            },
+                            {
+                                "href": "#4",
+                                "text": "Navigation item 4"
+                            },
+                            {
+                                "href": "#5",
+                                "text": "Navigation item 5"
+                            },
+                            {
+                                "href": "#6",
+                                "text": "Navigation item 6"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Single column list",
+                        "width": "one-third",
+                        "items": [
+                            {
+                                "href": "#1",
+                                "text": "Navigation item 1"
+                            },
+                            {
+                                "href": "#2",
+                                "text": "Navigation item 2"
+                            },
+                            {
+                                "href": "#3",
+                                "text": "Navigation item 3"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "html": "<footer class=\"ccs-footer \" role=\"contentinfo\">\n  <div class=\"govuk-width-container \">\n    \n      <div class=\"ccs-footer__navigation\">\n        \n          <div class=\"ccs-footer__section govuk-grid-column-two-thirds\">\n            <h2 class=\"ccs-footer__heading govuk-heading-m\">Two column list</h2>\n            \n              \n              <ul class=\"ccs-footer__list ccs-footer__list--columns-2\">\n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#1\">\n                        Navigation item 1\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#2\">\n                        Navigation item 2\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#3\">\n                        Navigation item 3\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#4\">\n                        Navigation item 4\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#5\">\n                        Navigation item 5\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#6\">\n                        Navigation item 6\n                      </a>\n                    </li>\n                  \n                \n              </ul>\n            \n          </div>\n        \n          <div class=\"ccs-footer__section govuk-grid-column-one-third\">\n            <h2 class=\"ccs-footer__heading govuk-heading-m\">Single column list</h2>\n            \n              \n              <ul class=\"ccs-footer__list \">\n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#1\">\n                        Navigation item 1\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#2\">\n                        Navigation item 2\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#3\">\n                        Navigation item 3\n                      </a>\n                    </li>\n                  \n                \n              </ul>\n            \n          </div>\n        \n      </div>\n      <hr class=\"ccs-footer__section-break\">\n    \n    <div class=\"ccs-footer__meta\">\n      <div class=\"ccs-footer__meta-item ccs-footer__meta-item--grow\">\n        \n        <svg\n          aria-hidden=\"true\"\n          focusable=\"false\"\n          class=\"ccs-footer__licence-logo\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 0 483.2 195.7\"\n          height=\"17\"\n          width=\"41\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145\"\n          />\n        </svg>\n        <span class=\"ccs-footer__licence-description\">\n          All content is available under the\n          <a\n            class=\"ccs-footer__link\"\n            href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\"\n            rel=\"license\"\n          >Open Government Licence v3.0</a>, except where otherwise stated\n        </span>\n      </div>\n      <div class=\"ccs-footer__meta-item\">\n        <a\n          class=\"ccs-footer__link ccs-footer__copyright-logo\"\n          href=\"https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/\"\n        >© Crown copyright</a>\n      </div>\n    </div>\n  </div>\n</footer>",
+            "hidden": false
+        },
+        {
+            "name": "Full CCS example",
+            "options": {
+                "navigation": [
+                    {
+                        "title": "Sitemap",
+                        "width": "one-third",
+                        "items": [
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/agreements",
+                                "text": "Search agreements"
+                            },
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/suppliers",
+                                "text": "Search suppliers"
+                            },
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/agreements/upcoming",
+                                "text": "Upcoming deals"
+                            },
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/buy-and-supply/how-to-buy/",
+                                "text": "Buy through CCS"
+                            },
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/buy-and-supply/",
+                                "text": "Buy and supply"
+                            },
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/about-ccs/",
+                                "text": "About CCS"
+                            },
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/contact",
+                                "text": "Contact us"
+                            },
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/news",
+                                "text": "News"
+                            },
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/about-ccs/press-office/",
+                                "text": "Press Office"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Quick links",
+                        "width": "one-third",
+                        "items": [
+                            {
+                                "href": "https://purchasingplatform.crowncommercial.gov.uk/mp-welcome",
+                                "text": "Purchasing platform"
+                            },
+                            {
+                                "href": "https://www.digitalmarketplace.service.gov.uk/",
+                                "text": "Digital marketplace"
+                            },
+                            {
+                                "href": "https://buyers.procserveonline.com/admin/login/auth?marketplace=bootstrap-gem",
+                                "text": "eMarketplace login"
+                            },
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/emarketplace-registration-form/",
+                                "text": "eMarketplace registration"
+                            },
+                            {
+                                "href": "https://fleetportal.crowncommercial.gov.uk/login.mth",
+                                "text": "Fleet"
+                            },
+                            {
+                                "href": "https://travel.crowncommercial.gov.uk/",
+                                "text": "Travel"
+                            },
+                            {
+                                "href": "https://www.gov.uk/contracts-finder",
+                                "text": "Contracts Finder"
+                            },
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/esourcing-register",
+                                "text": "eSourcing"
+                            },
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/esourcing-training",
+                                "text": "Register for eSourcing training"
+                            },
+                            {
+                                "href": "https://www.find-tender.service.gov.uk/",
+                                "text": "Find a Tender"
+                            },
+                            {
+                                "href": "http://ted.europa.eu/TED/main/HomePage.do",
+                                "text": "Tenders Electronic Daily (TED)"
+                            },
+                            {
+                                "href": "https://www.reportmi.crowncommercial.gov.uk/",
+                                "text": "Submit your MI returns"
+                            },
+                            {
+                                "href": "https://status.crowncommercial.gov.uk/",
+                                "text": "Service Status"
+                            },
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/newsletter",
+                                "text": "Sign up to our buyer newsletter"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "About and contact",
+                        "width": "one-third",
+                        "items": [
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/about-ccs/",
+                                "text": "About CCS"
+                            },
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/contact",
+                                "text": "Contact CCS"
+                            },
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/make-a-complaint/",
+                                "text": "Make a complaint"
+                            },
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/careers-with-ccs/",
+                                "text": "Careers with CCS"
+                            },
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/terms-and-conditions/",
+                                "text": "Terms and conditions"
+                            },
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/cookie-policy/",
+                                "text": "Cookie policy"
+                            },
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/cookie-settings/",
+                                "text": "Cookie settings"
+                            },
+                            {
+                                "href": "https://www.gov.uk/government/organisations/crown-commercial-service",
+                                "text": "Corporate information"
+                            },
+                            {
+                                "href": "https://www.gov.uk/government/publications/crown-commercial-service-privacy-notice",
+                                "text": "Privacy notice"
+                            },
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/accessibility-statement",
+                                "text": "Accessibility"
+                            },
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/public-sector-equality-duty-psed/",
+                                "text": "Public Sector Equality Duty (PSED)"
+                            },
+                            {
+                                "href": "https://www.crowncommercial.gov.uk/about-ccs/vulnerability-disclosure-policy/",
+                                "text": "Vulnerability disclosure policy"
+                            }
+                        ]
+                    }
+                ],
+                "meta": {
+                    "items": [
+                        {
+                            "href": "/help",
+                            "text": "Help"
+                        },
+                        {
+                            "href": "/help/cookies",
+                            "text": "Cookies"
+                        },
+                        {
+                            "href": "/contact",
+                            "text": "Contact"
+                        },
+                        {
+                            "href": "/help/terms-conditions",
+                            "text": "Terms and conditions"
+                        },
+                        {
+                            "href": "/cymraeg",
+                            "text": "Rhestr o Wasanaethau Cymraeg"
+                        }
+                    ],
+                    "html": "Built by the <a class=\"govuk-footer__link\" href=\"#\">Government Digital Service</a>"
+                }
+            },
+            "html": "<footer class=\"ccs-footer \" role=\"contentinfo\">\n  <div class=\"govuk-width-container \">\n    \n      <div class=\"ccs-footer__navigation\">\n        \n          <div class=\"ccs-footer__section govuk-grid-column-one-third\">\n            <h2 class=\"ccs-footer__heading govuk-heading-m\">Sitemap</h2>\n            \n              \n              <ul class=\"ccs-footer__list \">\n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/agreements\">\n                        Search agreements\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/suppliers\">\n                        Search suppliers\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/agreements/upcoming\">\n                        Upcoming deals\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/buy-and-supply/how-to-buy/\">\n                        Buy through CCS\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/buy-and-supply/\">\n                        Buy and supply\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/about-ccs/\">\n                        About CCS\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/contact\">\n                        Contact us\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/news\">\n                        News\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/about-ccs/press-office/\">\n                        Press Office\n                      </a>\n                    </li>\n                  \n                \n              </ul>\n            \n          </div>\n        \n          <div class=\"ccs-footer__section govuk-grid-column-one-third\">\n            <h2 class=\"ccs-footer__heading govuk-heading-m\">Quick links</h2>\n            \n              \n              <ul class=\"ccs-footer__list \">\n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://purchasingplatform.crowncommercial.gov.uk/mp-welcome\">\n                        Purchasing platform\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.digitalmarketplace.service.gov.uk/\">\n                        Digital marketplace\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://buyers.procserveonline.com/admin/login/auth?marketplace=bootstrap-gem\">\n                        eMarketplace login\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/emarketplace-registration-form/\">\n                        eMarketplace registration\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://fleetportal.crowncommercial.gov.uk/login.mth\">\n                        Fleet\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://travel.crowncommercial.gov.uk/\">\n                        Travel\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.gov.uk/contracts-finder\">\n                        Contracts Finder\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/esourcing-register\">\n                        eSourcing\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/esourcing-training\">\n                        Register for eSourcing training\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.find-tender.service.gov.uk/\">\n                        Find a Tender\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"http://ted.europa.eu/TED/main/HomePage.do\">\n                        Tenders Electronic Daily (TED)\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.reportmi.crowncommercial.gov.uk/\">\n                        Submit your MI returns\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://status.crowncommercial.gov.uk/\">\n                        Service Status\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/newsletter\">\n                        Sign up to our buyer newsletter\n                      </a>\n                    </li>\n                  \n                \n              </ul>\n            \n          </div>\n        \n          <div class=\"ccs-footer__section govuk-grid-column-one-third\">\n            <h2 class=\"ccs-footer__heading govuk-heading-m\">About and contact</h2>\n            \n              \n              <ul class=\"ccs-footer__list \">\n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/about-ccs/\">\n                        About CCS\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/contact\">\n                        Contact CCS\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/make-a-complaint/\">\n                        Make a complaint\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/careers-with-ccs/\">\n                        Careers with CCS\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/terms-and-conditions/\">\n                        Terms and conditions\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/cookie-policy/\">\n                        Cookie policy\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/cookie-settings/\">\n                        Cookie settings\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.gov.uk/government/organisations/crown-commercial-service\">\n                        Corporate information\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.gov.uk/government/publications/crown-commercial-service-privacy-notice\">\n                        Privacy notice\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/accessibility-statement\">\n                        Accessibility\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/public-sector-equality-duty-psed/\">\n                        Public Sector Equality Duty (PSED)\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"https://www.crowncommercial.gov.uk/about-ccs/vulnerability-disclosure-policy/\">\n                        Vulnerability disclosure policy\n                      </a>\n                    </li>\n                  \n                \n              </ul>\n            \n          </div>\n        \n      </div>\n      <hr class=\"ccs-footer__section-break\">\n    \n    <div class=\"ccs-footer__meta\">\n      <div class=\"ccs-footer__meta-item ccs-footer__meta-item--grow\">\n        \n          <h2 class=\"govuk-visually-hidden\">Support links</h2>\n          \n            <ul class=\"ccs-footer__inline-list\">\n              \n                <li class=\"ccs-footer__inline-list-item\">\n                  <a class=\"ccs-footer__link\" href=\"/help\">\n                    Help\n                  </a>\n                </li>\n              \n                <li class=\"ccs-footer__inline-list-item\">\n                  <a class=\"ccs-footer__link\" href=\"/help/cookies\">\n                    Cookies\n                  </a>\n                </li>\n              \n                <li class=\"ccs-footer__inline-list-item\">\n                  <a class=\"ccs-footer__link\" href=\"/contact\">\n                    Contact\n                  </a>\n                </li>\n              \n                <li class=\"ccs-footer__inline-list-item\">\n                  <a class=\"ccs-footer__link\" href=\"/help/terms-conditions\">\n                    Terms and conditions\n                  </a>\n                </li>\n              \n                <li class=\"ccs-footer__inline-list-item\">\n                  <a class=\"ccs-footer__link\" href=\"/cymraeg\">\n                    Rhestr o Wasanaethau Cymraeg\n                  </a>\n                </li>\n              \n            </ul>\n          \n          \n            <div class=\"ccs-footer__meta-custom\">\n              Built by the <a class=\"govuk-footer__link\" href=\"#\">Government Digital Service</a>\n            </div>\n          \n        \n        <svg\n          aria-hidden=\"true\"\n          focusable=\"false\"\n          class=\"ccs-footer__licence-logo\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 0 483.2 195.7\"\n          height=\"17\"\n          width=\"41\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145\"\n          />\n        </svg>\n        <span class=\"ccs-footer__licence-description\">\n          All content is available under the\n          <a\n            class=\"ccs-footer__link\"\n            href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\"\n            rel=\"license\"\n          >Open Government Licence v3.0</a>, except where otherwise stated\n        </span>\n      </div>\n      <div class=\"ccs-footer__meta-item\">\n        <a\n          class=\"ccs-footer__link ccs-footer__copyright-logo\"\n          href=\"https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/\"\n        >© Crown copyright</a>\n      </div>\n    </div>\n  </div>\n</footer>",
+            "hidden": false
+        },
+        {
+            "name": "Three equal columns",
+            "options": {
+                "navigation": [
+                    {
+                        "title": "Single column list 1",
+                        "width": "one-third",
+                        "columns": 1,
+                        "items": [
+                            {
+                                "href": "#1",
+                                "text": "Navigation item 1"
+                            },
+                            {
+                                "href": "#2",
+                                "text": "Navigation item 2"
+                            },
+                            {
+                                "href": "#3",
+                                "text": "Navigation item 3"
+                            },
+                            {
+                                "href": "#4",
+                                "text": "Navigation item 4"
+                            },
+                            {
+                                "href": "#5",
+                                "text": "Navigation item 5"
+                            },
+                            {
+                                "href": "#6",
+                                "text": "Navigation item 6"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Single column list 2",
+                        "width": "one-third",
+                        "columns": 1,
+                        "items": [
+                            {
+                                "href": "#1",
+                                "text": "Navigation item 1"
+                            },
+                            {
+                                "href": "#2",
+                                "text": "Navigation item 2"
+                            },
+                            {
+                                "href": "#3",
+                                "text": "Navigation item 3"
+                            },
+                            {
+                                "href": "#4",
+                                "text": "Navigation item 4"
+                            },
+                            {
+                                "href": "#5",
+                                "text": "Navigation item 5"
+                            },
+                            {
+                                "href": "#6",
+                                "text": "Navigation item 6"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Single column list 3",
+                        "width": "one-third",
+                        "columns": 1,
+                        "items": [
+                            {
+                                "href": "#1",
+                                "text": "Navigation item 1"
+                            },
+                            {
+                                "href": "#2",
+                                "text": "Navigation item 2"
+                            },
+                            {
+                                "href": "#3",
+                                "text": "Navigation item 3"
+                            },
+                            {
+                                "href": "#4",
+                                "text": "Navigation item 4"
+                            },
+                            {
+                                "href": "#5",
+                                "text": "Navigation item 5"
+                            },
+                            {
+                                "href": "#6",
+                                "text": "Navigation item 6"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "html": "<footer class=\"ccs-footer \" role=\"contentinfo\">\n  <div class=\"govuk-width-container \">\n    \n      <div class=\"ccs-footer__navigation\">\n        \n          <div class=\"ccs-footer__section govuk-grid-column-one-third\">\n            <h2 class=\"ccs-footer__heading govuk-heading-m\">Single column list 1</h2>\n            \n              \n              <ul class=\"ccs-footer__list ccs-footer__list--columns-1\">\n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#1\">\n                        Navigation item 1\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#2\">\n                        Navigation item 2\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#3\">\n                        Navigation item 3\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#4\">\n                        Navigation item 4\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#5\">\n                        Navigation item 5\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#6\">\n                        Navigation item 6\n                      </a>\n                    </li>\n                  \n                \n              </ul>\n            \n          </div>\n        \n          <div class=\"ccs-footer__section govuk-grid-column-one-third\">\n            <h2 class=\"ccs-footer__heading govuk-heading-m\">Single column list 2</h2>\n            \n              \n              <ul class=\"ccs-footer__list ccs-footer__list--columns-1\">\n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#1\">\n                        Navigation item 1\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#2\">\n                        Navigation item 2\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#3\">\n                        Navigation item 3\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#4\">\n                        Navigation item 4\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#5\">\n                        Navigation item 5\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#6\">\n                        Navigation item 6\n                      </a>\n                    </li>\n                  \n                \n              </ul>\n            \n          </div>\n        \n          <div class=\"ccs-footer__section govuk-grid-column-one-third\">\n            <h2 class=\"ccs-footer__heading govuk-heading-m\">Single column list 3</h2>\n            \n              \n              <ul class=\"ccs-footer__list ccs-footer__list--columns-1\">\n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#1\">\n                        Navigation item 1\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#2\">\n                        Navigation item 2\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#3\">\n                        Navigation item 3\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#4\">\n                        Navigation item 4\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#5\">\n                        Navigation item 5\n                      </a>\n                    </li>\n                  \n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#6\">\n                        Navigation item 6\n                      </a>\n                    </li>\n                  \n                \n              </ul>\n            \n          </div>\n        \n      </div>\n      <hr class=\"ccs-footer__section-break\">\n    \n    <div class=\"ccs-footer__meta\">\n      <div class=\"ccs-footer__meta-item ccs-footer__meta-item--grow\">\n        \n        <svg\n          aria-hidden=\"true\"\n          focusable=\"false\"\n          class=\"ccs-footer__licence-logo\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 0 483.2 195.7\"\n          height=\"17\"\n          width=\"41\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145\"\n          />\n        </svg>\n        <span class=\"ccs-footer__licence-description\">\n          All content is available under the\n          <a\n            class=\"ccs-footer__link\"\n            href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\"\n            rel=\"license\"\n          >Open Government Licence v3.0</a>, except where otherwise stated\n        </span>\n      </div>\n      <div class=\"ccs-footer__meta-item\">\n        <a\n          class=\"ccs-footer__link ccs-footer__copyright-logo\"\n          href=\"https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/\"\n        >© Crown copyright</a>\n      </div>\n    </div>\n  </div>\n</footer>",
+            "hidden": false
+        },
+        {
+            "name": "attributes",
+            "options": {
+                "attributes": {
+                    "data-test-attribute": "value",
+                    "data-test-attribute-2": "value-2"
+                }
+            },
+            "html": "<footer class=\"ccs-footer \" role=\"contentinfo\" data-test-attribute=\"value\" data-test-attribute-2=\"value-2\">\n  <div class=\"govuk-width-container \">\n    \n    <div class=\"ccs-footer__meta\">\n      <div class=\"ccs-footer__meta-item ccs-footer__meta-item--grow\">\n        \n        <svg\n          aria-hidden=\"true\"\n          focusable=\"false\"\n          class=\"ccs-footer__licence-logo\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 0 483.2 195.7\"\n          height=\"17\"\n          width=\"41\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145\"\n          />\n        </svg>\n        <span class=\"ccs-footer__licence-description\">\n          All content is available under the\n          <a\n            class=\"ccs-footer__link\"\n            href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\"\n            rel=\"license\"\n          >Open Government Licence v3.0</a>, except where otherwise stated\n        </span>\n      </div>\n      <div class=\"ccs-footer__meta-item\">\n        <a\n          class=\"ccs-footer__link ccs-footer__copyright-logo\"\n          href=\"https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/\"\n        >© Crown copyright</a>\n      </div>\n    </div>\n  </div>\n</footer>",
+            "hidden": true
+        },
+        {
+            "name": "classes",
+            "options": {
+                "classes": "app-footer--custom-modifier"
+            },
+            "html": "<footer class=\"ccs-footer app-footer--custom-modifier\" role=\"contentinfo\">\n  <div class=\"govuk-width-container \">\n    \n    <div class=\"ccs-footer__meta\">\n      <div class=\"ccs-footer__meta-item ccs-footer__meta-item--grow\">\n        \n        <svg\n          aria-hidden=\"true\"\n          focusable=\"false\"\n          class=\"ccs-footer__licence-logo\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 0 483.2 195.7\"\n          height=\"17\"\n          width=\"41\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145\"\n          />\n        </svg>\n        <span class=\"ccs-footer__licence-description\">\n          All content is available under the\n          <a\n            class=\"ccs-footer__link\"\n            href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\"\n            rel=\"license\"\n          >Open Government Licence v3.0</a>, except where otherwise stated\n        </span>\n      </div>\n      <div class=\"ccs-footer__meta-item\">\n        <a\n          class=\"ccs-footer__link ccs-footer__copyright-logo\"\n          href=\"https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/\"\n        >© Crown copyright</a>\n      </div>\n    </div>\n  </div>\n</footer>",
+            "hidden": true
+        },
+        {
+            "name": "with container classes",
+            "options": {
+                "containerClasses": "app-width-container"
+            },
+            "html": "<footer class=\"ccs-footer \" role=\"contentinfo\">\n  <div class=\"govuk-width-container app-width-container\">\n    \n    <div class=\"ccs-footer__meta\">\n      <div class=\"ccs-footer__meta-item ccs-footer__meta-item--grow\">\n        \n        <svg\n          aria-hidden=\"true\"\n          focusable=\"false\"\n          class=\"ccs-footer__licence-logo\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 0 483.2 195.7\"\n          height=\"17\"\n          width=\"41\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145\"\n          />\n        </svg>\n        <span class=\"ccs-footer__licence-description\">\n          All content is available under the\n          <a\n            class=\"ccs-footer__link\"\n            href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\"\n            rel=\"license\"\n          >Open Government Licence v3.0</a>, except where otherwise stated\n        </span>\n      </div>\n      <div class=\"ccs-footer__meta-item\">\n        <a\n          class=\"ccs-footer__link ccs-footer__copyright-logo\"\n          href=\"https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/\"\n        >© Crown copyright</a>\n      </div>\n    </div>\n  </div>\n</footer>",
+            "hidden": true
+        },
+        {
+            "name": "with empty meta",
+            "options": {
+                "meta": {}
+            },
+            "html": "<footer class=\"ccs-footer \" role=\"contentinfo\">\n  <div class=\"govuk-width-container \">\n    \n    <div class=\"ccs-footer__meta\">\n      <div class=\"ccs-footer__meta-item ccs-footer__meta-item--grow\">\n        \n          <h2 class=\"govuk-visually-hidden\">Support links</h2>\n          \n          \n        \n        <svg\n          aria-hidden=\"true\"\n          focusable=\"false\"\n          class=\"ccs-footer__licence-logo\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 0 483.2 195.7\"\n          height=\"17\"\n          width=\"41\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145\"\n          />\n        </svg>\n        <span class=\"ccs-footer__licence-description\">\n          All content is available under the\n          <a\n            class=\"ccs-footer__link\"\n            href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\"\n            rel=\"license\"\n          >Open Government Licence v3.0</a>, except where otherwise stated\n        </span>\n      </div>\n      <div class=\"ccs-footer__meta-item\">\n        <a\n          class=\"ccs-footer__link ccs-footer__copyright-logo\"\n          href=\"https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/\"\n        >© Crown copyright</a>\n      </div>\n    </div>\n  </div>\n</footer>",
+            "hidden": true
+        },
+        {
+            "name": "with empty meta items",
+            "options": {
+                "meta": {
+                    "items": []
+                }
+            },
+            "html": "<footer class=\"ccs-footer \" role=\"contentinfo\">\n  <div class=\"govuk-width-container \">\n    \n    <div class=\"ccs-footer__meta\">\n      <div class=\"ccs-footer__meta-item ccs-footer__meta-item--grow\">\n        \n          <h2 class=\"govuk-visually-hidden\">Support links</h2>\n          \n          \n        \n        <svg\n          aria-hidden=\"true\"\n          focusable=\"false\"\n          class=\"ccs-footer__licence-logo\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 0 483.2 195.7\"\n          height=\"17\"\n          width=\"41\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145\"\n          />\n        </svg>\n        <span class=\"ccs-footer__licence-description\">\n          All content is available under the\n          <a\n            class=\"ccs-footer__link\"\n            href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\"\n            rel=\"license\"\n          >Open Government Licence v3.0</a>, except where otherwise stated\n        </span>\n      </div>\n      <div class=\"ccs-footer__meta-item\">\n        <a\n          class=\"ccs-footer__link ccs-footer__copyright-logo\"\n          href=\"https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/\"\n        >© Crown copyright</a>\n      </div>\n    </div>\n  </div>\n</footer>",
+            "hidden": true
+        },
+        {
+            "name": "meta html as text",
+            "options": {
+                "meta": {
+                    "text": "GOV.UK Prototype Kit <strong>v7.0.1</strong>"
+                }
+            },
+            "html": "<footer class=\"ccs-footer \" role=\"contentinfo\">\n  <div class=\"govuk-width-container \">\n    \n    <div class=\"ccs-footer__meta\">\n      <div class=\"ccs-footer__meta-item ccs-footer__meta-item--grow\">\n        \n          <h2 class=\"govuk-visually-hidden\">Support links</h2>\n          \n          \n            <div class=\"ccs-footer__meta-custom\">\n              GOV.UK Prototype Kit &lt;strong&gt;v7.0.1&lt;/strong&gt;\n            </div>\n          \n        \n        <svg\n          aria-hidden=\"true\"\n          focusable=\"false\"\n          class=\"ccs-footer__licence-logo\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 0 483.2 195.7\"\n          height=\"17\"\n          width=\"41\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145\"\n          />\n        </svg>\n        <span class=\"ccs-footer__licence-description\">\n          All content is available under the\n          <a\n            class=\"ccs-footer__link\"\n            href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\"\n            rel=\"license\"\n          >Open Government Licence v3.0</a>, except where otherwise stated\n        </span>\n      </div>\n      <div class=\"ccs-footer__meta-item\">\n        <a\n          class=\"ccs-footer__link ccs-footer__copyright-logo\"\n          href=\"https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/\"\n        >© Crown copyright</a>\n      </div>\n    </div>\n  </div>\n</footer>",
+            "hidden": true
+        },
+        {
+            "name": "with meta html",
+            "options": {
+                "meta": {
+                    "html": "GOV.UK Prototype Kit <strong>v7.0.1</strong>"
+                }
+            },
+            "html": "<footer class=\"ccs-footer \" role=\"contentinfo\">\n  <div class=\"govuk-width-container \">\n    \n    <div class=\"ccs-footer__meta\">\n      <div class=\"ccs-footer__meta-item ccs-footer__meta-item--grow\">\n        \n          <h2 class=\"govuk-visually-hidden\">Support links</h2>\n          \n          \n            <div class=\"ccs-footer__meta-custom\">\n              GOV.UK Prototype Kit <strong>v7.0.1</strong>\n            </div>\n          \n        \n        <svg\n          aria-hidden=\"true\"\n          focusable=\"false\"\n          class=\"ccs-footer__licence-logo\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 0 483.2 195.7\"\n          height=\"17\"\n          width=\"41\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145\"\n          />\n        </svg>\n        <span class=\"ccs-footer__licence-description\">\n          All content is available under the\n          <a\n            class=\"ccs-footer__link\"\n            href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\"\n            rel=\"license\"\n          >Open Government Licence v3.0</a>, except where otherwise stated\n        </span>\n      </div>\n      <div class=\"ccs-footer__meta-item\">\n        <a\n          class=\"ccs-footer__link ccs-footer__copyright-logo\"\n          href=\"https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/\"\n        >© Crown copyright</a>\n      </div>\n    </div>\n  </div>\n</footer>",
+            "hidden": true
+        },
+        {
+            "name": "with meta item attributes",
+            "options": {
+                "meta": {
+                    "items": [
+                        {
+                            "href": "#1",
+                            "text": "meta item 1",
+                            "attributes": {
+                                "data-attribute": "my-attribute",
+                                "data-attribute-2": "my-attribute-2"
+                            }
+                        }
+                    ]
+                }
+            },
+            "html": "<footer class=\"ccs-footer \" role=\"contentinfo\">\n  <div class=\"govuk-width-container \">\n    \n    <div class=\"ccs-footer__meta\">\n      <div class=\"ccs-footer__meta-item ccs-footer__meta-item--grow\">\n        \n          <h2 class=\"govuk-visually-hidden\">Support links</h2>\n          \n            <ul class=\"ccs-footer__inline-list\">\n              \n                <li class=\"ccs-footer__inline-list-item\">\n                  <a class=\"ccs-footer__link\" href=\"#1\" data-attribute=\"my-attribute\" data-attribute-2=\"my-attribute-2\">\n                    meta item 1\n                  </a>\n                </li>\n              \n            </ul>\n          \n          \n        \n        <svg\n          aria-hidden=\"true\"\n          focusable=\"false\"\n          class=\"ccs-footer__licence-logo\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 0 483.2 195.7\"\n          height=\"17\"\n          width=\"41\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145\"\n          />\n        </svg>\n        <span class=\"ccs-footer__licence-description\">\n          All content is available under the\n          <a\n            class=\"ccs-footer__link\"\n            href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\"\n            rel=\"license\"\n          >Open Government Licence v3.0</a>, except where otherwise stated\n        </span>\n      </div>\n      <div class=\"ccs-footer__meta-item\">\n        <a\n          class=\"ccs-footer__link ccs-footer__copyright-logo\"\n          href=\"https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/\"\n        >© Crown copyright</a>\n      </div>\n    </div>\n  </div>\n</footer>",
+            "hidden": true
+        },
+        {
+            "name": "with empty navigation",
+            "options": {
+                "navigation": []
+            },
+            "html": "<footer class=\"ccs-footer \" role=\"contentinfo\">\n  <div class=\"govuk-width-container \">\n    \n    <div class=\"ccs-footer__meta\">\n      <div class=\"ccs-footer__meta-item ccs-footer__meta-item--grow\">\n        \n        <svg\n          aria-hidden=\"true\"\n          focusable=\"false\"\n          class=\"ccs-footer__licence-logo\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 0 483.2 195.7\"\n          height=\"17\"\n          width=\"41\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145\"\n          />\n        </svg>\n        <span class=\"ccs-footer__licence-description\">\n          All content is available under the\n          <a\n            class=\"ccs-footer__link\"\n            href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\"\n            rel=\"license\"\n          >Open Government Licence v3.0</a>, except where otherwise stated\n        </span>\n      </div>\n      <div class=\"ccs-footer__meta-item\">\n        <a\n          class=\"ccs-footer__link ccs-footer__copyright-logo\"\n          href=\"https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/\"\n        >© Crown copyright</a>\n      </div>\n    </div>\n  </div>\n</footer>",
+            "hidden": true
+        },
+        {
+            "name": "with navigation item attributes",
+            "options": {
+                "navigation": [
+                    {
+                        "title": "Single column list 1",
+                        "items": [
+                            {
+                                "href": "#1",
+                                "text": "Navigation item 1",
+                                "attributes": {
+                                    "data-attribute": "my-attribute",
+                                    "data-attribute-2": "my-attribute-2"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "html": "<footer class=\"ccs-footer \" role=\"contentinfo\">\n  <div class=\"govuk-width-container \">\n    \n      <div class=\"ccs-footer__navigation\">\n        \n          <div class=\"ccs-footer__section govuk-grid-column-full\">\n            <h2 class=\"ccs-footer__heading govuk-heading-m\">Single column list 1</h2>\n            \n              \n              <ul class=\"ccs-footer__list \">\n                \n                  \n                    <li class=\"ccs-footer__list-item\">\n                      <a class=\"ccs-footer__link\" href=\"#1\" data-attribute=\"my-attribute\" data-attribute-2=\"my-attribute-2\">\n                        Navigation item 1\n                      </a>\n                    </li>\n                  \n                \n              </ul>\n            \n          </div>\n        \n      </div>\n      <hr class=\"ccs-footer__section-break\">\n    \n    <div class=\"ccs-footer__meta\">\n      <div class=\"ccs-footer__meta-item ccs-footer__meta-item--grow\">\n        \n        <svg\n          aria-hidden=\"true\"\n          focusable=\"false\"\n          class=\"ccs-footer__licence-logo\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          viewBox=\"0 0 483.2 195.7\"\n          height=\"17\"\n          width=\"41\"\n        >\n          <path\n            fill=\"currentColor\"\n            d=\"M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145\"\n          />\n        </svg>\n        <span class=\"ccs-footer__licence-description\">\n          All content is available under the\n          <a\n            class=\"ccs-footer__link\"\n            href=\"https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/\"\n            rel=\"license\"\n          >Open Government Licence v3.0</a>, except where otherwise stated\n        </span>\n      </div>\n      <div class=\"ccs-footer__meta-item\">\n        <a\n          class=\"ccs-footer__link ccs-footer__copyright-logo\"\n          href=\"https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/\"\n        >© Crown copyright</a>\n      </div>\n    </div>\n  </div>\n</footer>",
+            "hidden": true
+        }
+    ]
+}

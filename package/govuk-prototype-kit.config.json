@@ -3,12 +3,12 @@
     "/"
   ],
   "scripts": [
-    "/govuk/all.js"
+    "/ccs/all.js"
   ],
   "assets": [
-    "/govuk/assets"
+    "/ccs/assets"
   ],
   "sass": [
-    "/govuk/all.scss"
+    "/ccs/all.scss"
   ]
 }
