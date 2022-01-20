@@ -39,7 +39,7 @@ const destinationPath = function () {
   if (taskArguments.destination === 'dist' || taskArguments.destination === 'public') {
     return taskArguments.destination
   } else {
-    return `${taskArguments.destination}/govuk/`
+    return `${taskArguments.destination}/ccs/`
   }
 }
 
@@ -71,7 +71,7 @@ function compileStyles (done) {
     ])))
     .pipe(gulpif(isDist,
       rename({
-        basename: 'govuk-frontend',
+        basename: 'ccs-components',
         extname: '.min.css'
       })
     ))
@@ -110,7 +110,7 @@ function compileOldIE (done) {
     ])))
     .pipe(gulpif(isDist,
       rename({
-        basename: 'govuk-frontend-ie8',
+        basename: 'ccs-components-ie8',
         extname: '.min.css'
       })
     ))
@@ -221,7 +221,7 @@ gulp.task('js:compile', (done) => {
       })))
       .pipe(gulpif(isDist,
         rename({
-          basename: 'govuk-frontend',
+          basename: 'ccs-components',
           extname: '.min.js'
         })
       ))
