@@ -14,7 +14,7 @@ jobs:
       - run: |
           npm install -g sass@v1.0.0
           sass --version
-      - run: time sass src/govuk/all.scss > /dev/null
+      - run: time sass src/ccs/all.scss > /dev/null
 
   lib-sass:
     name: LibSass v3.3.0 (deprecated)
@@ -27,7 +27,7 @@ jobs:
       - run: |
           npm install -g node-sass@v3.4.0
           node-sass --version
-      - run: time node-sass src/govuk/all.scss > /dev/null
+      - run: time node-sass src/ccs/all.scss > /dev/null
 
   ruby-sass:
     name: Ruby Sass v3.4.0 (deprecated)
@@ -40,4 +40,4 @@ jobs:
       - run: |
           gem install sass -v 3.4.0
           sass --version
-      - run: time sass src/govuk/all.scss > /dev/null
+      - run: time sass src/ccs/all.scss > /dev/null

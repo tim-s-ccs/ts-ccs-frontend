@@ -1,0 +1,208 @@
+---
+scenario: >-
+  An example of a service that uses the header and footer components.
+
+  The Facilities Management application allows users to procure services for their buildings
+
+---
+
+{# This example is based of the "Facilities Management" page: https://marketplace.service.crowncommercial.gov.uk/facilities-management/RM3830/start #}
+{% extends "full-page-example.njk" %}
+
+{% from "header/macro.njk"                                        import ccsHeader %}
+{% from "footer/macro.njk"                                        import ccsFooter %}
+{% from "govuk-frontend/govuk/components/phase-banner/macro.njk"  import govukPhaseBanner %}
+{% from "govuk-frontend/govuk/components/button/macro.njk"        import govukButton %}
+{% from "govuk-frontend/govuk/components/details/macro.njk"       import govukDetails %}
+
+{% block pageTitle %}
+  Find a facilities management supplier - Crown Commercial Service
+{% endblock %}
+
+{% block header %}
+  {{ ccsHeader({
+    serviceName: 'Find a facilities management supplier'
+  }) }}
+  <div class="govuk-width-container ">
+    {{ govukPhaseBanner({
+      tag: {
+        text: "Beta"
+      },
+      html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+    }) }}
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-body">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">
+          Find a facilities management supplier
+        </h1>
+      </div>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-!-font-size-19">
+          Use this service to:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>quickly view suppliers who can provide services to your locations</li>
+          <li>see an estimated contract cost</li>
+          <li>compliantly create and offer a direct award contract</li>
+          <li>shortlist suppliers ready for further competition</li>
+        </ul>
+
+        <div class="govuk-inset-text">
+          Direct award is only available for contracts less than £1.5 million, and can only be awarded to the lowest priced supplier.
+        </div>
+
+        <p class="govuk-!-font-size-24 ccs-font-weight-semi-bold">
+          Before you start
+        </p>
+        <p class="govuk-!-font-size-19">
+          You need to know:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>what services you are looking for</li>
+          <li>your building locations and information</li>
+          <li>your basic contract requirements</li>
+        </ul>
+
+        <a target="_blank" class="govuk-link--no-visited-state" href="https://www.crowncommercial.gov.uk/agreements/rm3830">
+          View further information about the Facilities Management framework RM3830
+        </a>
+        <br>
+        {{ govukButton({
+          text: "Start now",
+          href: "#",
+          isStartButton: true,
+          classes: "govuk-!-margin-top-6 govuk-!-margin-bottom-8"
+        }) }}
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+        <p class="govuk-!-font-size-24 ccs-font-weight-semi-bold">
+          How it works
+        </p>
+        <p>
+          You can progress through these three steps:
+        </p>
+
+        {{ govukDetails({
+          summaryText: "1. Quick view suppliers",
+          html: '
+            <div class="govuk-!-padding-bottom-3">
+              <p class="ccs-font-weight-semi-bold govuk-!-margin-bottom-0">
+                You will tell us
+              </p>
+            </div>
+            <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-0">
+              <li>which services you are looking for</li>
+              <li>building locations and information</li>
+            </ul>
+            <div class="govuk-!-padding-top-3 govuk-!-padding-bottom-3">
+              <p class="ccs-font-weight-semi-bold govuk-!-margin-bottom-0">
+                We will tell you
+              </p>
+            </div>
+            <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-0">
+              <li>which suppliers can meet your needs</li>
+            </ul>
+          '
+        }) }}
+
+        {{ govukDetails({
+          summaryText: "2. Start a procurement",
+          html: '
+            <div class="govuk-!-padding-bottom-3">
+              <p class="ccs-font-weight-semi-bold govuk-!-margin-bottom-0">
+                You will tell us
+              </p>
+            </div>
+            <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-0">
+              <li>about your buildings and service requirements</li>
+              <li>basic contract information</li>
+            </ul>
+            <div class="govuk-!-padding-top-3 govuk-!-padding-bottom-3">
+              <p class="ccs-font-weight-semi-bold govuk-!-margin-bottom-0">
+                We will tell you
+              </p>
+            </div>
+            <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-0">
+              <li>which sub-lot is suitable</li>
+              <li>an estimated contract cost</li>
+              <li>a shortlist of suppliers</li>
+              <li>procurement options to proceed</li>
+            </ul>
+          '
+        }) }}
+
+        {{ govukDetails({
+          summaryText: "3. Procurement options",
+          html: '
+            <div class="govuk-!-padding-bottom-3">
+              <p class="ccs-font-weight-semi-bold govuk-!-margin-bottom-0">
+                Direct award (if option is available)
+              </p>
+            </div>
+              <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-0">
+                <li>create your contract online, and offer to the most competitive supplier</li>
+                <li>the most efficient and compliant route to procure FM services</li>
+              </ul>
+            <div class="govuk-!-padding-top-3 govuk-!-padding-bottom-3">
+              <p class="ccs-font-weight-semi-bold govuk-!-margin-bottom-0">
+                Further competition
+              </p>
+            </div>
+            <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-0">
+              <li>download your supplier shortlist and requirement documents</li>
+              <li>proceed with your standard procurement process or contact CCS for further guidance</li>
+            </ul>
+          '
+        }) }}
+
+        <p class="ccs-font-weight-semi-bold govuk-!-font-size-24 govuk-!-margin-top-6">
+          Direct award
+        </p>
+        <p>
+          A quick way of identifying suitable suppliers and awarding a contract without the need for a further competition. A preferred supplier cannot be manually selected, a direct award is only awardable to the lowest priced supplier based on your requirements.
+        </p>
+
+        <p class="ccs-font-weight-semi-bold govuk-!-font-size-24 govuk-!-margin-top-6">
+          International coverage
+        </p>
+        <p>
+          Please contact us for overseas services - email/phone details below.
+        </p>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block footer %}
+  {{ ccsFooter({
+    meta: {
+      items: [
+        {
+          "href": "#1",
+          "text": "Cookie policy"
+        },
+        {
+          "href": "#2",
+          "text": "Cookie settings"
+        },
+        {
+          "href": "#3",
+          "text": "Privacy policy"
+        },
+        {
+          "href": "#4",
+          "text": "Accessibility statement"
+        }
+      ]
+    }
+  }) }}
+{% endblock %}

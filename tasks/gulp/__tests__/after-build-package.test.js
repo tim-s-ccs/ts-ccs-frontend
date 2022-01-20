@@ -108,7 +108,7 @@ describe('package/', () => {
       const allJsFile = path.join(configPaths.package, 'govuk', 'all.js')
       return readFile(allJsFile, 'utf8')
         .then((data) => {
-          expect(data).toContain("typeof define === 'function' && define.amd ? define('GOVUKFrontend', ['exports'], factory)")
+          expect(data).toContain("typeof define === 'function' && define.amd ? define('CCSComponents', ['exports'], factory)")
         })
         .catch(error => {
           throw error

@@ -1,6 +1,6 @@
 ---
 extends: stylelint-config-gds/scss
-ignoreFiles: src/govuk/vendor/**/*
+ignoreFiles: src/ccs/vendor/**/*
 plugins:
   - stylelint-order
 rules:
