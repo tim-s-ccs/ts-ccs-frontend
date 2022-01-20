@@ -27,7 +27,7 @@ gulp.task('update-assets-version', () => {
     .pipe(vinylPaths(del))
     .pipe(gulpif(isDist,
       rename(obj => {
-        obj.basename = obj.basename.replace(/(govuk.*)(?=\.min)/g, '$1-' + pkg.version)
+        obj.basename = obj.basename.replace(/(ccs.*)(?=\.min)/g, '$1-' + pkg.version)
         return obj
       })
     ))
