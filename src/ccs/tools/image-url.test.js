@@ -14,7 +14,7 @@ describe('@function image-url', () => {
       $ccs-images-path: '/path/to/images/';
 
       .foo {
-        background-image: govuk-image-url("baz.png");
+        background-image: ccs-image-url("baz.png");
       }`
 
     const results = await renderSass({ data: sass, ...sassConfig })
@@ -31,7 +31,7 @@ describe('@function image-url', () => {
       $ccs-image-url-function: 'to_upper_case';
 
       .foo {
-        background-image: govuk-image-url("baz.png");
+        background-image: ccs-image-url("baz.png");
       }`
 
     const results = await renderSass({ data: sass, ...sassConfig })
@@ -53,7 +53,7 @@ describe('@function image-url', () => {
       $ccs-image-url-function: 'custom-url-handler';
 
       .foo {
-        background-image: govuk-image-url("baz.png");
+        background-image: ccs-image-url("baz.png");
       }`
 
     const results = await renderSass({ data: sass, ...sassConfig })
