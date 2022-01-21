@@ -15,7 +15,7 @@ describe('@function font-url', () => {
 
       @font-face {
         font-family: "whatever";
-        src: govuk-font-url("whatever.woff2");
+        src: ccs-font-url("whatever.woff2");
       }`
 
     const results = await renderSass({ data: sass, ...sassConfig })
@@ -33,7 +33,7 @@ describe('@function font-url', () => {
 
       @font-face {
         font-family: "whatever";
-        src: govuk-font-url("whatever.woff2");
+        src: ccs-font-url("whatever.woff2");
       }`
 
     const results = await renderSass({ data: sass, ...sassConfig })
@@ -56,7 +56,7 @@ describe('@function font-url', () => {
 
       @font-face {
         font-family: "whatever";
-        src: govuk-font-url("whatever.woff2");
+        src: ccs-font-url("whatever.woff2");
       }`
 
     const results = await renderSass({ data: sass, ...sassConfig })
