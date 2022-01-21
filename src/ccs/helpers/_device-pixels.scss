@@ -8,21 +8,21 @@
 /// @content Passed content will be outputted within the media query
 ///
 /// @example scss - Providing a @2x image for screens that support it
-///   background-image: govuk-image-url("my-image.png");
+///   background-image: ccs-image-url("my-image.png");
 ///
 ///   @include govuk-device-pixel-ratio {
-///     background-image: govuk-image-url("my-image-2x.png");
+///     background-image: ccs-image-url("my-image-2x.png");
 ///   }
 ///
 /// @example scss - Using a custom ratio
-///   background-image: govuk-image-url("my-image.png");
+///   background-image: ccs-image-url("my-image.png");
 ///
 ///   @include govuk-device-pixel-ratio {
-///     background-image: govuk-image-url("my-image-2x.png");
+///     background-image: ccs-image-url("my-image-2x.png");
 ///   }
 ///
 ///   @include govuk-device-pixel-ratio(3) {
-///     background-image: govuk-image-url("my-image-3x.png");
+///     background-image: ccs-image-url("my-image-3x.png");
 ///   }
 ///
 /// @access public
