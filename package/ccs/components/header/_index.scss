@@ -1,4 +1,4 @@
-@include govuk-exports("govuk/component/ccs-header") {
+@include govuk-exports("ccs/component/ccs-header") {
   $ccs-header-background: #9b1a47;
   $ccs-header-border-color: $govuk-brand-colour;
   $ccs-header-border-width: govuk-spacing(2);
