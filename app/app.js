@@ -20,7 +20,8 @@ const appViews = [
   configPaths.fullPageExamples,
   configPaths.components,
   configPaths.src,
-  configPaths.node_modules
+  configPaths.node_modules,
+  configPaths.govukFrontend
 ]
 
 module.exports = (options) => {

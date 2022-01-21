@@ -13,6 +13,7 @@
   "sassdoc": "sassdoc/",
   "src": "src/ccs/",
     "components": "src/ccs/components/",
+  "govukFrontend": "node_modules/govuk-frontend/",
   "ports": {
     "app": 3000,
     "test": 8888
