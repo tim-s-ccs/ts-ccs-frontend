@@ -11,7 +11,7 @@ describe('@function image-url', () => {
     const sass = `
       @import "tools/image-url";
 
-      $govuk-images-path: '/path/to/images/';
+      $ccs-images-path: '/path/to/images/';
 
       .foo {
         background-image: govuk-image-url("baz.png");
@@ -28,7 +28,7 @@ describe('@function image-url', () => {
     const sass = `
       @import "tools/image-url";
 
-      $govuk-image-url-function: 'to_upper_case';
+      $ccs-image-url-function: 'to_upper_case';
 
       .foo {
         background-image: govuk-image-url("baz.png");
@@ -49,8 +49,8 @@ describe('@function image-url', () => {
         @return url("/custom/#{$filename}");
       }
 
-      $govuk-images-path: '/assets/fonts/';
-      $govuk-image-url-function: 'custom-url-handler';
+      $ccs-images-path: '/assets/fonts/';
+      $ccs-image-url-function: 'custom-url-handler';
 
       .foo {
         background-image: govuk-image-url("baz.png");

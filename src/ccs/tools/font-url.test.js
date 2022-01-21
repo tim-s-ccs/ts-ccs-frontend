@@ -11,7 +11,7 @@ describe('@function font-url', () => {
     const sass = `
       @import "tools/font-url";
 
-      $govuk-fonts-path: '/path/to/fonts/';
+      $ccs-fonts-path: '/path/to/fonts/';
 
       @font-face {
         font-family: "whatever";
@@ -29,7 +29,7 @@ describe('@function font-url', () => {
     const sass = `
       @import "tools/font-url";
 
-      $govuk-font-url-function: 'to_upper_case';
+      $ccs-font-url-function: 'to_upper_case';
 
       @font-face {
         font-family: "whatever";
@@ -51,8 +51,8 @@ describe('@function font-url', () => {
         @return url("/custom/#{$filename}");
       }
 
-      $govuk-fonts-path: '/assets/fonts/';
-      $govuk-font-url-function: 'custom-url-handler';
+      $ccs-fonts-path: '/assets/fonts/';
+      $ccs-font-url-function: 'custom-url-handler';
 
       @font-face {
         font-family: "whatever";
