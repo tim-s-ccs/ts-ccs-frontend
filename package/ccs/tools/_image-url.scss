@@ -12,7 +12,7 @@
 /// @return {String} URL for the filename, wrapped in `url()`
 /// @access public
 
-@function govuk-image-url($filename) {
+@function ccs-image-url($filename) {
   $use-custom-function: variable-exists("ccs-image-url-function")
     and $ccs-image-url-function
     and function-exists($ccs-image-url-function);
