@@ -11,11 +11,6 @@ const PORT = configPaths.ports.test
 const expectedPages = [
   '/',
   '/components/all',
-  '/examples/form-alignment',
-  '/examples/form-elements',
-  '/examples/grid',
-  '/examples/links',
-  '/examples/typography',
   '/examples/template-default',
   '/examples/template-custom'
 ]
@@ -164,8 +159,8 @@ describe(`http://localhost:${PORT}`, () => {
     it('should have a custom Header component', done => {
       requestPath(templatePath, (err, res) => {
         const $ = cheerio.load(res.body)
-        const $header = $('.govuk-header')
-        const $serviceName = $header.find('.govuk-header__link--service-name')
+        const $header = $('.ccs-header')
+        const $serviceName = $header.find('.ccs-header__link--service-name')
         expect($serviceName.html()).toContain('Nom du service')
         done(err)
       })
@@ -184,8 +179,8 @@ describe(`http://localhost:${PORT}`, () => {
     it('should have a custom Footer component', done => {
       requestPath.get(templatePath, (err, res) => {
         const $ = cheerio.load(res.body)
-        const $footer = $('.govuk-footer')
-        const $footerLink = $footer.find('.govuk-footer__link')
+        const $footer = $('.ccs-footer')
+        const $footerLink = $footer.find('.ccs-footer__link')
         expect($footerLink.html()).toContain('Aidez-moi')
         done(err)
       })
