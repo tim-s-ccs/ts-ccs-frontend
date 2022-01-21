@@ -1,7 +1,7 @@
 {
   "name": "ts-ccs-components",
   "description": "CCS Components contains the code you need to start building a user interface for CCS platforms and services.",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "ccs/all.js",
   "sass": "ccs/all.scss",
   "engines": {
