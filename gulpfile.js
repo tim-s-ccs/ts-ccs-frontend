@@ -31,6 +31,14 @@ gulp.task('styles', gulp.series(
   'scss:compile'
 ))
 
+// Copy fonts task ----------------------
+// Copies fonts to taskArguments.destination (public)
+// --------------------------------------
+gulp.task('copy:fonts', () => {
+  return gulp.src(paths.app + 'assets/fonts/*')
+    .pipe(gulp.dest(taskArguments.destination + '/assets/fonts/'))
+})
+
 // Copy assets task ----------------------
 // Copies assets to taskArguments.destination (public)
 // --------------------------------------
@@ -71,6 +79,7 @@ gulp.task('serve', gulp.parallel(
 gulp.task('dev', gulp.series(
   'clean',
   'copy-assets',
+  'copy:fonts',
   'sassdoc',
   'serve'
 ))

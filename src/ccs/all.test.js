@@ -63,25 +63,6 @@ describe('CCS Components', () => {
       expect(componentsWithoutInitFunctions).toEqual([])
     })
   })
-  describe('global styles', () => {
-    it('are disabled by default', async () => {
-      const sass = `
-        @import "all";
-      `
-      const results = await renderSass({ data: sass })
-      expect(results.css.toString()).not.toContain(', a {')
-      expect(results.css.toString()).not.toContain(', p {')
-    })
-    it('are enabled if $global-styles variable is set to true', async () => {
-      const sass = `
-        $govuk-global-styles: true;
-        @import "all";
-      `
-      const results = await renderSass({ data: sass })
-      expect(results.css.toString()).toContain(', a {')
-      expect(results.css.toString()).toContain(', p {')
-    })
-  })
 
   // Sass functions will be automatically evaluated at compile time and the
   // return value from the function will be used in the compiled CSS.

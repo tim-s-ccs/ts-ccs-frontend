@@ -6,18 +6,18 @@ const sassConfig = {
   outputStyle: 'compressed'
 }
 
-describe('@mixin govuk-exports', () => {
+describe('@mixin ccs-exports', () => {
   it('will only output a named section once', async () => {
     const sass = `
       @import "tools/exports";
 
-      @include govuk-exports(foo) {
+      @include ccs-exports(foo) {
         .foo {
           color: red;
         }
       }
 
-      @include govuk-exports(foo) {
+      @include ccs-exports(foo) {
         .foo {
           color: blue;
         }
@@ -32,13 +32,13 @@ describe('@mixin govuk-exports', () => {
     const sass = `
       @import "tools/exports";
 
-      @include govuk-exports(foo) {
+      @include ccs-exports(foo) {
         .foo {
           color: red;
         }
       }
 
-      @include govuk-exports(bar) {
+      @include ccs-exports(bar) {
         .bar {
           color: blue;
         }
