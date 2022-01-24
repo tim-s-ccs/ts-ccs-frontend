@@ -1,11 +1,11 @@
-@include govuk-exports("ccs/component/ccs-footer") {
+@include ccs-exports("ccs/component/ccs-footer") {
 
-  $ccs-footer-background: #2f2f2f;
-  $ccs-footer-border: #b1b4b6;
+  $ccs-footer-background: ccs-colour("black");
+  $ccs-footer-border: $ccs-border-colour;
   // This variable can be removed entirely once the legacy palette goes away,
   // as it'll just be the same as $ccs-footer-border.
-  $ccs-footer-border-top: #b1b4b6;
-  $ccs-footer-text: govuk-colour("white");
+  $ccs-footer-border-top: $ccs-border-colour;
+  $ccs-footer-text: ccs-colour("white");
 
   // Based on the govuk-crest-2x.png image dimensions.
   $ccs-footer-crest-image-width-2x: 250px;

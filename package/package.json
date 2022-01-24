@@ -1,7 +1,7 @@
 {
   "name": "ts-ccs-components",
   "description": "CCS Components contains the code you need to start building a user interface for CCS platforms and services.",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "main": "ccs/all.js",
   "sass": "ccs/all.scss",
   "engines": {
@@ -25,5 +25,8 @@
     "design system",
     "template"
   ],
+  "dependencies": {
+    "govuk-frontend": "^4.0.0"
+  },
   "license": "MIT"
 }
