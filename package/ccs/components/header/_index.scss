@@ -1,10 +1,10 @@
-@include govuk-exports("ccs/component/ccs-header") {
-  $ccs-header-background: #9b1a47;
-  $ccs-header-border-color: $govuk-brand-colour;
+@include ccs-exports("ccs/component/ccs-header") {
+  $ccs-header-background: $ccs-brand-colour;
+  $ccs-header-border-color: ccs-colour("blue");
   $ccs-header-border-width: govuk-spacing(2);
-  $ccs-header-text: govuk-colour("white");
-  $ccs-header-link-active-border-color: govuk-colour("white");
-  $ccs-header-nav-item-border-color: #85163d;
+  $ccs-header-text: ccs-colour("white");
+  $ccs-header-link-active-border-color: ccs-colour("white");
+  $ccs-header-nav-item-border-color: ccs-colour("dark-red");
   $ccs-header-link-underline-thickness: 3px;
 
   .ccs-header {
@@ -293,7 +293,9 @@
       // When focussed, the text colour needs to be darker to ensure that colour
       // contrast is still acceptable
       &:focus {
-        color: $govuk-focus-text-colour;
+        @include govuk-focused-text;
+
+        border-color: $govuk-focus-colour;
       }
     }
   }

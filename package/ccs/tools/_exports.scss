@@ -7,7 +7,7 @@
 /// @type List
 /// @access private
 
-$_govuk-imported-modules: () !default;
+$_ccs-imported-modules: () !default;
 
 /// Export module
 ///
@@ -20,11 +20,11 @@ $_govuk-imported-modules: () !default;
 ///   $name has not already been outputted
 /// @access public
 
-@mixin govuk-exports($name) {
+@mixin ccs-exports($name) {
   // If the mixin is not in the list of modules already exported...
-  @if (index($_govuk-imported-modules, $name) == null) {
+  @if (index($_ccs-imported-modules, $name) == null) {
     // ... then add it to the list
-    $_govuk-imported-modules: append($_govuk-imported-modules, $name) !global;
+    $_ccs-imported-modules: append($_ccs-imported-modules, $name) !global;
     // ... and output the CSS for that module
     @content;
   }
