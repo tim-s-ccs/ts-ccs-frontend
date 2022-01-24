@@ -9,12 +9,10 @@ const sassConfig = {
   outputStyle: 'compressed'
 }
 
-describe('Organisation colours', () => {
+describe('CCS Colours', () => {
   it('should define websafe colours that meet contrast requirements', async () => {
     const sass = `
-      @import "settings/compatibility";
       @import "settings/colours-palette";
-      @import "settings/colours-organisations";
       @import "settings/colours-applied";
       @import "helpers/colour";
 
@@ -22,16 +20,15 @@ describe('Organisation colours', () => {
 
       $minimum-contrast: 4.5;
 
-      @each $organisation in map-keys($govuk-colours-organisations) {
+      $colour: ccs-colour("white");
+      $background-colour: $ccs-brand-colour;
 
-        $colour: govuk-organisation-colour($organisation);
-        $contrast: ch-color-contrast($govuk-body-background-colour, $colour);
+      $contrast: ch-color-contrast($background-colour, $colour);
 
-        @if ($contrast < $minimum-contrast) {
-          @error "Contrast ratio for #{$organisation} too low."
-          + " #{$colour} on #{$govuk-body-background-colour} has a contrast of: #{$contrast}."
-          + " Must be higher than #{$minimum-contrast} for WCAG AA support.";
-        }
+      @if ($contrast < $minimum-contrast) {
+        @error "Contrast ratio for #{$organisation} too low."
+        + " #{$colour} on #{$background-colour} has a contrast of: #{$contrast}."
+        + " Must be higher than #{$minimum-contrast} for WCAG AA support.";
       }`
 
     await renderSass({ data: sass, ...sassConfig })

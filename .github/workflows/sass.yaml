@@ -14,7 +14,10 @@ jobs:
       - run: |
           npm install -g sass@v1.0.0
           sass --version
-      - run: time sass src/ccs/all.scss > /dev/null
+      - run: |
+          mkdir -p ./node_modules
+          npm install --prefix ./ govuk-frontend@4.0.0 --only=production
+      - run: time sass --load-path . src/ccs/all.scss > /dev/null
 
   lib-sass:
     name: LibSass v3.3.0 (deprecated)
@@ -27,6 +30,9 @@ jobs:
       - run: |
           npm install -g node-sass@v3.4.0
           node-sass --version
+      - run: |
+          mkdir -p ./node_modules
+          npm install --prefix ./ govuk-frontend@4.0.0 --only=production
       - run: time node-sass src/ccs/all.scss > /dev/null
 
   ruby-sass:
@@ -40,4 +46,7 @@ jobs:
       - run: |
           gem install sass -v 3.4.0
           sass --version
+      - run: |
+          mkdir -p ./node_modules
+          npm install --prefix ./ govuk-frontend@4.0.0 --only=production
       - run: time sass src/ccs/all.scss > /dev/null

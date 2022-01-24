@@ -20,13 +20,6 @@ $ccs-assets-path: "/assets/" !default;
 
 $ccs-images-path: "#{$ccs-assets-path}images/" !default;
 
-/// Path to the fonts folder, with trailing slash.
-///
-/// @type String
-/// @access public
-
-$ccs-fonts-path: "#{$ccs-assets-path}fonts/" !default;
-
 /// Custom image URL function
 ///
 /// If the built-in image URL helper does not meet your needs, you can specify
@@ -53,30 +46,3 @@ $ccs-fonts-path: "#{$ccs-assets-path}fonts/" !default;
 /// @access public
 
 $ccs-image-url-function: false !default;
-
-/// Custom font URL function
-///
-/// If the built-in font URL helper does not meet your needs, you can specify
-/// the name of a custom handler – either built in or by writing your own
-/// function.
-///
-/// If you are writing your own handler, ensure that it returns a string wrapped
-/// with `url()`
-///
-/// @type String
-///
-/// @example scss - Rails asset handling
-///   $ccs-font-url-function: 'font-url';
-///
-/// @example scss - Custom asset handling
-///
-///   @function my-url-handler($filename) {
-///     // Some custom URL handling
-///     @return url('example.woff');
-///   }
-///
-///   $ccs-font-url-function: 'my-url-handler';
-///
-/// @access public
-
-$ccs-font-url-function: false !default;

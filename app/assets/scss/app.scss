@@ -1,6 +1,8 @@
 $govuk-show-breakpoints: true;
 $govuk-new-link-styles: true;
 
+$govuk-assets-path: '/public/assets/';
+
 @import "../../../src/ccs/all";
 @import "node_modules/govuk-frontend/govuk/all";
 @import "partials/app";
