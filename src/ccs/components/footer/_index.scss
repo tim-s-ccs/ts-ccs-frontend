@@ -26,7 +26,17 @@
 
   .ccs-footer__link {
     @include govuk-link-common;
-    color: $ccs-footer-text;
+
+    &:link,
+    &:visited,
+    &:hover {
+      color: $ccs-footer-text;
+    }
+
+    &:hover,
+    &:focus {
+      color: $govuk-focus-text-colour;
+    }
 
     // alphagov/govuk_template includes a specific a:link:focus selector
     // designed to make unvisited links a slightly darker blue when focussed, so
