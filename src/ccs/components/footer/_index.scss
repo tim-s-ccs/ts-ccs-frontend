@@ -33,7 +33,7 @@
       color: $ccs-footer-text;
     }
 
-    &:hover,
+    &:active,
     &:focus {
       color: $govuk-focus-text-colour;
     }
