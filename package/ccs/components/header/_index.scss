@@ -111,8 +111,8 @@
       text-decoration: none;
     }
 
-    &:hover,
-    &:active {
+    &:hover:not(:focus),
+    &:active:not(:focus) {
       // Negate the added border
       margin-bottom: -1px;
       // Omitting colour will use default value of currentColor – if we
@@ -123,7 +123,6 @@
     // Remove any borders that show when focused and hovered.
     &:focus {
       margin-bottom: 0;
-      border-bottom: 0;
     }
   }
 
