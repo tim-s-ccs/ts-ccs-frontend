@@ -1,0 +1,26 @@
+{% macro showOptionsTable(tableName, params) %}
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-heading-m">{{ tableName }}</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Name</th>
+      <th class="govuk-table__header" scope="col">Type</th>
+      <th class="govuk-table__header" scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    {% for param in params %}
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="row">{{ param.name }}</th>
+        <td class="govuk-table__cell ">{{ param.type }}</td>
+        <td class="govuk-table__cell ">
+          {% if param.required %}
+            <strong>Required.</strong>
+          {% endif %}
+          {{ param.description | replace(r/((?:[^`]*`){1}[^`]*)`/g, '$1</code>') | replace('`', '<code>') | safe }}
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endmacro %}

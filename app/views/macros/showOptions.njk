@@ -1,0 +1,16 @@
+{% from "macros/showOptionsTable.njk" import showOptionsTable %}
+
+{% macro showOptions(data) %}
+
+
+{{ showOptionsTable('Primary options', data.params) }}
+
+{% for param in data.params %}
+  {% if param.params %}
+    <hr class="govuk-section-break govuk-section-break--m">
+
+    {{ showOptionsTable("Options for " + param.name, param.params) }}
+  {% endif %}  
+{% endfor %}
+
+{% endmacro %}
