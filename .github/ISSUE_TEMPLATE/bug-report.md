@@ -32,4 +32,4 @@ assignees: ''
 - Operating system:
 - Browser:
 - Browser version:
-- GOV.UK Frontend Version:
+- CCS Frontend Version:

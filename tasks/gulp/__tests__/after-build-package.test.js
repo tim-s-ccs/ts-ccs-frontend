@@ -88,8 +88,8 @@ describe('package/', () => {
     it('is not overwritten', () => {
       return readFile(path.join(configPaths.package, 'README.md'), 'utf8')
         .then(contents => {
-          // Look for H1 matching 'GOV.UK Frontend' from existing README
-          expect(contents).toMatch(/^# GOV.UK Frontend/)
+          // Look for H1 matching 'CCS Frontend' from existing README
+          expect(contents).toMatch(/^# CCS Frontend/)
         }).catch(error => {
           throw error
         })

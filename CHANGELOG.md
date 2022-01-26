@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.0 (Pre Release)
+  - Change the name of the project from CCS Components to CCS Frontend.
+    This is so it is easier to understand some of the text and bring it in line with GOV.UK Frontend:
+    - [Rename Package to CCS Frontend](https://github.com/tim-s-ccs/ts-ccs-frontend/pull/20)
+
 ## 0.3.0 (Pre Release)
   - Update and add documentation:
     - [Update README and add guides](https://github.com/tim-s-ccs/ts-ccs-frontend/pull/16)

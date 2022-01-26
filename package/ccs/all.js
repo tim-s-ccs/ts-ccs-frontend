@@ -1,7 +1,7 @@
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-	typeof define === 'function' && define.amd ? define('CCSComponents', ['exports'], factory) :
-	(factory((global.CCSComponents = {})));
+	typeof define === 'function' && define.amd ? define('CCSFrontend', ['exports'], factory) :
+	(factory((global.CCSFrontend = {})));
 }(this, (function (exports) { 'use strict';
 
 (function(undefined) {
@@ -1065,7 +1065,7 @@ function initAll (options) {
   // Set the options to an empty object by default if no options are passed.
   options = typeof options !== 'undefined' ? options : {};
 
-  // Allow the user to initialise GOV.UK Frontend in only certain sections of the page
+  // Allow the user to initialise CCS Frontend in only certain sections of the page
   // Defaults to the entire document if nothing is set.
   var scope = typeof options.scope !== 'undefined' ? options.scope : document;
 
