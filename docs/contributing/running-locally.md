@@ -10,9 +10,9 @@ If you're an external contributor make sure to [fork this project first](https:/
 
 ## 2. Clone repository
 ```
-git clone git@github.com:tim-s-ccs/tim-ccs-components.git # or clone your own fork
+git clone git@github.com:tim-s-ccs/ts-ccs-frontend.git # or clone your own fork
 
-cd tim-ccs-components
+cd ts-ccs-frontend
 ```
 
 ## 3. Using nvm (optional)

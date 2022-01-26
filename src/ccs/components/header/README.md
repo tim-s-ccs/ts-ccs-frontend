@@ -2,7 +2,7 @@
 
 ## Installation
 
-See the [main README quick start guide](https://github.com/tim-s-ccs/tim-ccs-components#quick-start) for how to install this component.
+See the [main README quick start guide](https://github.com/tim-s-ccs/ts-ccs-frontend#quick-start) for how to install this component.
 
 ## Guidance and Examples
 <!-- Add place for guide -->

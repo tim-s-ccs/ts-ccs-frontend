@@ -108,7 +108,7 @@ describe('package/', () => {
       const allJsFile = path.join(configPaths.package, 'ccs', 'all.js')
       return readFile(allJsFile, 'utf8')
         .then((data) => {
-          expect(data).toContain("typeof define === 'function' && define.amd ? define('CCSComponents', ['exports'], factory)")
+          expect(data).toContain("typeof define === 'function' && define.amd ? define('CCSFrontend', ['exports'], factory)")
         })
         .catch(error => {
           throw error

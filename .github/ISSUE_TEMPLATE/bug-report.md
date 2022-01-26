@@ -8,12 +8,12 @@ assignees: ''
 ---
 
 <!--
-    The source of this template is for GOV.UK Frontend but the same guidance applies to CCS Components
+    The source of this template is for GOV.UK Frontend but the same guidance applies to CCS Frontend
 
     Please fill in as much of the template below as you’re able to. If you're unsure whether the issue already exists or how to fill in the template, open an issue anyway. Our team will help you to complete the rest.
 
     Your issue might already exist. If so, add a comment to the existing issue instead of creating a new one. You can find existing issues here:
-    - an existing Github issue: https://github.com/tim-s-ccs/tim-ccs-components/issues
+    - an existing Github issue: https://github.com/tim-s-ccs/ts-ccs-frontend/issues
     - our known validation error/warning list: https://github.com/alphagov/govuk-frontend/issues/1280#issuecomment-509588851
 -->
 
@@ -27,7 +27,7 @@ assignees: ''
 <!-- What is happening vs what would you expect to happen instead? -->
 
 ## Environment (where applicable)
-<!-- Details of your operating system, browser and the version of CCS Components you’re using may help us to reproduce your issue. -->
+<!-- Details of your operating system, browser and the version of CCS Frontend you’re using may help us to reproduce your issue. -->
 
 - Operating system:
 - Browser:

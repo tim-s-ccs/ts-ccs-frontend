@@ -1,6 +1,6 @@
 # Publishing
 
-## Before you publish CCS Components
+## Before you publish CCS Frontend
 
 > :warning: This section will be updated when the project is more mature. Most of the information does not yet apply.
 
@@ -36,7 +36,7 @@
 
 > **Note:** Before you go on leave, tell the delivery manager who will be looking after your work. This will help us to complete sign-off without fuss.
 
-## Publish a new version of CCS Components
+## Publish a new version of CCS Frontend
 
 Developers should pair on releases. When remote working, it can be useful to be on a call together.
 
@@ -91,10 +91,10 @@ Developers should pair on releases. When remote working, it can be useful to be 
 
 3. Run `npm run publish-release`, which will prompt you to either continue or cancel. Enter `y` to continue.
 
-4. View the created tag in the [GitHub interface](https://github.com/tim-s-ccs/tim-ccs-components/releases) as follows:
+4. View the created tag in the [GitHub interface](https://github.com/tim-s-ccs/ts-ccs-frontend/releases) as follows:
   - select the latest tag
   - press **Edit tag**
-  - set 'CCS Components v[version-number]' as the title
+  - set 'CCS Frontend v[version-number]' as the title
   - add release notes from changelog
   - attach the generated ZIP that has been generated at the root of this project
   - publish release

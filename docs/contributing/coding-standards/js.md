@@ -1,6 +1,6 @@
 # JavaScript style guide
 
-The source for this document can be [found on GOV.UK Frontend](https://github.com/alphagov/govuk-frontend/blob/main/docs/contributing/coding-standards/js.md) but the same guidance applies to CCS Components.
+The source for this document can be [found on GOV.UK Frontend](https://github.com/alphagov/govuk-frontend/blob/main/docs/contributing/coding-standards/js.md) but the same guidance applies to CCS Frontend.
 ## Files
 
 JavaScript files have the same name as the component's folder name. Test files have a `.test` suffix placed before the file extension.
@@ -133,7 +133,7 @@ If you need polyfills for features that are not yet included in this project, pl
 
 ## Formatting and linting
 
-CCS Components uses [standardjs](http://standardjs.com/), an opinionated JavaScript linter. All JavaScript files follow its conventions, and it runs on CI to ensure that new pull requests are in line with them.
+CCS Frontend uses [standardjs](http://standardjs.com/), an opinionated JavaScript linter. All JavaScript files follow its conventions, and it runs on CI to ensure that new pull requests are in line with them.
 
 The standard docs have a [complete list of rules and some reasoning behind them](http://standardjs.com/rules.html).
 

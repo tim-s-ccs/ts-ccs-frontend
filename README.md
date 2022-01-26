@@ -1,59 +1,59 @@
-CCS Components ·
-[![Build Status](https://github.com/tim-s-ccs/tim-ccs-components/workflows/Tests/badge.svg)](https://github.com/tim-s-ccs/tim-ccs-components/actions?query=workflow%3ATests+branch%3Amain)
+CCS Frontend ·
+[![Build Status](https://github.com/tim-s-ccs/ts-ccs-frontend/workflows/Tests/badge.svg)](https://github.com/tim-s-ccs/ts-ccs-frontend/actions?query=workflow%3ATests+branch%3Amain)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 =====================
 
-CCS Components contains the code you need to start building a user interface
+CCS Frontend contains the code you need to start building a user interface
 for CCS platforms and services.
 
 This is based off of [GOV.UK Frontend](https://github.com/alphagov/govuk-frontend) which was created and is maintained by a team at the Government Digital Service.
 
-Because of this, CCS Components can be used in an identical way to GOV.UK Frontend.
+Because of this, CCS Frontend can be used in an identical way to GOV.UK Frontend.
 
 <!-- TODO: Add space for guide -->
-<!-- See live examples of CCS Components, and guidance on when to use
-them in your service, in the [CCS Components Design System](#). -->
+<!-- See live examples of CCS Frontend, and guidance on when to use
+them in your service, in the [CCS Frontend Design System](#). -->
 
-As part of future work, there will be a place where you can view live examples and guidance on when to use CCS Components as part of your service.
+As part of future work, there will be a place where you can view live examples and guidance on when to use CCS Frontend as part of your service.
 
 ## STATUS: BUILD AND DEVELOPMENT
 At the moment this project is still in the build and development phase.
 
 As it is still not decided if CCS wants to take on this project, it is being hosted on the personal accounts of `tim-s-ccs`.
 
-That is why the package is called [`ts-ccs-component` on NPM](https://www.npmjs.com/package/ts-ccs-components).
+That is why the package is called [`ts-ccs-frontend` on NPM](https://www.npmjs.com/package/ts-ccs-frontend).
 
 This will all be updated, with real package name confirmed, before the first major release.
 
 ## Contact the team
 
-CCS Components is maintained by a team at the Crown Commercial Service.
+CCS Frontend is maintained by a team at the Crown Commercial Service.
 <!-- TODO: add mail to link -->
-If you want to know more about CCS Components, please email [Tim South](mailto:timothy.south@crowncommercial.gov.uk)
+If you want to know more about CCS Frontend, please email [Tim South](mailto:timothy.south@crowncommercial.gov.uk)
 <!-- the [Development team](mailto:#). -->
 
 ## Quick start
 
 Please note that this package is designed to be used in the same way as GOV.UK Frontend so if these documents are not sufficient, please try the [documentation for GOV.UK Frontend](https://frontend.design-system.service.gov.uk/).
 
-There are 2 ways to start using CCS Components in your app.
+There are 2 ways to start using CCS Frontend in your app.
 
 <!-- TODO: Add space for guide -->
 <!-- Once installed, you will be able to use the code from the examples in the
-[CCS Components Design System](#)
+[CCS Frontend Design System](#)
 in your service. -->
 
 ### 1. Install with npm (recommended)
 
-We recommend [installing CCS Components using node package manager (npm)](docs/instillation/install-with-npm.md).
+We recommend [installing CCS Frontend using node package manager (npm)](docs/instillation/install-with-npm.md).
 
 ### 2. Install using compiled files
 
-You can also install CCS Components by [copying our CSS, JavaScript and asset files into your project](docs/instillation/install-using-compiled-files.md).
+You can also install CCS Frontend by [copying our CSS, JavaScript and asset files into your project](docs/instillation/install-using-compiled-files.md).
 
 ## Browser and assistive technology support
 
-CCS Components supports:
+CCS Frontend supports:
 
 - [recommended browsers](https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices#browsers-to-test-in)
 - [recommended assistive technologies](https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies#which-assistive-technologies-to-test-with)
@@ -62,13 +62,13 @@ CCS Components supports:
 
 ## Accessibility
 
-The CCS Development team works hard to ensure that CCS Components is accessible.
+The CCS Development team works hard to ensure that CCS Frontend is accessible.
 
-Using CCS Components along with GOV.UK Frontend will help your service meet [level AA of WCAG 2.1](https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag). But you must still [check that your service meets accessibility requirements](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction), especially if you extend or modify components.
+Using CCS Frontend along with GOV.UK Frontend will help your service meet [level AA of WCAG 2.1](https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag). But you must still [check that your service meets accessibility requirements](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction), especially if you extend or modify components.
 
 You should also use:
 
-- [the JavaScript from CCS Components](docs/guides/import-assets.md#javascript)
+- [the JavaScript from CCS Frontend](docs/guides/import-assets.md#javascript)
 - [a separate stylesheet](https://frontend.design-system.service.gov.uk/supporting-ie8/) if you support Internet Explorer 8
 
 <!-- You can also read the [accessibility statement for the CCS Design System](https://design-system.service.gov.uk/accessibility/). -->
@@ -82,7 +82,7 @@ If you get a warning from a linter or accessibility checker, check the list of [
 
 To be notified when there’s a new release, you can:
 
-- [watch the tim-ccs-components Github repository](https://docs.github.com/en/github/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications#configuring-your-watch-settings-for-an-individual-repository)
+- [watch the ts-ccs-frontend Github repository](https://docs.github.com/en/github/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications#configuring-your-watch-settings-for-an-individual-repository)
 
 Find out how to [update with npm](docs/guides/update-with-npm.md).
 
@@ -103,9 +103,9 @@ Open Government 3.0 licence.
 
 ## Contributing
 
-[To learn how to help us build CCS Components, see our contribution guidelines.](CONTRIBUTING.md)
+[To learn how to help us build CCS Frontend, see our contribution guidelines.](CONTRIBUTING.md)
 
-The tim-ccs-components repository is public and we welcome contributions from anyone.
+The ts-ccs-frontend repository is public and we welcome contributions from anyone.
 
 However, please note this a small project compared to GOV.UK Frontend and is only concerned with assets relating to CCS.
 

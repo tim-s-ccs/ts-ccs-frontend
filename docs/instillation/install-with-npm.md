@@ -18,7 +18,7 @@
 
     We recommend you do not use either LibSass or Ruby Sass, as they are deprecated.
 
-    Currently, CCS Components supports:
+    Currently, CCS Frontend supports:
 
     - LibSass - version 3.3.0 and greater
     - Ruby Sass - version 3.4.0 and greater
@@ -26,16 +26,16 @@
     However, we may stop supporting LibSass and Ruby Sass in future
 
 <!-- Create guide for nunjucks -->
-You can also [install Nunjucks v3.0.0 or later](https://www.npmjs.com/package/nunjucks) if you want to [use CCS Components' Nunjucks macros](/docs/guides/use-nunjucks.md).
+You can also [install Nunjucks v3.0.0 or later](https://www.npmjs.com/package/nunjucks) if you want to [use CCS Frontend’s Nunjucks macros](/docs/guides/use-nunjucks.md).
 
-## Install CCS Components
+## Install CCS Frontend
 
 Run:
 ```
-npm install ts-ccs-components --save
+npm install ts-ccs-frontend --save
 ```
-When the installation finishes, the `ts-ccs-components` package will be in your `node_modules` folder.
+When the installation finishes, the `ts-ccs-frontend` package will be in your `node_modules` folder.
 
-If it is not already installed, you will also find the `govuk-frontend` package in your `node_modules` folder as this is a dependency of CCS Components.
+If it is not already installed, you will also find the `govuk-frontend` package in your `node_modules` folder as this is a dependency of CCS Frontend.
 
 You should now get started by [getting the CSS, assets and JavaScript working](/docs/guides/get-started.md).

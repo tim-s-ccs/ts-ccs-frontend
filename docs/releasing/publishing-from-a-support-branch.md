@@ -1,25 +1,25 @@
 # Publishing from a support branch
 
-The source for this document can be [found on GOV.UK Frontend](https://github.com/alphagov/govuk-frontend/blob/main/docs/releasing/publishing-from-a-support-branch.md) but the same guidance applies to CCS Components.
+The source for this document can be [found on GOV.UK Frontend](https://github.com/alphagov/govuk-frontend/blob/main/docs/releasing/publishing-from-a-support-branch.md) but the same guidance applies to CCS Frontend.
 
-This document is for CCS developers who need to publish a support branch of CCS Components when the `main` branch contains unreleasable changes. For example, you might need to release a fix as part of a:
+This document is for CCS developers who need to publish a support branch of CCS Frontend when the `main` branch contains unreleasable changes. For example, you might need to release a fix as part of a:
 
 - patch release, after the team has started to merge changes for a new feature release into the `main` branch - for example, a 3.14.x release once we've started merging changes for 3.15.0
 - release, after the team has started to merge changes for a new breaking release into the `main` branch - for example, a 3x.x release once we've started merging changes for 4.0.0
 
 Do not use this document to release changes for previous major releases. We have not tested the document in this scenario, and extra work would be needed to tell npm not to mark the release as the 'latest'.
 
-If you want to publish the `main` branch for CCS Components, [follow the steps in Publishing CCS Components](/docs/releasing/publishing.md).
+If you want to publish the `main` branch for CCS Frontend, [follow the steps in Publishing CCS Frontend](/docs/releasing/publishing.md).
 
 If the `main` branch only has a few unreleasable changes, you can temporarily revert these changes.
 
 1. Revert the unreleasable changes on the `main` branch.
-2. Publish CCS Components.
+2. Publish CCS Frontend.
 3. Add the reverted changes back into the `main` branch.
 
 However, this approach has risks. For example, it creates a messy commit history on the `main` branch.
 
-## Before you publish CCS Components
+## Before you publish CCS Frontend
 
 > :warning: This section will be updated when the project is more mature. Most of the information does not yet apply.
 
@@ -55,7 +55,7 @@ However, this approach has risks. For example, it creates a messy commit history
 
 Note: Before you go on annual leave, tell the delivery manager who will be looking after your work. This will help us to complete sign-off.
 
-## Publish a new version of CCS Components from the support branch
+## Publish a new version of CCS Frontend from the support branch
 
 ### Change the code
 
@@ -125,11 +125,11 @@ Note: Before you go on annual leave, tell the delivery manager who will be looki
 
 3. Run `npm run publish-release`, which will prompt you to either continue or cancel. Enter `y` to continue.
 
-4. View the created tag in the [GitHub interface](https://github.com/tim-s-ccs/tim-ccs-components/releases) as follows:
+4. View the created tag in the [GitHub interface](https://github.com/tim-s-ccs/ts-ccs-frontend/releases) as follows:
 
     - select the latest tag
     - press **Edit tag**
-    - set ‘CCS Components v[version-number]’ as the title
+    - set ‘CCS Frontend v[version-number]’ as the title
     - add release notes from changelog
     - attach the generated ZIP that has been generated at the root of this project
     - publish release

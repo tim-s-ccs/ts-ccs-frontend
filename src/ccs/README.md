@@ -2,7 +2,7 @@
 
 ## Structure
 
-As CCS Components is based on GOV.UK Frontend, it is broken into a number of layers in order to help provide a
+As CCS Frontend is based on GOV.UK Frontend, it is broken into a number of layers in order to help provide a
 logical structure, loosely following the conventions of [ITCSS].
 
 1. [Settings](#settings)
@@ -16,7 +16,7 @@ logical structure, loosely following the conventions of [ITCSS].
 
 Each folder has its own entry point (`_all.scss`).
 
-However, as CCS Components is a much smaller package, some of these layers are empty.
+However, as CCS Frontend is a much smaller package, some of these layers are empty.
 They have been left in the project incase there is a need to add to them in the future.
 
 ## Settings

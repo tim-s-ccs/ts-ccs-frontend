@@ -64,7 +64,7 @@ You can resize text in Firefox in 2 ways.
 
 ## Known issue: no text resizing in iOS
 
-There is a known issue on GOV.UK Frontend which applies to CCS Components too.
+There is a known issue on GOV.UK Frontend which applies to CCS Frontend too.
 
 You cannot resize the text for GOV.UK Design System styles in iOS. 
 

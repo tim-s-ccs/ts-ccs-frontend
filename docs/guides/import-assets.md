@@ -1,31 +1,31 @@
 # Import CSS, assets and JavaScript
 
-When importing CSS, assets and JavaScript for CCS Components, you will also need to import them for GOV.UK Frontend too.
+When importing CSS, assets and JavaScript for CCS Frontend, you will also need to import them for GOV.UK Frontend too.
 A guide for this can be found on the [GOV.UK Frontend website](https://frontend.design-system.service.gov.uk/importing-css-assets-and-javascript/#import-css-assets-and-javascript).
 
 ## CSS
 
 ### Import all the CSS
 
-To import all the Sass rules from CCS Components, add the following to your Sass file:
+To import all the Sass rules from CCS Frontend, add the following to your Sass file:
 
 ```scss
-@import "node_modules/ts-ccs-components/ccs/all";
+@import "node_modules/ts-ccs-frontend/ccs/all";
 ```
 
 ### Import specific parts of the CSS
 If you want to improve how quickly your service’s pages load in browsers, you can import only the Sass rules you need.
 
-1. Import `node_modules/ts-ccs-components/ccs/base` in your Sass file.
+1. Import `node_modules/ts-ccs-frontend/ccs/base` in your Sass file.
 2. Import the parts of the CSS you need.
 
 For example, add the following to your Sass file to import the CSS you need for a basic CCS page.
 
 ```scss
-@import "node_modules/ts-ccs-components/ccs/base";
+@import "node_modules/ts-ccs-frontend/ccs/base";
 
-@import "node_modules/ts-ccs-components/ccs/components/footer/index";
-@import "node_modules/ts-ccs-components/ccs/components/header/index";
+@import "node_modules/ts-ccs-frontend/ccs/components/footer/index";
+@import "node_modules/ts-ccs-frontend/ccs/components/header/index";
 ```
 
 You can remove lines that import parts of the CSS you do not need.
@@ -33,21 +33,21 @@ You can remove lines that import parts of the CSS you do not need.
 You do not need `/index` at the end of your component imports if you’re using Dart Sass, LibSass 3.6.0 or higher, or Ruby Sass 3.6.0 or higher.
 
 ### Import an individual component’s CSS using a single import
-You can also import a component and all its dependencies without `importing node_modules/ts-ccs-components/ccs/base` first.
+You can also import a component and all its dependencies without `importing node_modules/ts-ccs-frontend/ccs/base` first.
 
 To import the header component for example, add the following to your Sass file:
 
 ```scss
-@import "node_modules/ts-ccs-components/ccs/components/header/header";
+@import "node_modules/ts-ccs-frontend/ccs/components/header/header";
 ```
 
 ### Simplify Sass import paths
 
-If you want to make Sass import paths shorter, add `node_modules/ts-ccs-components` to either your:
+If you want to make Sass import paths shorter, add `node_modules/ts-ccs-frontend` to either your:
 - Sass load paths
 - assets paths if you use Ruby in your project
 
-You can then import without using `node_modules/ts-ccs-components/` in your import path. For example:
+You can then import without using `node_modules/ts-ccs-frontend/` in your import path. For example:
 
 ```scss
 @import "ccs/components/header/header";
@@ -55,7 +55,7 @@ You can then import without using `node_modules/ts-ccs-components/` in your impo
 
 ### Override with your own CSS
 
-If you want to override CCS Components’ styles with your own styles, `@import` CCS Components’ styles before your own Sass rules.
+If you want to override CCS Frontend’s styles with your own styles, `@import` CCS Frontend’s styles before your own Sass rules.
 
 ### Silence deprecation warnings from dependencies in Dart Sass
 
@@ -65,7 +65,7 @@ If you’re using Dart Sass 1.33.0 or greater, you may see deprecation warnings 
 DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
 ```
 
-We’re currently unable to fix these deprecation warnings without breaking support for LibSass. However, you can silence the warnings caused by CCS Components and other dependencies. Make sure you’re using Dart Sass 1.35.0 or greater, and then if you’re:
+We’re currently unable to fix these deprecation warnings without breaking support for LibSass. However, you can silence the warnings caused by CCS Frontend and other dependencies. Make sure you’re using Dart Sass 1.35.0 or greater, and then if you’re:
 
 - calling the Sass compiler from the command line, [pass the `--quiet-deps` flag](https://sass-lang.com/documentation/cli/dart-sass#quiet-deps)
 - using the JavaScript API, [include `quietDeps: true`](https://sass-lang.com/documentation/js-api#quietdeps) in the `options` object
@@ -74,28 +74,28 @@ You’ll still see deprecation warnings if you’re using `/` for division in yo
 
 ## Image assets
 
-To use the image assets from CCS Components, you can either:
+To use the image assets from CCS Frontend, you can either:
 
-- serve the assets from the CCS Components assets folder - recommended
+- serve the assets from the CCS Frontend assets folder - recommended
 - copy the image files into your application
 
-### Serve the assets from the CCS Components assets folder - recommended
+### Serve the assets from the CCS Frontend assets folder - recommended
 
-Set up your routing so that requests for files in `<YOUR-SITE-URL>/assets` are served from `/node_modules/ts-ccs-components/ccs/assets`.
+Set up your routing so that requests for files in `<YOUR-SITE-URL>/assets` are served from `/node_modules/ts-ccs-frontend/ccs/assets`.
 
 For example if you’re using [express.js](https://expressjs.com/), add the following to your `app.js` file:
 
 ```js
 var path = require('path');
-app.use('/assets', express.static(path.join(__dirname, '/node_modules/ts-ccs-components/ccs/assets')))
+app.use('/assets', express.static(path.join(__dirname, '/node_modules/ts-ccs-frontend/ccs/assets')))
 ```
 
 ### Copy the image files into your application
 
 If you decide to copy the assets instead, copy the:
-  - `/node_modules/ts-ccs-components/ccs/assets/images` folder to `<YOUR-APP>/assets/images`
+  - `/node_modules/ts-ccs-frontend/ccs/assets/images` folder to `<YOUR-APP>/assets/images`
 
-You should use an automated task or your build pipeline to copy the files, so your project folder stays up to date when we update CCS Components.
+You should use an automated task or your build pipeline to copy the files, so your project folder stays up to date when we update CCS Frontend.
 
 #### If you have your own folder structure
 
@@ -111,17 +111,17 @@ You can also use your own function to generate paths, for example if you’re us
 
 ## JavaScript
 
-To import the JavaScript from CCS Components, you can either:
+To import the JavaScript from CCS Frontend, you can either:
 
-- add CCS Components’ JavaScript file to your HTML
+- add CCS Frontend’s JavaScript file to your HTML
 - import the JavaScript using a bundler like [Webpack](https://webpack.js.org/)
 
 ### Add the JavaScript file to your HTML
 
 If you decide to add the JavaScript to your HTML, first either:
 
-- set up your routing so that requests for the JavaScript file are served from `node_modules/ts-ccs-components/ccs/all.js`
-- copy the `node_modules/ts-ccs-components/ccs/all.js` file into your application
+- set up your routing so that requests for the JavaScript file are served from `node_modules/ts-ccs-frontend/ccs/all.js`
+- copy the `node_modules/ts-ccs-frontend/ccs/all.js` file into your application
 
 Then import the JavaScript file before the closing `</body>` tag of your HTML page or page template, and run the `initAll` function to initialise all the components.
 
@@ -130,25 +130,25 @@ Then import the JavaScript file before the closing `</body>` tag of your HTML pa
 ...
   <script src="<YOUR-APP>/<YOUR-JS-FILE>.js"></script>
   <script>
-    window.CCSComponents.initAll()
+    window.CCSFrontend.initAll()
   </script>
 </body>
 ```
 
 ### Import JavaScript using a bundler
 
-If you decide to import using a bundler, use `import` to import all of CCS Components' components, then run the `initAll` function to initialise them:
+If you decide to import using a bundler, use `import` to import all of CCS Frontend’s components, then run the `initAll` function to initialise them:
 
 ```js
-import { initAll } from 'ts-ccs-components'
+import { initAll } from 'ts-ccs-frontend'
 initAll()
 ```
 
 If you’re using a bundler that uses CommonJS like [Browserify](http://browserify.org/), you should use require:
 
 ```js
-const CCSComponents = require('ts-ccs-components')
-CCSComponents.initAll()
+const CCSFrontend = require('ts-ccs-frontend')
+CCSFrontend.initAll()
 ```
 
 ### Select and initialise part of a page
@@ -160,7 +160,7 @@ For example:
 ```html
   <script>
     var $modal = document.querySelector('.modal')
-    window.CCSComponents.initAll({
+    window.CCSFrontend.initAll({
       scope: $modal
     })
   </script>

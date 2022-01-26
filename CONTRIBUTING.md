@@ -1,5 +1,5 @@
 # Contribution guidelines
-We love contributions! We've compiled these docs to help you understand our contribution guidelines. If you still have questions, please [contact us](https://github.com/tim-s-ccs/tim-ccs-components#contact-the-team), we'd be super happy to help.
+We love contributions! We've compiled these docs to help you understand our contribution guidelines. If you still have questions, please [contact us](https://github.com/tim-s-ccs/ts-ccs-frontend#contact-the-team), we'd be super happy to help.
 
 ## Contents of this file
 
@@ -74,7 +74,7 @@ Please see our [Git style guide in the 'How to store source code' page of the GD
 See the versioning documentation for [updating the changelog](/docs/contributing/versioning.md#updating-changelog)
 
 ## Testing a release
-If you need to test a release, for example if you're contributing a new component see [Publishing pre-release of CCS Components](/docs/releasing/publishing-a-pre-release.md).
+If you need to test a release, for example if you're contributing a new component see [Publishing pre-release of CCS Frontend](/docs/releasing/publishing-a-pre-release.md).
 
 ## Application tasks
 

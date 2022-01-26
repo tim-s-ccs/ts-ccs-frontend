@@ -20,9 +20,9 @@ gulp.task('update-assets-version', () => {
   const pkg = require('../../' + configPaths.package + 'package.json')
   fs.writeFileSync(taskArguments.destination + '/VERSION.txt', pkg.version + '\r\n')
   return gulp.src([
-    taskArguments.destination + '/ccs-components.min.css',
-    taskArguments.destination + '/ccs-components-ie8.min.css',
-    taskArguments.destination + '/ccs-components.min.js'
+    taskArguments.destination + '/ts-ccs-frontend.min.css',
+    taskArguments.destination + '/ts-ccs-frontend-ie8.min.css',
+    taskArguments.destination + '/ts-ccs-frontend.min.js'
   ])
     .pipe(vinylPaths(del))
     .pipe(gulpif(isDist,
