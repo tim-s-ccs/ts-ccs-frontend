@@ -2,7 +2,7 @@
 
 ## Structure
 
-As CCS Components based on GOV.UK Frontend, it is broken into a number of layers in order to help provide a
+As CCS Components is based on GOV.UK Frontend, it is broken into a number of layers in order to help provide a
 logical structure, loosely following the conventions of [ITCSS].
 
 1. [Settings](#settings)

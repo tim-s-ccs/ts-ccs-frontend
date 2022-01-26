@@ -1,3 +1,5 @@
+> :warning: This section will be updated when the project is more mature. Some of the information does not yet apply.
+
 # Test components using accessibility acceptance criteria
 
 We're still developing this page. To suggest changes, comment on the [GitHub issue for improving this page's content](https://github.com/alphagov/govuk-design-system/issues/1850). Alternatively, you can [contact us directly](https://design-system.service.gov.uk/#support).

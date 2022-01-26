@@ -1,13 +1,14 @@
 # JavaScript style guide
 
+The source for this document can be [found on GOV.UK Frontend](https://github.com/alphagov/govuk-frontend/blob/main/docs/contributing/coding-standards/js.md) but the same guidance applies to CCS Components.
 ## Files
 
 JavaScript files have the same name as the component's folder name. Test files have a `.test` suffix placed before the file extension.
 
 ```
-checkboxes
-├── checkboxes.js
-└── checkboxes.test.js
+header
+├── header.js
+└── header.test.js
 ```
 
 ## Skeleton
@@ -15,15 +16,15 @@ checkboxes
 ```js
 import { nodeListForEach } from '../vendor/common'
 
-function Checkboxes ($module) {
+function Header ($module) {
   // code goes here
 }
 
-Checkboxes.prototype.init = function () {
+Header.prototype.init = function () {
   // code goes here
 }
 
-export default Checkboxes
+export default Header
 ```
 
 ## Use data attributes to initialise component JavaScript
@@ -31,15 +32,15 @@ export default Checkboxes
 Use `data-module` attributes in HTML to initialise a component in JavaScript. For example:
 
 ```html
-data-module="govuk-accordion"
+data-module="ccs-header"
 ```
 
 ## Use classes to target DOM elements
 
-After you initialise a component, use `govuk-js-*` classes to target DOM elements. For example:
+After you initialise a component, use `ccs-js-*` classes to target DOM elements. For example:
 
 ```html
-class="govuk-js-header-toggle"
+class="ccs-js-header-toggle"
 ```
 
 ## Comments
@@ -73,7 +74,7 @@ Use the prototype design pattern to structure your code.
 Create a constructor and define any variables that the object needs.
 
 ```js
-function Checkboxes ($module) {
+function Header ($module) {
   // code goes here
 }
 ```
@@ -82,14 +83,14 @@ Assign methods to the prototype object. Do not overwrite the prototype with a ne
 
 ```js
 // bad
-Checkboxes.prototype = {
+Header.prototype = {
   init: function () {
     // code goes here
   }
 }
 
 // good
-Checkboxes.prototype.init = function () {
+Header.prototype.init = function () {
   // code goes here
 }
 ```
@@ -98,10 +99,10 @@ When initialising an object, use the `new` keyword.
 
 ```js
 // bad
-var myCheckbox = Checkbox().init()
+var myHeader = Header().init()
 
 // good
-var myCheckbox = new Checkbox().init()
+var myCHeader = new Header().init()
 ```
 
 ## Modules
@@ -111,7 +112,7 @@ Use ES6 modules (`import`/`export`) over a non-standard module system. You can a
 ```js
 import { nodeListForEach } from '../vendor/common'
 // code goes here
-export default Checkboxes
+export default Header
 ```
 
 Avoid using wildcard (`import * as nodeListForEach`) imports.
@@ -132,7 +133,7 @@ If you need polyfills for features that are not yet included in this project, pl
 
 ## Formatting and linting
 
-GOV.UK Frontend uses [standardjs](http://standardjs.com/), an opinionated JavaScript linter. All JavaScript files follow its conventions, and it runs on CI to ensure that new pull requests are in line with them.
+CCS Components uses [standardjs](http://standardjs.com/), an opinionated JavaScript linter. All JavaScript files follow its conventions, and it runs on CI to ensure that new pull requests are in line with them.
 
 The standard docs have a [complete list of rules and some reasoning behind them](http://standardjs.com/rules.html).
 

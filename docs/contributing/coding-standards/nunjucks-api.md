@@ -1,12 +1,16 @@
 
 # Component API definition and use
-We have chosen as Nunjucks as the templating language for GOV.UK Frontend components. We expose those templates as reusable chunks of code: macros. Developers import macros into their application, call them as per documentation and provide data to its options.
+The source for this document can be [found on GOV.UK Frontend](https://github.com/alphagov/govuk-frontend/blob/main/docs/contributing/coding-standards/nunjucks-api.md) but the same guidance applies to CCS Components.
+
+We have chosen as Nunjucks as the templating language for CCS Components components. We expose those templates as reusable chunks of code: macros. Developers import macros into their application, call them as per documentation and provide data to its options.
 
 To provide a level of consistency for developers we have standardised option names, their expected input, use and placement. There are exceptions, and  if so they are documented accordingly.
 
 The options (arguments) accepted by the component macro are specified in a `[component-name].yaml` file as `params`. Each option should have the following attributes: `name`, `type`, `required`, `description`.
 
-An option can additionally contain `params` that denotes nested items in the option (see [breadcrumbs component](/src/ccs/components/breadcrumbs/breadcrumbs.yaml#L6)) and `isComponent: true` where the option is another component (see [checkboxes component](/src/ccs/components/checkboxes/checkboxes.yaml#L11)).
+An option can additionally contain `params` that denotes nested items in the option (see [footer component](/src/ccs/components/footer/footer.yaml#L6)) and `isComponent: true` where the option is another component.
+<!-- No examples yet -->
+<!-- (see [checkboxes component](/src/ccs/components/checkboxes/checkboxes.yaml#L11)). -->
 
 Component macro options are shipped as  `macro-options.json` in `package`.
 
@@ -18,9 +22,9 @@ When providing *content* to a macro, say for a label or a button, we accept two 
 
 Example:
 
-`{{ govukButton({"text": "Button text"}) }}`
+`{{ ccsHeader({ "navigationPrimary": { "text": "Navigation text" }) }}`
 
-`{{ govukButton({"html": "Button <span class='bold'>text</span>"}) }}`
+`{{ ccsHeader({ "navigationPrimary": { "html": "Navigation <span class='bold'>text</span>" }) }}`
 
 Example of implementing logic in a component template:
 
@@ -32,6 +36,8 @@ Example shows that if `html` and `text` options are present, then `html` takes p
 We should use **camelCase** for naming options.
 
 If a component depends on another component, we group the options for the dependent component inside an object, where the name of the object is the name of the component using **camelCase** convention. In case of ambiguity we prefix the component name.
+
+*The examples are from GOV.UK Frontend as we do not have a component from CCS Components that uses this convention yet.*
 
 Example of a component depending on another component
 ```
@@ -59,6 +65,8 @@ Example of a component depending on two other components
 ## Mimic HTML attribute names
 When there is a need to specify html attributes, such as *checked, disabled, id, name*, etc, and they map directly, we use the same option name. We use boolean value to check and render the attribute.
 
+*The examples are from GOV.UK Frontend as we do not have a component from CCS Components that uses this convention yet.*
+
 Example:
 
 `{{ govukButton({"disabled": true}) }}`
@@ -70,6 +78,8 @@ Example:
 When there is a need to add additional attributes to the component, we accept an ***"attributes"*** object with key : value pairs for each attribute.
 
 You cannot use this to set attributes that are already defined, such as class – use the classes option instead.
+
+*The examples are from GOV.UK Frontend as we do not have a component from CCS Components that uses this convention yet.*
 
 Example:
 ```
@@ -87,21 +97,25 @@ When a component accepts a *single array of items* for an output, such as checkb
 
 Example:
 ```
-{{ govukCheckbox({
-   "items": [
-   {
-      "value": "checkbox value",
-      "text": "Checkbox text"
-    },
-    {
-      "value": "checkbox value 2",
-      "text": "Checkbox text 2"
-    }
-  ]
+{{ ccsFooter({
+   "navigation": {
+    "items": [
+      {
+        "name": "Page 1"
+        "href": "#page-1",
+      },
+      {
+        "name": "Page 2"
+        "href": "#page-2",
+      }
+    ]
+   }
 }) }}
 ```
 ## Use of classes to specify variants
 When a component has multiple visual presentations, such default button vs start button, we make use of classes option to differentiate between them.
+
+*The examples are from GOV.UK Frontend as we do not have a component from CCS Components that uses this convention yet.*
 
 Default button example:
 ```

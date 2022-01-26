@@ -1,10 +1,10 @@
 # Contribution guidelines
-We love contributions! We've compiled these docs to help you understand our contribution guidelines. If you still have questions, please [contact us](https://design-system.service.gov.uk/#support), we'd be super happy to help.
+We love contributions! We've compiled these docs to help you understand our contribution guidelines. If you still have questions, please [contact us](https://github.com/tim-s-ccs/tim-ccs-components#contact-the-team), we'd be super happy to help.
 
 ## Contents of this file
 
 ### For contributors
-- [Code of conduct](#code-of-conduct)
+<!-- - [Code of conduct](#code-of-conduct) -->
 - [Application architecture](#application-architecture)
 - [Running locally](#running-locally)
 - [Conventions to follow](#conventions-to-follow)
@@ -25,8 +25,9 @@ We love contributions! We've compiled these docs to help you understand our cont
 - [Releasing a new version](#releasing-a-new-version)
 
 
-## Code of Conduct
-Please read [the `alphagov` CODE_OF_CONDUCT.md](https://github.com/alphagov/blob/main/.github/CODE_OF_CONDUCT.md) before contributing.
+<!-- TODO: Add Code of conduct -->
+<!-- ## Code of Conduct
+Please read [the `alphagov` CODE_OF_CONDUCT.md](https://github.com/alphagov/blob/main/.github/CODE_OF_CONDUCT.md) before contributing. -->
 
 ## Application architecture
 
@@ -73,7 +74,7 @@ Please see our [Git style guide in the 'How to store source code' page of the GD
 See the versioning documentation for [updating the changelog](/docs/contributing/versioning.md#updating-changelog)
 
 ## Testing a release
-If you need to test a release, for example if you're contributing a new component see [Publishing pre-release of GOV.UK Frontend](/docs/releasing/publishing-a-pre-release.md).
+If you need to test a release, for example if you're contributing a new component see [Publishing pre-release of CCS Components](/docs/releasing/publishing-a-pre-release.md).
 
 ## Application tasks
 

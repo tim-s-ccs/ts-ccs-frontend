@@ -1,23 +1,27 @@
 # Publishing from a support branch
 
-This document is for GOV.UK Design System developers who need to publish a support branch of GOV.UK Frontend when the `main` branch contains unreleasable changes. For example, you might need to release a fix as part of a:
+The source for this document can be [found on GOV.UK Frontend](https://github.com/alphagov/govuk-frontend/blob/main/docs/releasing/publishing-from-a-support-branch.md) but the same guidance applies to CCS Components.
+
+This document is for CCS developers who need to publish a support branch of CCS Components when the `main` branch contains unreleasable changes. For example, you might need to release a fix as part of a:
 
 - patch release, after the team has started to merge changes for a new feature release into the `main` branch - for example, a 3.14.x release once we've started merging changes for 3.15.0
 - release, after the team has started to merge changes for a new breaking release into the `main` branch - for example, a 3x.x release once we've started merging changes for 4.0.0
 
 Do not use this document to release changes for previous major releases. We have not tested the document in this scenario, and extra work would be needed to tell npm not to mark the release as the 'latest'.
 
-If you want to publish the `main` branch for GOV.UK Frontend, [follow the steps in Publishing GOV.UK Frontend](/docs/releasing/publishing.md).
+If you want to publish the `main` branch for CCS Components, [follow the steps in Publishing CCS Components](/docs/releasing/publishing.md).
 
 If the `main` branch only has a few unreleasable changes, you can temporarily revert these changes.
 
 1. Revert the unreleasable changes on the `main` branch.
-2. Publish GOV.UK Frontend.
+2. Publish CCS Components.
 3. Add the reverted changes back into the `main` branch.
 
 However, this approach has risks. For example, it creates a messy commit history on the `main` branch.
 
-## Before you publish GOV.UK Frontend
+## Before you publish CCS Components
+
+> :warning: This section will be updated when the project is more mature. Most of the information does not yet apply.
 
 1. At stand-up, person leading the release (usually a developer) to tell the GOV.UK Design System team we are close to releasing.
 
@@ -51,7 +55,7 @@ However, this approach has risks. For example, it creates a messy commit history
 
 Note: Before you go on annual leave, tell the delivery manager who will be looking after your work. This will help us to complete sign-off.
 
-## Publish a new version of GOV.UK Frontend from the support branch
+## Publish a new version of CCS Components from the support branch
 
 ### Change the code
 
@@ -94,7 +98,8 @@ Note: Before you go on annual leave, tell the delivery manager who will be looki
 
 8. Run `npm run build-release`, which will prompt you to either continue or cancel. Enter `y` to continue.
 
-9. If you want to make sure your changes work when used in the GOV.UK Design System, use [`npm-link`](https://docs.npmjs.com/cli/v7/commands/npm-link) to test before publishing:
+<!-- Step does not yet apply to CCS frotnend -->
+<!-- 9. If you want to make sure your changes work when used in the GOV.UK Design System, use [`npm-link`](https://docs.npmjs.com/cli/v7/commands/npm-link) to test before publishing:
 
   ```bash
   cd ../govuk-design-system
@@ -102,27 +107,29 @@ Note: Before you go on annual leave, tell the delivery manager who will be looki
   git pull
   npm install # note running `npm install` after `npm link` will destroy the link.
   npm link ../govuk-frontend/package/
-  ```
+  ``` -->
 
-10. When you finish testing, run `npm unlink ../govuk-frontend/package/` to unlink the package.
+<!-- 10. When you finish testing, run `npm unlink ../govuk-frontend/package/` to unlink the package. -->
 
-11. Raise a pull request, with `support/<CURRENT MAJOR VERSION NUMBER>.x` as the base branch to merge into.
+9. Raise a pull request, with `support/<CURRENT MAJOR VERSION NUMBER>.x` as the base branch to merge into.
 
-12. Once a developer approves the pull request, merge it into `support/<CURRENT MAJOR VERSION NUMBER>.x`.
+10. Once a developer approves the pull request, merge it into `support/<CURRENT MAJOR VERSION NUMBER>.x`.
 
 ### Publish the release to npm
 
 1. Check out `support/<CURRENT MAJOR VERSION NUMBER>.x` and pull the latest changes.
 
-2. Sign in to npm (`npm login`), using the npm/govuk-patterns-and-tools team [credentials](https://github.com/alphagov/design-system-team-credentials/tree/main/npm/govuk-patterns-and-tools).
+2. Sign in to npm (`npm login`), using the CCS credentials (which will be added at a later date).
+
+<!-- npm/govuk-patterns-and-tools team [credentials](https://github.com/alphagov/design-system-team-credentials/tree/main/npm/govuk-patterns-and-tools). -->
 
 3. Run `npm run publish-release`, which will prompt you to either continue or cancel. Enter `y` to continue.
 
-4. View the created tag in the [GitHub interface](https://github.com/alphagov/govuk-frontend/releases) as follows:
+4. View the created tag in the [GitHub interface](https://github.com/tim-s-ccs/tim-ccs-components/releases) as follows:
 
     - select the latest tag
     - press **Edit tag**
-    - set ‘GOV.UK Frontend v[version-number]’ as the title
+    - set ‘CCS Components v[version-number]’ as the title
     - add release notes from changelog
     - attach the generated ZIP that has been generated at the root of this project
     - publish release
@@ -130,6 +137,8 @@ Note: Before you go on annual leave, tell the delivery manager who will be looki
 5. Run `npm logout` to sign out from npm.
 
 ## After you publish the new release
+
+> :warning: This section will be updated when the project is more mature. Most of the information does not yet apply.
 
 1. Once you've updated the GOV.UK Design System, Prototype Kit and Frontend Docs, [post a short summary of the release in the cross-government and GDS #govuk-design-system Slack channels](https://github.com/alphagov/govuk-frontend/issues/2363).
 

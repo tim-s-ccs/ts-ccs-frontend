@@ -1,4 +1,6 @@
-# Before you publish GOV.UK Frontend
+# Before you publish CCS Components
+
+> :warning: This section will be updated when the project is more mature. Most of the information does not yet apply.
 
 1. At stand up, person leading the release to tell the GOV.UK Design System team we are close to releasing so we can coordinate the final cutoff date. Once the cutoff date passes, do not add any further major changes to the release. We can still add small fixes before step 7 as long as we notify the content designer and technical writer. However, we should try to avoid adding too many fixes in this way, as it requires us to repeat some of steps 4-6.
 
@@ -32,7 +34,7 @@
 
 > **Note:** Before you go on leave, tell the delivery manager who will be looking after your work. This will help us to complete sign-off without fuss.
 
-# Publish a new version of GOV.UK Frontend
+# Publish a new version of CCS Components
 
 Developers should pair on releases. When remote working, it can be useful to be on a call together.
 
@@ -54,7 +56,8 @@ Developers should pair on releases. When remote working, it can be useful to be 
 
 8. Run `npm run build-release`. You will be now be prompted to continue or cancel.
 
-9. (Optional) Test in [GOV.UK Design System](git@github.com:alphagov/govuk-design-system.git)
+<!-- Step does not yet apply to CCS frotnend -->
+<!-- 9. (Optional) Test in [GOV.UK Design System](git@github.com:alphagov/govuk-design-system.git)
 
   If you want to test that your changes work in the GOV.UK Design System, you can use [npm link](https://docs.npmjs.com/cli/link) to test before publishing.
 
@@ -70,25 +73,26 @@ Developers should pair on releases. When remote working, it can be useful to be 
 
   ```bash
   npm unlink ../govuk-frontend/package/
-  ```
+  ``` -->
 
-10. Create a pull request and copy the changelog text.
+9. Create a pull request and copy the changelog text.
    When reviewing the PR, check that the version-numbers have been updated and that the compiled assets use this version-number.
 
-11. Once a reviewer approves the pull request, merge it to **main**.
+10. Once a reviewer approves the pull request, merge it to **main**.
 
 ## Publish a release to npm
 
 1. Check out the **main** branch and pull the latest changes.
 
-2. Sign in to npm (`npm login`), using the npm/govuk-patterns-and-tools team [credentials](https://github.com/alphagov/design-system-team-credentials/tree/main/npm/govuk-patterns-and-tools).
+2. Sign in to npm (`npm login`), using the CCS credentials (which will be added at a later date).
+<!-- npm/govuk-patterns-and-tools team [credentials](https://github.com/alphagov/design-system-team-credentials/tree/main/npm/govuk-patterns-and-tools). -->
 
 3. Run `npm run publish-release`, which will prompt you to either continue or cancel. Enter `y` to continue.
 
-4. View the created tag in the [Github interface](https://github.com/alphagov/govuk-frontend/releases) as follows:
+4. View the created tag in the [GitHub interface](https://github.com/tim-s-ccs/tim-ccs-components/releases) as follows:
   - select the latest tag
   - press **Edit tag**
-  - set 'GOV.UK Frontend v[version-number]' as the title
+  - set 'CCS Components v[version-number]' as the title
   - add release notes from changelog
   - attach the generated ZIP that has been generated at the root of this project
   - publish release
@@ -96,6 +100,8 @@ Developers should pair on releases. When remote working, it can be useful to be 
 5. Run `npm logout` to log out from npm.
 
 # After you publish the new release
+
+> :warning: This section will be updated when the project is more mature. Most of the information does not yet apply.
 
 1. Update the GOV.UK Design System, Prototype Kit and Frontend Docs to:
   - use a new release of GOV.UK Frontend
