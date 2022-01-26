@@ -2,7 +2,7 @@
 
 ## Structure
 
-GOV.UK Frontend is broken into a number of layers in order to help provide a
+As CCS Components based on GOV.UK Frontend, it is broken into a number of layers in order to help provide a
 logical structure, loosely following the conventions of [ITCSS].
 
 1. [Settings](#settings)
@@ -15,6 +15,9 @@ logical structure, loosely following the conventions of [ITCSS].
 8. [Overrides](#overrides)
 
 Each folder has its own entry point (`_all.scss`).
+
+However, as CCS Components is a much smaller package, some of these layers are empty.
+They have been left in the project incase there is a need to add to them in the future.
 
 ## Settings
 
@@ -67,9 +70,10 @@ Classes that map to a specific property – for example margin or font weight -
 and override all other layers. Rules in this layer will generally be marked as
 !important.
 
-Class names within this layer use an additional prefix `-!-`, for example
-`.govuk-!-font-width-regular`.
+Class names within this layer use an additional prefix `-!-`.
+<!-- , for example `.govuk-!-font-width-regular`. -->
 
-If a class only overrides when a condition is met, the condition will be at the end of the class name. For example `.govuk-!-display-none-print` will only override with `display: none` in a print layout.
+If a class only overrides when a condition is met, the condition will be at the end of the class name.
+<!-- For example `.govuk-!-display-none-print` will only override with `display: none` in a print layout. -->
 
 [ITCSS]: (http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528)

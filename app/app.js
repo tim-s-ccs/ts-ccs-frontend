@@ -157,6 +157,20 @@ module.exports = (options) => {
     })
   })
 
+  // Component 'Options' page
+  app.get('/components/:component/options', function (req, res, next) {
+    // make variables available to nunjucks template
+    res.locals.componentPath = req.params.component
+
+    res.render('options', function (error, html) {
+      if (error) {
+        next(error)
+      } else {
+        res.send(html)
+      }
+    })
+  })
+
   // Component example preview
   app.get('/components/:component/:example*?/preview', function (req, res, next) {
     // Find the data for the specified example (or the default example)

@@ -1,0 +1,45 @@
+{% from "govuk-frontend/govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+{% from "macros/showOptions.njk" import showOptions %}
+
+{% extends "full-width.njk" %}
+
+{% set componentName = componentPath %}
+{% set componentNameHuman = componentName | replace("-", " ") %}
+
+{% block beforeContent %}
+  {{ govukBreadcrumbs({
+    "items": [
+    { text: 'CCS Components', href: '/' + legacyQuery },
+    { text: componentNameHuman | capitalize, href: '/components/' + componentName },
+    { text: 'Options' }
+    ]
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-width-container">
+    <h1 class="govuk-heading-xl">
+      {% block componentName %}
+        {{ componentNameHuman | capitalize }}
+      {% endblock %}
+    </h1>
+
+    <div class="govuk-body govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <p>
+          Use options to customise the appearance, content and behaviour of a component when using a macro, for example, changing the text.
+        </p>
+        <p>
+          Some options are required for the macro to work; these are marked as "Required" in the option description.
+        </p>
+        <p>
+          If you're using Nunjucks macros in production with "html" options, or ones ending with "html", you must sanitise the HTML to protect against cross-site scripting exploits.
+        </p>
+      </div>
+    </div>
+
+    {% block options %}
+      {{ showOptions(componentData) }}
+    {% endblock %}
+  </div>
+{% endblock %}

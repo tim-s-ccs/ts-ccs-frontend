@@ -1,41 +1,59 @@
-GOV.UK Frontend ·
-[![Build Status](https://github.com/alphagov/govuk-frontend/workflows/Tests/badge.svg)](https://github.com/alphagov/govuk-frontend/actions?query=workflow%3ATests+branch%3Amain)
+CCS Components ·
+[![Build Status](https://github.com/tim-s-ccs/tim-ccs-components/workflows/Tests/badge.svg)](https://github.com/tim-s-ccs/tim-ccs-components/actions?query=workflow%3ATests+branch%3Amain)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 =====================
 
-GOV.UK Frontend contains the code you need to start building a user interface
-for government platforms and services.
+CCS Components contains the code you need to start building a user interface
+for CCS platforms and services.
 
-See live examples of GOV.UK Frontend components, and guidance on when to use
-them in your service, in the [GOV.UK Design
-System](https://design-system.service.gov.uk/).
+This is based off of [GOV.UK Frontend](https://github.com/alphagov/govuk-frontend) which was created and is maintained by a team at the Government Digital Service.
+
+Because of this, CCS Components can be used in an identical way to GOV.UK Frontend.
+
+<!-- TODO: Add space for guide -->
+<!-- See live examples of CCS Components, and guidance on when to use
+them in your service, in the [CCS Components Design System](#). -->
+
+As part of future work, there will be a place where you can view live examples and guidance on when to use CCS Components as part of your service.
+
+## STATUS: BUILD AND DEVELOPMENT
+At the moment this project is still in the build and development phase.
+
+As it is still not decided if CCS wants to take on this project, it is being hosted on the personal accounts of `tim-s-ccs`.
+
+That is why the package is called [`ts-ccs-component` on NPM](https://www.npmjs.com/package/ts-ccs-components).
+
+This will all be updated, with real package name confirmed, before the first major release.
 
 ## Contact the team
 
-GOV.UK Frontend is maintained by a team at Government Digital Service. If you want to know more about GOV.UK Frontend, please email the [Design System
-team](mailto:govuk-design-system-support@digital.cabinet-office.gov.uk) or get in touch with them on [Slack](https://ukgovernmentdigital.slack.com/messages/govuk-design-system).
+CCS Components is maintained by a team at the Crown Commercial Service.
+<!-- TODO: add mail to link -->
+If you want to know more about CCS Components, please email [Tim South](mailto:timothy.south@crowncommercial.gov.uk)
+<!-- the [Development team](mailto:#). -->
 
 ## Quick start
 
-There are 2 ways to start using GOV.UK Frontend in your app.
+Please note that this package is designed to be used in the same way as GOV.UK Frontend so if these documents are not sufficient, please try the [documentation for GOV.UK Frontend](https://frontend.design-system.service.gov.uk/).
 
-Once installed, you will be able to use the code from the examples in the
-[GOV.UK Design System](https://design-system.service.gov.uk/)
-in your service.
+There are 2 ways to start using CCS Components in your app.
+
+<!-- TODO: Add space for guide -->
+<!-- Once installed, you will be able to use the code from the examples in the
+[CCS Components Design System](#)
+in your service. -->
 
 ### 1. Install with npm (recommended)
 
-We recommend [installing GOV.UK Frontend using node package manager
-(npm)](https://frontend.design-system.service.gov.uk/installing-with-npm/).
+We recommend [installing CCS Components using node package manager (npm)](docs/instillation/install-with-npm.md).
 
 ### 2. Install using compiled files
 
-You can also install GOV.UK Frontend by [copying our CSS, JavaScript and asset
-files into your project](https://frontend.design-system.service.gov.uk/install-using-precompiled-files/).
+You can also install CCS Components by [copying our CSS, JavaScript and asset files into your project](docs/instillation/install-using-compiled-files.md).
 
 ## Browser and assistive technology support
 
-GOV.UK Frontend supports:
+CCS Components supports:
 
 - [recommended browsers](https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices#browsers-to-test-in)
 - [recommended assistive technologies](https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies#which-assistive-technologies-to-test-with)
@@ -44,37 +62,38 @@ GOV.UK Frontend supports:
 
 ## Accessibility
 
-The GOV.UK Design System team works hard to ensure that GOV.UK Frontend is accessible.
+The CCS Development team works hard to ensure that CCS Components is accessible.
 
-Using Frontend will help your service meet [level AA of WCAG 2.1](https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag). But you must still [check that your service meets accessibility requirements](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction), especially if you extend or modify components.
+Using CCS Components along with GOV.UK Frontend will help your service meet [level AA of WCAG 2.1](https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag). But you must still [check that your service meets accessibility requirements](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction), especially if you extend or modify components.
 
 You should also use:
-
-- [the JavaScript from GOV.UK Frontend](https://frontend.design-system.service.gov.uk/importing-css-assets-and-javascript/#javascript)
+<!-- TODO: Change link to document -->
+- [the JavaScript from CCS Components](docs/guides/import-assets.md#javascript)
 - [a separate stylesheet](https://frontend.design-system.service.gov.uk/supporting-ie8/) if you support Internet Explorer 8
 
-Your service will not meet level AA of WCAG 2.1 if you use [compatibility mode](https://frontend.design-system.service.gov.uk/compatibility-mode/) to use GOV.UK Frontend with old frameworks or the old colour palette.
-
-You can also read the [accessibility statement for the GOV.UK Design System](https://design-system.service.gov.uk/accessibility/).
+<!-- You can also read the [accessibility statement for the CCS Design System](https://design-system.service.gov.uk/accessibility/). -->
+An accessibility statement for the CCS Design System will be added in the future.
 
 ### Accessibility warnings
 
-If you get a warning from a linter or accessibility checker, check our list of [issues you should not need to fix](https://github.com/alphagov/govuk-frontend/issues/1280#issuecomment-509588851).
+If you get a warning from a linter or accessibility checker, check the list of [issues you should not need to fix](https://github.com/alphagov/govuk-frontend/issues/1280#issuecomment-509588851) from GOV.UK Frontend.
 
 ## Getting updates
 
-To be notified when there’s a new release, you can either:
+To be notified when there’s a new release, you can:
 
-- [watch the govuk-frontend Github repository](https://docs.github.com/en/github/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications#configuring-your-watch-settings-for-an-individual-repository)
-- join the [#govuk-design-system channel on cross-government Slack](https://ukgovernmentdigital.slack.com/app_redirect?channel=govuk-design-system)
+- [watch the tim-ccs-components Github repository](https://docs.github.com/en/github/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications#configuring-your-watch-settings-for-an-individual-repository)
 
-Find out how to [update with npm](https://frontend.design-system.service.gov.uk/updating-with-npm/).
+<!-- TODO: Update with NPM -->
+Find out how to [update with npm](docs/guides/update-with-npm.md).
 
 ### Security
 
-GDS is an advocate of responsible vulnerability disclosure. If you’ve found a vulnerability, we would like to know so we can fix it.
+CCS is an advocate of responsible vulnerability disclosure. If you’ve found a vulnerability, we would like to know so we can fix it.
 
-For full details on how to tell us about vulnerabilities, [see our security policy](https://github.com/alphagov/govuk-frontend/security/policy).
+If you have discovered a security vulnerability in this code, we appreciate your help in disclosing it to us in a responsible manner.
+
+Please follow the [CCS vulnerability reporting steps](https://www.crowncommercial.gov.uk/about-ccs/vulnerability-disclosure-policy/), giving details of any issue you find. Appropriate credit will be given to those reporting confirmed issues.
 
 ## Licence
 
@@ -85,10 +104,14 @@ Open Government 3.0 licence.
 
 ## Contributing
 
-[To learn how to help us build GOV.UK Frontend, see our contribution guidelines.](https://github.com/alphagov/govuk-frontend/blob/f07569c9e7724606970c0d2764f1e9ce7fa14092/CONTRIBUTING.md)
+[To learn how to help us build CCS Components, see our contribution guidelines.](CONTRIBUTING.md)
 
-The govuk-frontend repository is public and we welcome contributions from anyone.
+The tim-ccs-components repository is public and we welcome contributions from anyone.
 
-Contributors to alphagov repositories are expected to follow the [Contributor Covenant Code of Conduct](https://github.com/alphagov/.github/blob/main/CODE_OF_CONDUCT.md#contributor-covenant-code-of-conduct). Contributors working within government are also expected to follow the [Civil Service code](https://www.gov.uk/government/publications/civil-service-code/the-civil-service-code).
+However, please note this a small project compared to GOV.UK Frontend and is only concerned with assets relating to CCS.
+
+<!-- TODO: Add CCS Contributing rules -->
+<!-- 
+Contributors to alphagov repositories are expected to follow the [Contributor Covenant Code of Conduct](https://github.com/alphagov/.github/blob/main/CODE_OF_CONDUCT.md#contributor-covenant-code-of-conduct). Contributors working within government are also expected to follow the [Civil Service code](https://www.gov.uk/government/publications/civil-service-code/the-civil-service-code). -->
 
 We're unable to monitor activity on this repository outside of our office hours (10am to 4pm, UK time). To get a faster response at other times, you can [report abuse or spam to GitHub](https://docs.github.com/en/communities/maintaining-your-safety-on-github/reporting-abuse-or-spam).
