@@ -12,7 +12,7 @@ npm list ts-ccs-components
 
 If you do not have command line access, you can see the version number in the `package.json` file in the root of your project directory. For example:
 
-```
+```json
 "ts-ccs-components": "0.3.0"
 ```
 

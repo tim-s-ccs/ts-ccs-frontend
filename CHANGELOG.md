@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0 (Pre Release)
+  - Update and add documentation:
+    - [Update README and add guides](https://github.com/tim-s-ccs/tim-ccs-components/pull/16)
+    - [Update all the other documentation](https://github.com/tim-s-ccs/tim-ccs-components/pull/17)
+    - [Update links and add some references](https://github.com/tim-s-ccs/tim-ccs-components/pull/18)
+
 ## 0.2.0 (Pre Release)
   - Remove as much of the code as possible to slim down the package:
     - [PR #12](https://github.com/tim-s-ccs/tim-ccs-components/pull/12)
