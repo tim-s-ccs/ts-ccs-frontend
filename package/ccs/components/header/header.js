@@ -1,7 +1,7 @@
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-	typeof define === 'function' && define.amd ? define('CCSComponents.Header', factory) :
-	(global.CCSComponents = global.CCSComponents || {}, global.CCSComponents.Header = factory());
+	typeof define === 'function' && define.amd ? define('CCSFrontend.Header', factory) :
+	(global.CCSFrontend = global.CCSFrontend || {}, global.CCSFrontend.Header = factory());
 }(this, (function () { 'use strict';
 
 (function(undefined) {
