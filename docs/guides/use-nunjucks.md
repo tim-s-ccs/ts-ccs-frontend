@@ -25,7 +25,7 @@ You must first:
 1.  Add `node_modules/govuk-frontend/` and `node_modules/ts-ccs-components/` to your list of Nunjucks paths, so Nunjucks knows where to find the CCS Components and GOV.UK Frontend template and components.
 
     For example:
-    ```
+    ```js
         nunjucks.configure([
           "node_modules/govuk-frontend/",
           "node_modules/ts-ccs-components/",

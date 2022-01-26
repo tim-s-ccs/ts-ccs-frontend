@@ -18,7 +18,7 @@ As CCS Components is setup in the same way as GOV.UK Frontend, it is simple to u
 Because CCS Components has a [GOV.UK Prototype Kit config file](../../package/govuk-prototype-kit.config.json) you do not need to import the assets as they will be mounted by the kit automatically.
 
 The only thing you need to do is add the following line into the `application.scss` file:
-```
+```scss
 $ccs-assets-path: '/extension-assets/ts-ccs-components/ccs/assets/';
 ```
 

@@ -9,7 +9,7 @@ A guide for this can be found on the [GOV.UK Frontend website](https://frontend.
 
 To import all the Sass rules from CCS Components, add the following to your Sass file:
 
-```
+```scss
 @import "node_modules/ts-ccs-components/ccs/all";
 ```
 
@@ -21,7 +21,7 @@ If you want to improve how quickly your service’s pages load in browsers, you 
 
 For example, add the following to your Sass file to import the CSS you need for a basic CCS page.
 
-```
+```scss
 @import "node_modules/ts-ccs-components/ccs/base";
 
 @import "node_modules/ts-ccs-components/ccs/components/footer/index";
@@ -37,7 +37,7 @@ You can also import a component and all its dependencies without `importing node
 
 To import the header component for example, add the following to your Sass file:
 
-```
+```scss
 @import "node_modules/ts-ccs-components/ccs/components/header/header";
 ```
 
@@ -49,7 +49,7 @@ If you want to make Sass import paths shorter, add `node_modules/ts-ccs-componen
 
 You can then import without using `node_modules/ts-ccs-components/` in your import path. For example:
 
-```
+```scss
 @import "ccs/components/header/header";
 ```
 
@@ -85,7 +85,7 @@ Set up your routing so that requests for files in `<YOUR-SITE-URL>/assets` are s
 
 For example if you’re using [express.js](https://expressjs.com/), add the following to your `app.js` file:
 
-```
+```js
 var path = require('path');
 app.use('/assets', express.static(path.join(__dirname, '/node_modules/ts-ccs-components/ccs/assets')))
 ```
@@ -103,7 +103,7 @@ If you use a different folder structure than `<YOUR-APP>/assets/images`, you can
 
 Set `$ccs-images-path` before the `@import` line in your Sass file. For example:
 
-```
+```scss
 $ccs-images-path: "/<YOUR-IMAGES-FOLDER>/";
 ```
 
@@ -125,7 +125,7 @@ If you decide to add the JavaScript to your HTML, first either:
 
 Then import the JavaScript file before the closing `</body>` tag of your HTML page or page template, and run the `initAll` function to initialise all the components.
 
-```
+```html
 <body>
 ...
   <script src="<YOUR-APP>/<YOUR-JS-FILE>.js"></script>
@@ -139,14 +139,14 @@ Then import the JavaScript file before the closing `</body>` tag of your HTML pa
 
 If you decide to import using a bundler, use `import` to import all of CCS Components' components, then run the `initAll` function to initialise them:
 
-```
+```js
 import { initAll } from 'ts-ccs-components'
 initAll()
 ```
 
 If you’re using a bundler that uses CommonJS like [Browserify](http://browserify.org/), you should use require:
 
-```
+```js
 const CCSComponents = require('ts-ccs-components')
 CCSComponents.initAll()
 ```
@@ -157,7 +157,7 @@ If you update a page with new markup, for example a modal dialogue box, you can 
 
 For example:
 
-```
+```html
   <script>
     var $modal = document.querySelector('.modal')
     window.CCSComponents.initAll({

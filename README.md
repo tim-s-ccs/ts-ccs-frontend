@@ -67,7 +67,7 @@ The CCS Development team works hard to ensure that CCS Components is accessible.
 Using CCS Components along with GOV.UK Frontend will help your service meet [level AA of WCAG 2.1](https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag). But you must still [check that your service meets accessibility requirements](https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction), especially if you extend or modify components.
 
 You should also use:
-<!-- TODO: Change link to document -->
+
 - [the JavaScript from CCS Components](docs/guides/import-assets.md#javascript)
 - [a separate stylesheet](https://frontend.design-system.service.gov.uk/supporting-ie8/) if you support Internet Explorer 8
 
@@ -84,7 +84,6 @@ To be notified when there’s a new release, you can:
 
 - [watch the tim-ccs-components Github repository](https://docs.github.com/en/github/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications#configuring-your-watch-settings-for-an-individual-repository)
 
-<!-- TODO: Update with NPM -->
 Find out how to [update with npm](docs/guides/update-with-npm.md).
 
 ### Security

@@ -30,14 +30,14 @@ For example, you can use the [example accordion component](https://design-system
 
 1.  Add the following to the main Sass file in your project, so your Sass compiler adds all of CCS Components' and GOV.UK Frontend’s styles to your CSS file.
 
-    ```
+    ```scss
     @import "node_modules/govuk-frontend/govuk/all";
     @import "node_modules/ts-ccs-components/ccs/all";
     ```
 
 2.  Add your CSS file to your page layout if you need to. For example:
 
-    ```
+    ```html
     <head>
       ...
       <link rel="stylesheet" href="<YOUR-CSS-FILE>.css">
@@ -70,7 +70,7 @@ Your components will not use the right font or images until you’ve added CCS C
 
 1.  Add the following to the top of the `<body>` section of your page template:
 
-    ```
+    ```html
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
     ```
 
@@ -80,7 +80,7 @@ Your components will not use the right font or images until you’ve added CCS C
 
 3.  Import the file before the closing `</body>` tag of your page template, then run the `initAll` function to initialise all the components. For example:
 
-    ```
+    ```html
     <body>
       ...
       <script src="<YOUR-JAVASCRIPT-FOLDER>/ccs.js"></script>
