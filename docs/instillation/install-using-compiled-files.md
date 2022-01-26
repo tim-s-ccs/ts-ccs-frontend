@@ -2,7 +2,7 @@
 
 You can install CCS Components by copying our CSS, JavaScript and asset files into your project. If you install this way, you can try CCS Components in your application without having to make many changes.
 
-:warning: In your live application, you should [install with Node.js package manager (npm) instead](install-with-npm.md).
+> :warning: In your live application, you should [install with Node.js package manager (npm) instead](install-with-npm.md).
 
 ## What you cannot do after installing
 

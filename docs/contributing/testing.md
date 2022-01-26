@@ -1,6 +1,6 @@
-# Test your GOV.UK Frontend contribution
+# Test your CCS Components contribution
 
-Before you submit your contribution to GOV.UK Frontend, you should:
+Before you submit your contribution to CCS Components, you should:
 
 - fix any CSS or JavaScript style errors
 - check your changes look right and behave correctly
@@ -8,10 +8,10 @@ Before you submit your contribution to GOV.UK Frontend, you should:
 - run the automated tests
 - update the tests or add new tests if you need to
 
-Let us know in your pull request or [contact us](https://design-system.service.gov.uk/#support) if:
+Let us know in your pull request or [contact us](https://github.com/tim-s-ccs/tim-ccs-components#contact-the-team) if:
 
 - you cannot do some of the checks or tests
-- your contribution might affect other parts of GOV.UK Frontend
+- your contribution might affect other parts of CCS Components
 
 ## 1. Fix any CSS or JavaScript style errors
 
@@ -34,7 +34,7 @@ If you can, fix any errors or warnings reported by either the validator or bookm
 
 You do not need to fix any [known issues with our components](https://github.com/alphagov/govuk-frontend/issues/1280#issuecomment-509588851) reported by either the validator or bookmarklet.
 
-If you need help with fixing an error or a warning, leave a note in your pull request or [contact the Design System team](https://design-system.service.gov.uk/#support).
+If you need help with fixing an error or a warning, leave a note in your pull request or [contact the CCS Development team](https://github.com/tim-s-ccs/tim-ccs-components#contact-the-team).
 
 ## 3. Check your changes in the ‘review app’
 
@@ -43,7 +43,7 @@ In your project folder, run `npm start`, then go to [http://localhost:3000/]([ht
 Check that:
 
 - the examples in the review app look right and behave correctly with your changes
-- your design is consistent with the rest of GOV.UK Frontend
+- your design is consistent with the rest of CCS Components
 
 ### Add an example
 
@@ -79,7 +79,9 @@ You should write new tests if you’ve created a new component, or changed the w
 
 Test files use examples from each component’s `.yaml` file, for example `src/ccs/components/button/button.yaml`. When you add or update tests, you can use the existing examples or add new ones.
 
-Use `hidden: true` in a new example if you do not want to include the example in the review app. The example will still appear in our [test fixtures](http://frontend.design-system.service.gov.uk/testing-your-html/).
+Use `hidden: true` in a new example if you do not want to include the example in the review app. The example will still appear in our test fixtures. 
+
+[More information on fixture testing](http://frontend.design-system.service.gov.uk/testing-your-html/) (from the Design System site but also applies for CCS Components).
 
 ### If you created a component
 

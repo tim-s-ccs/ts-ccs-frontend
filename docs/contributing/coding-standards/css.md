@@ -1,10 +1,12 @@
 # CSS Style Guide
 
+The source for this document can be [found on GOV.UK Frontend](https://github.com/alphagov/govuk-frontend/blob/main/docs/contributing/coding-standards/css.md) but the same guidance applies to CCS Components.
+
 ## Class naming convention
 
-## `govuk` namespacing
+## `ccs` namespacing
 
-All class names start with a `.govuk-` namespace to reduce the likelihood of
+All class names start with a `.ccs-` namespace to reduce the likelihood of
 conflicting with existing classes in your application. It also helps to identify
 where the styling for a particular element is coming from.
 
@@ -13,7 +15,7 @@ use a different prefix, for example `.app-` or the initials of your department.
 
 ## Block Element Modifier (BEM)
 
-GOV.UK Frontend uses the Block Element Modifier (BEM) methodology when naming
+CCS Components uses the Block Element Modifier (BEM) methodology when naming
 CSS classes. This is designed to help developers understand how the different
 classes relate to each other.
 
@@ -24,9 +26,9 @@ The naming convention follows this pattern:
 .block__element {}
 .block--modifier {}
 
-.govuk-card               // Block - the root of a component
-.govuk-card__body         // Element - a part of the block
-.govuk-card--active       // Modifier - a variant of the block
+.ccs-example-card               // Block - the root of a component
+.ccs-example-card__body         // Element - a part of the block
+.ccs-example-card--active       // Modifier - a variant of the block
 ```
 
 It uses double hyphens (`--`) and underscores (`__`) so that the block, element
@@ -35,9 +37,9 @@ or modifiers themselves can be hyphen delimited without causing ambiguity.
 For example:
 
 ```scss
-.govuk-phase-banner
-.govuk-phase-banner__phase-tag
-.govuk-phase-banner__phase-tag--light-blue
+.ccs-header
+.ccs-header__link
+.ccs-header__link--homepage
 ```
 
 ### Further reading:
@@ -57,9 +59,9 @@ given class name. It also discourages excessive nesting.
 Bad:
 
 ```
-.govuk-breadcrumb {
+.ccs-header {
   ...
-  &__item {
+  &__container {
     ...
   }
 }
@@ -68,11 +70,11 @@ Bad:
 Good:
 
 ```
-.govuk-breadcrumb {
+.ccs-header {
   ...
 }
 
-.govuk-breadcrumb__item {
+.ccs-header__container {
   ...
 }
 ```
@@ -98,11 +100,11 @@ other components.
 
 Keep all of the variants of a component in the same place.
 
-`.govuk-error-summary` modifies the `.govuk-list` component.
+`.ccs-footer` modifies the `.govuk-list` component.
 
 Component modifiers use an extra class, scoped to the component:
 
-`.govuk-error-summary__list`
+`.ccs-footer__list`
 
 This class is part of the component, rather than a parent of a component.
 
@@ -237,9 +239,9 @@ a {
 
 Bad:
 ```
-.govuk-breadcrumb {
+.ccs-header {
   ...
-  &__item {
+  &__container {
     ...
   }
 }
@@ -247,11 +249,11 @@ Bad:
 
 Good:
 ```
-.govuk-breadcrumb {
+.ccs-header {
   ...
 }
 
-.govuk-breadcrumb__item {
+.ccs-header__container {
   ...
 }
 ```
@@ -458,6 +460,7 @@ More write up on [supported rules](https://stylelint.io/user-guide/rules/list).
 ##  SassDoC
 We document SCSS using [SassDoc](http://sassdoc.com/). This includes most of the settings, helpers and tools layers, with variables, functions and mixins being marked as private or public.
 
-The SassDoc comments are used to generate the [Sass API reference in the GOV.UK Frontend docs](https://frontend.design-system.service.gov.uk/sass-api-reference/).
+We do not yet have a Sass API Docs, but they will be added in the future
+<!-- The SassDoc comments are used to generate the [Sass API reference in the GOV.UK Frontend docs](https://frontend.design-system.service.gov.uk/sass-api-reference/). -->
 
 See [colour.scss](../../../src/ccs/helpers/_colour.scss) for an example of SassDoc syntax.
