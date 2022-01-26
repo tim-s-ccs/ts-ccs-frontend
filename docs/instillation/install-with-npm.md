@@ -14,7 +14,7 @@
 
 3.  Install [Dart Sass](https://www.npmjs.com/package/sass) - version 1.0.0 or higher.
 
-    If you’re using Dart Sass 1.33.0 or greater, you may see deprecation warnings when compiling your Sass. You can [silence deprecation warnings caused by dependencies](../guides/import-assets.md#silence-deprecation-warnings-from-dependencies-in-dart-sass) if required.
+    If you’re using Dart Sass 1.33.0 or greater, you may see deprecation warnings when compiling your Sass. You can [silence deprecation warnings caused by dependencies](/docs/guides/import-assets.md#silence-deprecation-warnings-from-dependencies-in-dart-sass) if required.
 
     We recommend you do not use either LibSass or Ruby Sass, as they are deprecated.
 
@@ -26,7 +26,7 @@
     However, we may stop supporting LibSass and Ruby Sass in future
 
 <!-- Create guide for nunjucks -->
-You can also [install Nunjucks v3.0.0 or later](https://www.npmjs.com/package/nunjucks) if you want to [use CCS Components' Nunjucks macros](../guides/use-nunjucks.md).
+You can also [install Nunjucks v3.0.0 or later](https://www.npmjs.com/package/nunjucks) if you want to [use CCS Components' Nunjucks macros](/docs/guides/use-nunjucks.md).
 
 ## Install CCS Components
 
@@ -38,4 +38,4 @@ When the installation finishes, the `ts-ccs-components` package will be in your 
 
 If it is not already installed, you will also find the `govuk-frontend` package in your `node_modules` folder as this is a dependency of CCS Components.
 
-You should now get started by [getting the CSS, assets and JavaScript working](../guides/get-started.md).
+You should now get started by [getting the CSS, assets and JavaScript working](/docs/guides/get-started.md).
