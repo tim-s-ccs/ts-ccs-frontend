@@ -12,7 +12,7 @@ This file provides links for the documentation.
 
 [Get started](/docs/guides/get-started.md)
 
-[Using CCS Components with GOV.UK Prototype Kit](/docs/guides/govuk-prototype-kit.md)
+[Using CCS Frontend with GOV.UK Prototype Kit](/docs/guides/govuk-prototype-kit.md)
 
 [Import CSS, assets and JavaScript](/docs/guides/import-assets.md)
 
@@ -36,7 +36,7 @@ This file provides links for the documentation.
 
 [Test components using accessibility acceptance criteria](/docs/contributing/test-components-using-accessibility-acceptance-criteria.md)
 
-[Test your CCS Components contribution](/docs/contributing/testing.md)
+[Test your CCS Frontend contribution](/docs/contributing/testing.md)
 
 [Versioning](/docs/contributing/versioning.md)
 
@@ -52,7 +52,7 @@ This file provides links for the documentation.
 
 ## Releaseing
 
-[Publish pre-release of CCS Components](/docs/releasing/publishing-a-pre-release.md)
+[Publish pre-release of CCS Frontend](/docs/releasing/publishing-a-pre-release.md)
 
 [Publishing from a support branch](/docs/releasing/publishing-from-a-support-branch.md)
 

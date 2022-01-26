@@ -1,8 +1,8 @@
 
 # Component API definition and use
-The source for this document can be [found on GOV.UK Frontend](https://github.com/alphagov/govuk-frontend/blob/main/docs/contributing/coding-standards/nunjucks-api.md) but the same guidance applies to CCS Components.
+The source for this document can be [found on GOV.UK Frontend](https://github.com/alphagov/govuk-frontend/blob/main/docs/contributing/coding-standards/nunjucks-api.md) but the same guidance applies to CCS Frontend.
 
-We have chosen as Nunjucks as the templating language for CCS Components components. We expose those templates as reusable chunks of code: macros. Developers import macros into their application, call them as per documentation and provide data to its options.
+We have chosen as Nunjucks as the templating language for CCS Frontend components. We expose those templates as reusable chunks of code: macros. Developers import macros into their application, call them as per documentation and provide data to its options.
 
 To provide a level of consistency for developers we have standardised option names, their expected input, use and placement. There are exceptions, and  if so they are documented accordingly.
 
@@ -37,7 +37,7 @@ We should use **camelCase** for naming options.
 
 If a component depends on another component, we group the options for the dependent component inside an object, where the name of the object is the name of the component using **camelCase** convention. In case of ambiguity we prefix the component name.
 
-*The examples are from GOV.UK Frontend as we do not have a component from CCS Components that uses this convention yet.*
+*The examples are from GOV.UK Frontend as we do not have a component from CCS Frontend that uses this convention yet.*
 
 Example of a component depending on another component
 ```
@@ -65,7 +65,7 @@ Example of a component depending on two other components
 ## Mimic HTML attribute names
 When there is a need to specify html attributes, such as *checked, disabled, id, name*, etc, and they map directly, we use the same option name. We use boolean value to check and render the attribute.
 
-*The examples are from GOV.UK Frontend as we do not have a component from CCS Components that uses this convention yet.*
+*The examples are from GOV.UK Frontend as we do not have a component from CCS Frontend that uses this convention yet.*
 
 Example:
 
@@ -79,7 +79,7 @@ When there is a need to add additional attributes to the component, we accept an
 
 You cannot use this to set attributes that are already defined, such as class – use the classes option instead.
 
-*The examples are from GOV.UK Frontend as we do not have a component from CCS Components that uses this convention yet.*
+*The examples are from GOV.UK Frontend as we do not have a component from CCS Frontend that uses this convention yet.*
 
 Example:
 ```
@@ -115,7 +115,7 @@ Example:
 ## Use of classes to specify variants
 When a component has multiple visual presentations, such default button vs start button, we make use of classes option to differentiate between them.
 
-*The examples are from GOV.UK Frontend as we do not have a component from CCS Components that uses this convention yet.*
+*The examples are from GOV.UK Frontend as we do not have a component from CCS Frontend that uses this convention yet.*
 
 Default button example:
 ```

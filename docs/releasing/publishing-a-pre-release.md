@@ -1,20 +1,20 @@
-# Publish pre-release of CCS Components
+# Publish pre-release of CCS Frontend
 
-This pre-release guidance is aimed at CCS Development team members. If you're an external contributor who needs to create a pre-release, please [contact the CCS Development team](https://github.com/tim-s-ccs/tim-ccs-components#contact-the-team) and we'll do it for you.
+This pre-release guidance is aimed at CCS Development team members. If you're an external contributor who needs to create a pre-release, please [contact the CCS Development team](https://github.com/tim-s-ccs/ts-ccs-frontend#contact-the-team) and we'll do it for you.
 
-Before you publish a pre-release, you need to have committed a code change to CCS Components. Then follow these instructions.
+Before you publish a pre-release, you need to have committed a code change to CCS Frontend. Then follow these instructions.
 
 Use pre-releases when you:
 - work on developing a component or pattern for CCS
 - want to trial an experimental feature (guidance on trialling experimental features is in development)
 
-> :warning:Your projects should never depend on a pre-released CCS Components package. This is because someone could remove the GitHub branch containing the pre-release package at any time. For this reason, never use a pre-released package in a production setting.
+> :warning: Your projects should never depend on a pre-released CCS Frontend package. This is because someone could remove the GitHub branch containing the pre-release package at any time. For this reason, never use a pre-released package in a production setting.
 
-## What happens when you pre-release CCS Components
+## What happens when you pre-release CCS Frontend
 
-When you pre-release CCS Components, this creates a GitHub branch. This branch contains the CCS Components `/package` directory with your trial changes.
+When you pre-release CCS Frontend, this creates a GitHub branch. This branch contains the CCS Frontend `/package` directory with your trial changes.
 
-Projects can point to this branch in their package.json, instead of to the published [CCS Components npm package](https://www.npmjs.com/package/ts-ccs-components). No changes are published to the CCS Components npm package as part of this process.
+Projects can point to this branch in their package.json, instead of to the published [CCS Frontend npm package](https://www.npmjs.com/package/ts-ccs-frontend). No changes are published to the CCS Frontend npm package as part of this process.
 
 ## Publish a pre-release
 
@@ -32,7 +32,7 @@ Projects can point to this branch in their package.json, instead of to the publi
 
 1. If you need to update an existing project to use the pre-release, copy the command that displays after the `Success!`message.
 
-2. Navigate to the project in the command line and run the success notification command. Running this command makes the project point to the pre-release branch, instead of to the published [CCS Components npm package](https://www.npmjs.com/package/ts-ccs-components). You can now preview your trial changes to CCS Components.
+2. Navigate to the project in the command line and run the success notification command. Running this command makes the project point to the pre-release branch, instead of to the published [CCS Frontend npm package](https://www.npmjs.com/package/ts-ccs-frontend). You can now preview your trial changes to CCS Frontend.
 
 ## Update a pre-release
 

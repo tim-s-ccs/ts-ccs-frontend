@@ -1,6 +1,6 @@
 {
-  "name": "ts-ccs-components",
-  "description": "CCS Components contains the code you need to start building a user interface for CCS platforms and services.",
+  "name": "ts-ccs-frontend",
+  "description": "CCS Frontend contains the code you need to start building a user interface for CCS platforms and services.",
   "version": "0.3.0",
   "main": "ccs/all.js",
   "sass": "ccs/all.scss",
@@ -13,10 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tim-s-ccs/tim-ccs-components.git"
+    "url": "https://github.com/tim-s-ccs/ts-ccs-frontend.git"
   },
   "bugs": {
-    "url": "https://github.com/tim-s-ccs/tim-ccs-components/issues"
+    "url": "https://github.com/tim-s-ccs/ts-ccs-frontend/issues"
   },
   "keywords": [
     "ccs",

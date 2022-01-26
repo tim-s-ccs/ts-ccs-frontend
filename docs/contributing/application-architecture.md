@@ -35,7 +35,7 @@
 
 - `dist/` **contains auto-generated files**
 
-  Standalone builds of ts-ccs-components. Provides a way to consume ts-ccs-components without using npm.
+  Standalone builds of ts-ccs-frontend. Provides a way to consume ts-ccs-frontend without using npm.
 
 - `docs/`
 
@@ -48,7 +48,7 @@
 - `package/` **contains auto-generated files**
 
   package published on npm.
-  Consume all of ts-ccs-components through a single package.
+  Consume all of ts-ccs-frontend through a single package.
 
 - `src/`
 

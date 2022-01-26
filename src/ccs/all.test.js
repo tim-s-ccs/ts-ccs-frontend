@@ -19,28 +19,28 @@ beforeAll(() => {
   })
 })
 
-describe('CCS Components', () => {
+describe('CCS Frontend', () => {
   describe('javascript', () => {
-    it('can be accessed via `CCSComponents`', async () => {
+    it('can be accessed via `CCSFrontend`', async () => {
       await page.goto(baseUrl + '/', { waitUntil: 'load' })
 
-      const CCSComponentsGlobal = await page.evaluate(() => window.CCSComponents)
+      const CCSFrontendGlobal = await page.evaluate(() => window.CCSFrontend)
 
-      expect(typeof CCSComponentsGlobal).toBe('object')
+      expect(typeof CCSFrontendGlobal).toBe('object')
     })
     it('exports `initAll` function', async () => {
       await page.goto(baseUrl + '/', { waitUntil: 'load' })
 
-      const typeofInitAll = await page.evaluate(() => typeof window.CCSComponents.initAll)
+      const typeofInitAll = await page.evaluate(() => typeof window.CCSFrontend.initAll)
 
       expect(typeofInitAll).toEqual('function')
     })
     it('exports Components', async () => {
       await page.goto(baseUrl + '/', { waitUntil: 'load' })
 
-      const CCSComponentsGlobal = await page.evaluate(() => window.CCSComponents)
+      const CCSFrontendGlobal = await page.evaluate(() => window.CCSFrontend)
 
-      var components = Object.keys(CCSComponentsGlobal).filter(method => method !== 'initAll')
+      var components = Object.keys(CCSFrontendGlobal).filter(method => method !== 'initAll')
 
       // Ensure GOV.UK Frontend exports the expected components
       expect(components).toEqual([
@@ -51,11 +51,11 @@ describe('CCS Components', () => {
       await page.goto(baseUrl + '/', { waitUntil: 'load' })
 
       var componentsWithoutInitFunctions = await page.evaluate(() => {
-        var components = Object.keys(window.CCSComponents)
+        var components = Object.keys(window.CCSFrontend)
           .filter(method => method !== 'initAll')
 
         return components.filter(component => {
-          var prototype = window.CCSComponents[component].prototype
+          var prototype = window.CCSFrontend[component].prototype
           return typeof prototype.init !== 'function'
         })
       })

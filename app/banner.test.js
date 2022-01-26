@@ -21,7 +21,7 @@ describe('Banner', () => {
 
       // Check the page responded correctly
       expect(res.statusCode).toBe(200)
-      expect($.html()).toContain('CCS Components')
+      expect($.html()).toContain('CCS Frontend')
 
       // Check that the banner is visible
       const appBanner = $('[data-module="app-banner"]')
@@ -36,7 +36,7 @@ describe('Banner', () => {
 
       // Check the page responded correctly
       expect(res.statusCode).toBe(200)
-      expect($.html()).toContain('CCS Components')
+      expect($.html()).toContain('CCS Frontend')
 
       // Check that the banner is visible
       const appBanner = $('[data-module="app-banner"]')

@@ -71,7 +71,7 @@ function compileStyles (done) {
     ])))
     .pipe(gulpif(isDist,
       rename({
-        basename: 'ccs-components',
+        basename: 'ts-ccs-frontend',
         extname: '.min.css'
       })
     ))
@@ -110,7 +110,7 @@ function compileOldIE (done) {
     ])))
     .pipe(gulpif(isDist,
       rename({
-        basename: 'ccs-components-ie8',
+        basename: 'ts-ccs-frontend-ie8',
         extname: '.min.css'
       })
     ))
@@ -201,7 +201,7 @@ gulp.task('js:compile', (done) => {
     const newDirectoryPath = path.dirname(file).replace('src/ccs', '')
 
     // We only want to give component JavaScript a unique module name
-    let moduleName = 'CCSComponents'
+    let moduleName = 'CCSFrontend'
     if (path.dirname(file).includes('/components/')) {
       moduleName = componentNameToJavaScriptModuleName(path.parse(file).name)
     }
@@ -221,7 +221,7 @@ gulp.task('js:compile', (done) => {
       })))
       .pipe(gulpif(isDist,
         rename({
-          basename: 'ccs-components',
+          basename: 'ts-ccs-frontend',
           extname: '.min.js'
         })
       ))

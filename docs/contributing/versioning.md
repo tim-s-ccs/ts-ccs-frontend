@@ -17,7 +17,7 @@ But we should make sure that we only make breaking changes when we have a good r
 Good examples of such situations would be:
 
 - issues that are barriers for end-users (users of services) based on evidence (for example user research)
-- issues that are barriers for users (users of CCS Components) based on evidence
+- issues that are barriers for users (users of CCS Frontend) based on evidence
 - accessibility issues
 - security issues
 - performance issues

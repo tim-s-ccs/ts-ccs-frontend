@@ -54,8 +54,8 @@ describe('dist/', () => {
     })
   })
 
-  describe(`ccs-components-${version}.min.css`, () => {
-    const stylesheet = lib.readFileContents(path.join(configPaths.dist, `ccs-components-${version}.min.css`))
+  describe(`ts-ccs-frontend-${version}.min.css`, () => {
+    const stylesheet = lib.readFileContents(path.join(configPaths.dist, `ts-ccs-frontend-${version}.min.css`))
 
     it('should not contain current media query displayed on body element', () => {
       expect(stylesheet).not.toMatch(/body:before{content:/)
@@ -66,16 +66,16 @@ describe('dist/', () => {
     })
   })
 
-  describe(`ccs-components-ie8-${version}.min.css`, () => {
-    const stylesheet = lib.readFileContents(path.join(configPaths.dist, `ccs-components-ie8-${version}.min.css`))
+  describe(`ts-ccs-frontend-ie8-${version}.min.css`, () => {
+    const stylesheet = lib.readFileContents(path.join(configPaths.dist, `ts-ccs-frontend-ie8-${version}.min.css`))
 
     it('should not contain current media query displayed on body element', () => {
       expect(stylesheet).not.toMatch(/body:before{content:/)
     })
   })
 
-  describe(`ccs-components-${version}.min.js`, () => {
-    const javascript = lib.readFileContents(path.join(configPaths.dist, `ccs-components-${version}.min.js`))
+  describe(`ts-ccs-frontend-${version}.min.js`, () => {
+    const javascript = lib.readFileContents(path.join(configPaths.dist, `ts-ccs-frontend-${version}.min.js`))
 
     it('should have the correct version name', () => {
       expect(javascript).toBeTruthy()

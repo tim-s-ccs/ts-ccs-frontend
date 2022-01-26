@@ -1,6 +1,6 @@
 # CSS Style Guide
 
-The source for this document can be [found on GOV.UK Frontend](https://github.com/alphagov/govuk-frontend/blob/main/docs/contributing/coding-standards/css.md) but the same guidance applies to CCS Components.
+The source for this document can be [found on GOV.UK Frontend](https://github.com/alphagov/govuk-frontend/blob/main/docs/contributing/coding-standards/css.md) but the same guidance applies to CCS Frontend.
 
 ## Class naming convention
 
@@ -15,7 +15,7 @@ use a different prefix, for example `.app-` or the initials of your department.
 
 ## Block Element Modifier (BEM)
 
-CCS Components uses the Block Element Modifier (BEM) methodology when naming
+CCS Frontend uses the Block Element Modifier (BEM) methodology when naming
 CSS classes. This is designed to help developers understand how the different
 classes relate to each other.
 
