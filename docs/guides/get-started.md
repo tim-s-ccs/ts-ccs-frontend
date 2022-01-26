@@ -13,13 +13,13 @@ You will need to do all the following steps to get your component working.
 
 ## 1. Install
 
-[Install CCS Components using npm](../instillation/install-with-npm.md).
+[Install CCS Components using npm](/docs/instillation/install-with-npm.md).
 
-If you’ve installed using precompiled files, get started with [a basic page](../instillation/install-using-compiled-files.md#check-an-example-page) instead.
+If you’ve installed using precompiled files, get started with [a basic page](/docs/instillation/install-using-compiled-files.md#check-an-example-page) instead.
 
 ## 2. Add the HTML for a component to your application
 
-Start up this project as an app and go to the example header component, then copy the HTML.
+[Run this project locally](/docs/contributing/running-locally.md) and go to the example header component, then copy the HTML.
 
 Paste the HTML into a page or template in your application.
 
@@ -104,6 +104,6 @@ In your live application:
 - we recommend [using an automated task or your build pipeline](import-assets.md#javascript) instead of copying the files manually
 
 <!-- TODO: Update this link in future for space -->
-For CCS Components, you can find the code by running this project as an app.
+For CCS Components, you can find the code by running this [project as locally](/docs/contributing/running-locally.md).
 
 For GOV.UK Frontend, you can now get the full code for page layouts and other components from the [Design System website](https://design-system.service.gov.uk/).

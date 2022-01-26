@@ -17,7 +17,7 @@ There are more details on [how to use CCS Components with GOV.UK Prototype Kit](
 
 You must first:
 
-- [install CCS Components with Node.js package manager (npm)](../instillation/install-with-npm.md)
+- [install CCS Components with Node.js package manager (npm)](/docs/instillation/install-with-npm.md)
 - make sure you’ve installed Nunjucks so it’s working in your environment
 
 ## Set up Nunjucks and use the page template
@@ -49,7 +49,7 @@ Find out how to [change how the page template works](https://design-system.servi
 
 ## Adding a component
 <!-- TODO Create place to host examples -->
-You can currently view any components code by running this project as an app.
+You can currently view any components code by [running this project locally](/docs/contributing/running-locally.md).
 
 Go to any component page, then copy the Nunjucks macro code from the **Nunjucks** tab of any example.
 

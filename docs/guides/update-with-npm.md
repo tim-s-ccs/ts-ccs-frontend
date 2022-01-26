@@ -1,6 +1,6 @@
 # Update using Node.js package manager (npm)
 
-You can update with Node.js package manager (npm) if you [originally installed CCS Components with npm](../instillation/install-with-npm.md).
+You can update with Node.js package manager (npm) if you [originally installed CCS Components with npm](/docs/instillation/install-with-npm.md).
 
 ## Find out which version you’re using
 

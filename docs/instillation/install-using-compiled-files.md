@@ -1,6 +1,7 @@
 # Install using precompiled files
 
-You can install CCS Components by copying our CSS, JavaScript and asset files into your project. If you install this way, you can try CCS Components in your application without having to make many changes.
+You can install CCS Components by copying our CSS, JavaScript and asset files into your project.
+If you install this way, you can try CCS Components in your application without having to make many changes.
 
 > :warning: In your live application, you should [install with Node.js package manager (npm) instead](install-with-npm.md).
 
@@ -10,7 +11,7 @@ You’ll not be able to:
 
 <!-- Add Nunjucks -->
 - change [Sass settings](https://frontend.design-system.service.gov.uk/sass-api-reference/), for example override colours or set your own font
-- use the [Nunjucks code](../guides/use-nunjucks.md) to add components
+- use the [Nunjucks code](/docs/guides/use-nunjucks.md) to add components
 - import an individual component’s CSS or JavaScript
 - use CCS Components’ colours or mixins in your custom code
 
@@ -33,7 +34,7 @@ Note, CCS Components has a dependency on GOV.UK Frontend so you will need to fol
 3. Run your application - you can check it works the same way as the CCS Design System header example, which will be added in the future, by making your screen smaller which should make the `Menu` button appear.
    You should then be able to click this button which will reveal and hide the navigation links.
 
-You can now get the full code for page layouts and other components by downloading and running this project as an app.
+You can now get the full code for page layouts and other components by [running this project locally](/docs/contributing/running-locally.md).
 In the future we will host these examples on the CCS Design System website.
 
-If the header menu does not work, you can [find out more about how to import CCS Components’ CSS and JavaScript](../guides/import-assets.md).
+If the header menu does not work, you can [find out more about how to import CCS Components’ CSS and JavaScript](/docs/guides/import-assets.md).

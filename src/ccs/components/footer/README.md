@@ -14,5 +14,5 @@ You can use [GOV.UK Design System](https://design-system.service.gov.uk/componen
 
 Use options to customise the appearance, content and behaviour of a component when using a macro, for example, changing the text.
 
-To see the options table, run this project as an app and go to `/components/footer/options`.
+To see the options table, [run this project locally](/docs/contributing/running-locally.md) and go to `/components/footer/options`.
 <!-- See [options table](https://design-system.service.gov.uk/components/footer/#options-footer-example) for details. -->

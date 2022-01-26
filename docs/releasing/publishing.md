@@ -1,4 +1,6 @@
-# Before you publish CCS Components
+# Publishing
+
+## Before you publish CCS Components
 
 > :warning: This section will be updated when the project is more mature. Most of the information does not yet apply.
 
@@ -34,7 +36,7 @@
 
 > **Note:** Before you go on leave, tell the delivery manager who will be looking after your work. This will help us to complete sign-off without fuss.
 
-# Publish a new version of CCS Components
+## Publish a new version of CCS Components
 
 Developers should pair on releases. When remote working, it can be useful to be on a call together.
 
@@ -99,7 +101,7 @@ Developers should pair on releases. When remote working, it can be useful to be 
 
 5. Run `npm logout` to log out from npm.
 
-# After you publish the new release
+## After you publish the new release
 
 > :warning: This section will be updated when the project is more mature. Most of the information does not yet apply.
 
