@@ -10,9 +10,7 @@ This is based off of [GOV.UK Frontend](https://github.com/alphagov/govuk-fronten
 
 Because of this, CCS Frontend can be used in an identical way to GOV.UK Frontend.
 
-<!-- TODO: Add space for guide -->
-<!-- See live examples of CCS Frontend, and guidance on when to use
-them in your service, in the [CCS Frontend Design System](#). -->
+See live examples of CCS Frontend in the [CCS Frontend website](https://ts-ccs-frontend.herokuapp.com/).
 
 As part of future work, there will be a place where you can view live examples and guidance on when to use CCS Frontend as part of your service.
 
@@ -38,10 +36,7 @@ Please note that this package is designed to be used in the same way as GOV.UK F
 
 There are 2 ways to start using CCS Frontend in your app.
 
-<!-- TODO: Add space for guide -->
-<!-- Once installed, you will be able to use the code from the examples in the
-[CCS Frontend Design System](#)
-in your service. -->
+Once installed, you will be able to use the code from the examples in the [CCS Frontend website](https://ts-ccs-frontend.herokuapp.com/) in your service.
 
 ### 1. Install with npm (recommended)
 
@@ -114,3 +109,9 @@ However, please note this a small project compared to GOV.UK Frontend and is onl
 Contributors to alphagov repositories are expected to follow the [Contributor Covenant Code of Conduct](https://github.com/alphagov/.github/blob/main/CODE_OF_CONDUCT.md#contributor-covenant-code-of-conduct). Contributors working within government are also expected to follow the [Civil Service code](https://www.gov.uk/government/publications/civil-service-code/the-civil-service-code). -->
 
 We're unable to monitor activity on this repository outside of our office hours (10am to 4pm, UK time). To get a faster response at other times, you can [report abuse or spam to GitHub](https://docs.github.com/en/communities/maintaining-your-safety-on-github/reporting-abuse-or-spam).
+
+## Credits :trophy:
+This project was created from GOV.UK Frontend so a lot of the credit needs to go to the team at Government Digital Services.
+Beyond adding the CCS stylings, nearly all the code comes from that original project.
+
+So a big **Thank you** to the team at GDS because, without your hard work on GOV.UK Frontend, CCS Frontend would be a much lesser offering.

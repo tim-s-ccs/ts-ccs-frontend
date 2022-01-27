@@ -5,14 +5,11 @@
 See the [main README quick start guide](https://github.com/tim-s-ccs/ts-ccs-frontend#quick-start) for how to install this component.
 
 ## Guidance and Examples
-<!-- Add place for guide -->
-For now, you will need to run this project as an app to see examples of the header.
+You can view examples of the header component by going to the [CCS Frontend website](https://ts-ccs-frontend.herokuapp.com/components/header).
 
 You can use [GOV.UK Design System](https://design-system.service.gov.uk/components/header) to find out when to use a header component in your service.
 
 ## Component options
-
 Use options to customise the appearance, content and behaviour of a component when using a macro, for example, changing the text.
 
-To see the options table, [run this project locally](/docs/contributing/running-locally.md) and go to `/components/header/options`.
-<!-- See [options table](https://design-system.service.gov.uk/components/header/#options-header-example) for details. -->
+See the [options table](https://ts-ccs-frontend.herokuapp.com/components/header/options) for details.

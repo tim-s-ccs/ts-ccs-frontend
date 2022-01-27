@@ -39,5 +39,4 @@ npm start
 
 You can deploy your project straight to a Heroku instance.
 
-<!-- TODO: Create Heroku instance -->
-<!-- An existing Heroku instance can be found at: [http://govuk-frontend-review.herokuapp.com/](http://govuk-frontend-review.herokuapp.com/) -->
+An existing Heroku instance can be found at: [https://ts-ccs-frontend.herokuapp.com/](https://ts-ccs-frontend.herokuapp.com/)

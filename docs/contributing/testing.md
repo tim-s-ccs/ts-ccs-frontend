@@ -81,7 +81,7 @@ Test files use examples from each component’s `.yaml` file, for example `src/c
 
 Use `hidden: true` in a new example if you do not want to include the example in the review app. The example will still appear in our test fixtures. 
 
-[More information on fixture testing](http://frontend.design-system.service.gov.uk/testing-your-html/) (from the Design System site but also applies for CCS Frontend).
+[More information on fixture testing](http://frontend.design-system.service.gov.uk/testing-your-html/) (from the Design System website but also applies for CCS Frontend).
 
 ### If you created a component
 
