@@ -5,8 +5,7 @@
 See the [main README quick start guide](https://github.com/tim-s-ccs/ts-ccs-frontend#quick-start) for how to install this component.
 
 ## Guidance and Examples
-<!-- Add place for guide -->
-For now, you will need to run this project as an app to see examples of the footer.
+You can view examples of the footer component by going to the [CCS Frontend website](https://ts-ccs-frontend.herokuapp.com/components/footer).
 
 You can use [GOV.UK Design System](https://design-system.service.gov.uk/components/footer) to find out when to use a footer component in your service.
 
@@ -14,5 +13,4 @@ You can use [GOV.UK Design System](https://design-system.service.gov.uk/componen
 
 Use options to customise the appearance, content and behaviour of a component when using a macro, for example, changing the text.
 
-To see the options table, [run this project locally](/docs/contributing/running-locally.md) and go to `/components/footer/options`.
-<!-- See [options table](https://design-system.service.gov.uk/components/footer/#options-footer-example) for details. -->
+See the [options table](https://ts-ccs-frontend.herokuapp.com/components/footer/options) for details.
