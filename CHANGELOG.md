@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.1 (Pre Release)
+  - Update documentation and get an [example app running on Heroku](https://ts-ccs-frontend.herokuapp.com/):
+    - [Fix small issue with npm install](https://github.com/tim-s-ccs/ts-ccs-frontend/pull/22)
+    - [Change app.json name ](https://github.com/tim-s-ccs/ts-ccs-frontend/pull/23)
+    - [Make sure fonts are copied when deploying to heroku ](https://github.com/tim-s-ccs/ts-ccs-frontend/pull/24)
+    - [Update references and add credits](https://github.com/tim-s-ccs/ts-ccs-frontend/pull/25)
+
 ## 0.4.0 (Pre Release)
   - Change the name of the project from CCS Components to CCS Frontend.
     This is so it is easier to understand some of the text and bring it in line with GOV.UK Frontend:
