@@ -41,19 +41,16 @@ You must first:
 
 <!-- TODO: and example from CCS Design System website -->
 <!-- Go to the [default page template example](#) on the CCS Design System website, then copy the Nunjucks code into your view file. -->
-3.  Copy the Nunjucks code from the [default page template example](../examples/pages/default-page-template-example.html) into your view file.
+3.  Copy the Nunjucks code from the [default page template example](/docs/examples/pages/default-page-template-example.html) into your view file.
 
-You may need to change the paths in the Nunjucks code to [get the CSS, assets and JavaScript working](import-assets.md).
+You may need to change the paths in the Nunjucks code to [get the CSS, assets and JavaScript working](/docs/guides/import-assets.md).
 
 Find out how to [change how the page template works](https://design-system.service.gov.uk/styles/page-template/#changing-template-content).
 
 ## Adding a component
-<!-- TODO Create place to host examples -->
-You can currently view any components code by [running this project locally](/docs/contributing/running-locally.md).
+Go to any component page on the CCS Frontend website, then copy the Nunjucks macro code from the **Nunjucks** tab of any example.
 
-Go to any component page, then copy the Nunjucks macro code from the **Nunjucks** tab of any example.
-
-For example, to add the footer component to your page, copy the code from the **Nunjucks** tab in the first example on the footer component page.
+For example, to add the footer component to your page, copy the code from the **Nunjucks** tab in the first example on the [footer component page](https://ts-ccs-frontend.herokuapp.com/components/footer).
 
 ## Changing a component
 
@@ -67,9 +64,6 @@ For example, use the `serviceName` option to change the text on the header:
 }) }}
 ```
 
-<!-- TODO: Add ability to see the options  -->
-
-To see the options for a component, run this project as a local app and go to the components page.
-On this page select click on **View Nunjucks macro options** which will take you to a new page with the options. 
+To see the options for a component, click on the **View Nunjucks macro options** link of the component example on any CCS Frontend website page.
 
 You must sanitise any HTML you pass in to Nunjucks macros you’re using in your live application to protect your website against cross-site scripting (XSS) attacks. You can read more about [XSS](https://developer.mozilla.org/en-US/docs/Web/Security/Types_of_attacks#Cross-site_scripting_XSS) on the MDN website.

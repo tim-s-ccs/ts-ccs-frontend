@@ -6,7 +6,7 @@ As CCS Frontend is setup in the same way as GOV.UK Frontend, it is simple to use
 
 ## Install CCS Frontend into the Prototype Kit
 
-1.  You must first download the GOV.UK Prototype Kit which can be done by [following the instructions in the GOV.UK Prototype Kit site](https://govuk-prototype-kit.herokuapp.com/docs/install).
+1.  You must first download the GOV.UK Prototype Kit which can be done by [following the instructions in the GOV.UK Prototype Kit website](https://govuk-prototype-kit.herokuapp.com/docs/install).
 
 2.  Next you need to [install the CCS Frontend package using Node Package Manager (npm)](/docs/instillation/install-with-npm.md) which can be done by running the command:
     ```

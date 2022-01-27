@@ -26,7 +26,7 @@ Note, CCS Frontend has a dependency on GOV.UK Frontend so you will need to follo
 
 ## Check an example page
 <!-- Add templates -->
-1. Create a page in your project using the HTML found in [example-page.html](../examples/pages/example-page.html). 
+1. Create a page in your project using the HTML found in [example-page.html](/docs/examples/pages/example-page.html). 
    In your live application, you should use the CCS Design System page template, which will be added in the future, instead.
 
 2. Replace `<VERSION-NUMBER>` so the 3 filenames match the files you [copied from CCS Frontend’s GitHub repo](#copy-the-files).
@@ -34,7 +34,7 @@ Note, CCS Frontend has a dependency on GOV.UK Frontend so you will need to follo
 3. Run your application - you can check it works the same way as the CCS Design System header example, which will be added in the future, by making your screen smaller which should make the `Menu` button appear.
    You should then be able to click this button which will reveal and hide the navigation links.
 
-You can now get the full code for page layouts and other components by [running this project locally](/docs/contributing/running-locally.md).
-In the future we will host these examples on the CCS Design System website.
+You can now get the full code for page layouts and other components from the [CCS Frontend website](https://ts-ccs-frontend.herokuapp.com/).
+
 
 If the header menu does not work, you can [find out more about how to import CCS Frontend’s CSS and JavaScript](/docs/guides/import-assets.md).

@@ -19,7 +19,7 @@ If you’ve installed using precompiled files, get started with [a basic page](/
 
 ## 2. Add the HTML for a component to your application
 
-[Run this project locally](/docs/contributing/running-locally.md) and go to the example header component, then copy the HTML.
+Go to the [example header component](https://ts-ccs-frontend.herokuapp.com/components/header) on the CCS Frontend website, then copy the HTML.
 
 Paste the HTML into a page or template in your application.
 
@@ -48,8 +48,7 @@ For example, you can use the [example accordion component](https://design-system
 
 The header and accordion will use a generic font until you get the font and images working, and will not be interactive until you get the JavaScript working.
 
-<!-- TODO: Add Link -->
-There are also different ways you can [import CCS Frontend CSS](import-assets.md#css).
+There are also different ways you can [import CCS Frontend CSS](/docs/guides/import-assets.md#css).
 
 ## 4. Get the font and images working
 
@@ -63,8 +62,8 @@ Your components will not use the right font or images until you’ve added CCS F
     Note, while GOV.UK Frontend also contains images, you will only need the images from CCS Frontend.
 
 2.  Run your application, then use [the Fonts tab in Firefox Page Inspector](https://frontend.design-system.service.gov.uk/get-started/#:~:text=the%20Fonts%20tab%20in%20Firefox%20Page%20Inspector) to check the header and accordion is using the GDS Transport font.
-<!-- TODO: Update this link -->
-3. In your live application, we recommend [using an automated task or your build pipeline](import-assets.md#image-assets) instead of copying the files manually.
+
+3. In your live application, we recommend [using an automated task or your build pipeline](/docs/guides/import-assets.md#image-assets) instead of copying the files manually.
 
 ## 5. Get the JavaScript working
 
@@ -100,10 +99,9 @@ Your components will not use the right font or images until you’ve added CCS F
 In your live application:
 
 - you must use `initAll` to initialise all components that use CCS Frontend’s and GOV.UK Frontend’s JavaScript, or some components will not work correctly for disabled users who use assistive technologies
-<!-- TODO: Update this link -->
-- we recommend [using an automated task or your build pipeline](import-assets.md#javascript) instead of copying the files manually
 
-<!-- TODO: Update this link in future for space -->
-For CCS Frontend, you can find the code by running this [project as locally](/docs/contributing/running-locally.md).
+- we recommend [using an automated task or your build pipeline](/docs/guides/import-assets.md#javascript) instead of copying the files manually
+
+For CCS Frontend, you can now get the full code for page layouts and other components from the [CCS Frontend website](https://ts-ccs-frontend.herokuapp.com/).
 
 For GOV.UK Frontend, you can now get the full code for page layouts and other components from the [Design System website](https://design-system.service.gov.uk/).

@@ -42,9 +42,9 @@ You can also install CCS Frontend by [copying our CSS, JavaScript and asset file
 
 ### Before you start
 GOV.UK Frontend is a dependency of CCS Frontend.
-Therefore, boefore you import the styles, JavaScripts and assets CCS Frontend, you need to impor them for GOV.UK Frontend first.
+Therefore, before you import the styles, JavaScripts and assets CCS Frontend, you need to import them from GOV.UK Frontend first.
 
-You can do this by following the steps on the [Design System site](https://frontend.design-system.service.gov.uk/get-started/#get-started)
+You can do this by following the steps on the [Design System website](https://frontend.design-system.service.gov.uk/get-started/#get-started)
 
 ### Importing styles
 
@@ -77,13 +77,11 @@ Next you need to initialise the script by adding:
 
 [More details on importing Javascript and advanced options](https://github.com/tim-s-ccs/ts-ccs-frontend/blob/main/docs/guides/import-assets.md#javascript)
 
-
 ### Importing assets
 
 In order to import CCS Frontend images to your project, you should configure your application to reference or copy the relevant CCS Frontend assets.
 
 [More details on importing assets](https://github.com/tim-s-ccs/ts-ccs-frontend/blob/main/docs/guides/import-assets.md#image-assets)
-
 
 ## Getting updates
 
@@ -109,3 +107,9 @@ The ts-ccs-frontend repository is public and we welcome contributions from anyon
 However, please note this a small project compared to GOV.UK Frontend and is only concerned with assets relating to CCS.
 
 We're unable to monitor activity on this repository outside of our office hours (10am to 4pm, UK time). To get a faster response at other times, you can [report abuse or spam to GitHub](https://docs.github.com/en/communities/maintaining-your-safety-on-github/reporting-abuse-or-spam).
+
+## Credits :trophy:
+This project was created from GOV.UK Frontend so a lot of the credit needs to go to the team at Government Digital Services.
+Beyond adding the CCS stylings, nearly all the code comes from that original project.
+
+So a big **Thank you** to the team at GDS because, without your hard work on GOV.UK Frontend, CCS Frontend would be a much lesser offering.
