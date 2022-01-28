@@ -337,25 +337,4 @@
       }
     }
   }
-
-  @if $govuk-use-legacy-font {
-    // Begin adjustments for font baseline offset
-    // These should be removed when the font is updated with the correct baseline
-    .ccs-header__logotype-crown,
-    .ccs-header__logotype-crown-fallback-image {
-      position: relative;
-      top: -4px;
-      vertical-align: middle;
-    }
-
-    .ccs-header {
-      $offset: 3px;
-      padding-top: $offset;
-    }
-
-    .ccs-header__link--homepage {
-      line-height: 30px;
-    }
-    // End adjustments
-  }
 }

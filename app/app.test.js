@@ -179,7 +179,7 @@ describe(`http://localhost:${PORT}`, () => {
     it('should have a custom Footer component', done => {
       requestPath.get(templatePath, (err, res) => {
         const $ = cheerio.load(res.body)
-        const $footer = $('.ccs-footer')
+        const $footer = $('.ccs-footer .ccs-footer__inline-list')
         const $footerLink = $footer.find('.ccs-footer__link')
         expect($footerLink.html()).toContain('Aidez-moi')
         done(err)

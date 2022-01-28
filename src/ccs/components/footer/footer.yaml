@@ -95,7 +95,7 @@ accessibilityCriteria: |
   - have visible text
 
   Images in the Footer must:
-  - be presentational when linked to from accompanying text (Open Government Licence (OGL) icon).
+  - be presentational when linked to from accompanying text.
   - have a meaningful accessible name if also a linked element (crest icon).
 
   Landmarks and Roles in the Footer should:
@@ -157,7 +157,7 @@ examples:
           text: Fusce Sollicitudin
         - href: '#8'
           text:  Ligula Nullam Ultricies
-      html: Built by the <a href="#" class="govuk-footer__link">Department of Magical Law Enforcement</a>
+      html: Built by the <a href="#" class="ccs-footer__link">Department of Magical Law Enforcement</a>
 
 - name: with custom meta
   description: Custom meta section
@@ -326,7 +326,7 @@ examples:
           text: Terms and conditions
         - href: '/cymraeg'
           text: Rhestr o Wasanaethau Cymraeg
-      html: Built by the <a class="govuk-footer__link" href="#">Government Digital Service</a>
+      html: Built by the <a class="ccs-footer__link" href="#">Government Digital Service</a>
 
 - name: Three equal columns
   description: A full example to demonstrate three equal width columns
