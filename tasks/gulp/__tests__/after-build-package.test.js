@@ -117,7 +117,13 @@ describe('package/', () => {
   })
 
   describe('component', () => {
-    it.each(componentNames)('\'%s\' should have macro-options.json that contains JSON', (name) => {
+    const exemptComponents = [
+      'logo'
+    ]
+
+    const includedComponents = componentNames.filter(element => !exemptComponents.includes(element))
+
+    it.each(includedComponents)('\'%s\' should have macro-options.json that contains JSON', (name) => {
       const filePath = path.join(configPaths.package, 'ccs', 'components', name, 'macro-options.json')
       return readFile(filePath, 'utf8')
         .then((data) => {
