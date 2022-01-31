@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.5.1 (Pre Release)
+  - [Do a clean up of files](https://github.com/tim-s-ccs/ts-ccs-frontend/pull/44)
+
 ## 0.5.0 (Pre Release)
   - [Update footer to match CCS stylings](https://github.com/tim-s-ccs/ts-ccs-frontend/pull/27)
   - [Move the logo to a separate component so we comply with the "Don't Repeat Yourself" mantra](https://github.com/tim-s-ccs/ts-ccs-frontend/pull/28)

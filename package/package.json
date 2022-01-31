@@ -1,7 +1,7 @@
 {
   "name": "ts-ccs-frontend",
   "description": "CCS Frontend contains the code you need to start building a user interface for CCS platforms and services.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "main": "ccs/all.js",
   "sass": "ccs/all.scss",
   "engines": {
