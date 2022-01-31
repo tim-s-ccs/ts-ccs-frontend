@@ -17,7 +17,7 @@
           {% if param.required %}
             <strong>Required.</strong>
           {% endif %}
-          {{ param.description | replace(r/((?:[^`]*`){1}[^`]*)`/g, '$1</code>') | replace('`', '<code>') | safe }}
+          {{ markdown.parseInline(param.description) | safe }}
         </td>
       </tr>
     {% endfor %}
