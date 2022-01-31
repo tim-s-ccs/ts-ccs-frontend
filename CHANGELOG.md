@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.0 (Pre Release)
+  - [Update footer to match CCS stylings](https://github.com/tim-s-ccs/ts-ccs-frontend/pull/27)
+  - [Move the logo to a separate component so we comply with the "Don't Repeat Yourself" mantra](https://github.com/tim-s-ccs/ts-ccs-frontend/pull/28)
+
 ## 0.4.1 (Pre Release)
   - Update documentation and get an [example app running on Heroku](https://ts-ccs-frontend.herokuapp.com/):
     - [Fix small issue with npm install](https://github.com/tim-s-ccs/ts-ccs-frontend/pull/22)
