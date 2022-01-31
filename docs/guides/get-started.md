@@ -13,9 +13,9 @@ You will need to do all the following steps to get your component working.
 
 ## 1. Install
 
-[Install CCS Frontend using npm](/docs/instillation/install-with-npm.md).
+[Install CCS Frontend using npm](/docs/guides/install-with-npm.md).
 
-If you’ve installed using precompiled files, get started with [a basic page](/docs/instillation/install-using-compiled-files.md#check-an-example-page) instead.
+If you’ve installed using precompiled files, get started with [a basic page](/docs/guides/install-using-compiled-files.md#check-an-example-page) instead.
 
 ## 2. Add the HTML for a component to your application
 

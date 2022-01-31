@@ -2,23 +2,21 @@
 
 This file provides links for the documentation.
 
-## Instillation
-
-[Install using precompiled files](/docs/instillation/install-using-compiled-files.md)
-
-[Install with Node.js package manager (npm)](/docs/instillation/install-with-npm.md)
-
 ## Guides
 
+[Install using precompiled files](/docs/guides/install-using-compiled-files.md)
+
+[Install with Node.js package manager (npm)](/docs/guides/install-with-npm.md)
+
 [Get started](/docs/guides/get-started.md)
-
-[Using CCS Frontend with GOV.UK Prototype Kit](/docs/guides/govuk-prototype-kit.md)
-
-[Import CSS, assets and JavaScript](/docs/guides/import-assets.md)
 
 [Update using Node.js package manager (npm)](/docs/guides/update-with-npm.md)
 
 [Use Nunjucks](/docs/guides/use-nunjucks.md)
+
+[Import CSS, assets and JavaScript](/docs/guides/import-assets.md)
+
+[Using CCS Frontend with GOV.UK Prototype Kit](/docs/guides/govuk-prototype-kit.md)
 
 ## Contributing
 

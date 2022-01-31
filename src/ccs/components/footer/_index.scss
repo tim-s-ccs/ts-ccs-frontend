@@ -186,7 +186,6 @@
     margin-bottom: 0;
   }
 
-  // NEW CSS FOR FOOTER LOGO
   .ccs-footer__logo {
     @include govuk-responsive-margin(5, "bottom");
     box-sizing: border-box;
@@ -196,39 +195,6 @@
       padding-right: $govuk-gutter-half;
       float: left;
       vertical-align: top;
-    }
-  }
-
-  .ccs-footer__logotype {
-    display: inline-block;
-
-    // Prevent readability backplate from obscuring underline in Windows High
-    // Contrast Mode
-    @media (forced-colors: active) {
-      forced-color-adjust: none;
-      color: linktext;
-    }
-  }
-
-  .ccs-footer__logotype-crown {
-    position: relative;
-    top: -1px;
-    margin-right: 1px;
-    fill: currentColor;
-    vertical-align: top;
-  }
-
-  .ccs-footer__logotype-crown-fallback-image {
-    width: 36px;
-    height: 32px;
-    border: 0;
-    vertical-align: bottom;
-  }
-
-  @include govuk-media-query($media-type: print) {
-    // Hide the inverted crown when printing in browsers that don't support SVG.
-    .ccs-footer__logotype-crown-fallback-image {
-      display: none;
     }
   }
 
