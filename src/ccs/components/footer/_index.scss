@@ -14,6 +14,9 @@
   $ccs-footer-crest-image-width: ($ccs-footer-crest-image-width-2x / 2);
   $ccs-footer-crest-image-height: ($ccs-footer-crest-image-height-2x / 2);
 
+  $footer-columns-to-rows-point: 501px;
+  $footer-logo-exists: '.ccs-footer__meta-item > .ccs-footer__logo';
+
   .ccs-footer {
     @include govuk-font($size: 16);
     @include govuk-responsive-padding(7, "top");
@@ -62,6 +65,7 @@
     flex-wrap: wrap; // Support: Flexbox
     align-items: flex-end; // Support: Flexbox
     justify-content: center; // Support: Flexbox
+    text-align: right;
   }
 
   .ccs-footer__meta-item {
@@ -72,51 +76,41 @@
 
   .ccs-footer__meta-item--grow {
     flex: 1; // Support: Flexbox
+
     @include govuk-media-query ($until: tablet) {
       flex-basis: 320px; // Support: Flexbox
     }
-  }
 
-  .ccs-footer__licence-logo {
-    display: inline-block;
-    margin-right: govuk-spacing(2);
-    @include govuk-media-query ($until: desktop) {
-      margin-bottom: govuk-spacing(3);
+    @include govuk-media-query ($until: $footer-columns-to-rows-point) {
+      text-align: left;
     }
-    vertical-align: top;
-    // Work around SVGs not inheriting color from parent in forced color mode
-    // (https://github.com/w3c/csswg-drafts/issues/6310)
-    forced-color-adjust: auto;
   }
 
-  .ccs-footer__licence-description {
-    display: inline-block;
-  }
+  @if $footer_logo_exists {
+    @include govuk-media-query ($until: $footer-columns-to-rows-point) {
+      .ccs-footer__meta-item {
+        &:first-child {
+          order: 2;
+        }
 
-  .ccs-footer__copyright-logo {
-    display: inline-block;
-    min-width: $ccs-footer-crest-image-width;
-    padding-top: ($ccs-footer-crest-image-height + govuk-spacing(2));
-    background-image: ccs-image-url("govuk-crest.png");
-    @include govuk-device-pixel-ratio {
-      background-image: ccs-image-url("govuk-crest-2x.png");
+        &:last-child {
+          order: 1;
+        }
+      }
     }
-    background-repeat: no-repeat;
-    background-position: 50% 0%;
-    background-size: $ccs-footer-crest-image-width $ccs-footer-crest-image-height;
-    text-align: center;
-    white-space: nowrap;
   }
 
   .ccs-footer__inline-list {
     margin-top: 0;
     margin-bottom: govuk-spacing(3);
     padding: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .ccs-footer__meta-custom {
-    margin-bottom: govuk-spacing(4);
-
     a {
       color: $ccs-footer-text;
     }
@@ -124,8 +118,17 @@
 
   .ccs-footer__inline-list-item {
     display: inline-block;
-    margin-right: govuk-spacing(3);
     margin-bottom: govuk-spacing(1);
+    margin-left: govuk-spacing(3);
+
+    @include govuk-media-query ($until: tablet) {
+      margin-right: govuk-spacing(3);
+      margin-left: 0;
+    }
+  }
+
+  .ccs-footer__inline-list--bottom > .ccs-footer__inline-list-item {
+    margin-bottom: 0;
   }
 
   .ccs-footer__heading {
@@ -181,5 +184,56 @@
 
   .ccs-footer__list-item:last-child {
     margin-bottom: 0;
+  }
+
+  // NEW CSS FOR FOOTER LOGO
+  .ccs-footer__logo {
+    @include govuk-responsive-margin(5, "bottom");
+    box-sizing: border-box;
+
+    @include govuk-media-query ($from: tablet) {
+      width: 100%;
+      padding-right: $govuk-gutter-half;
+      float: left;
+      vertical-align: top;
+    }
+  }
+
+  .ccs-footer__logotype {
+    display: inline-block;
+
+    // Prevent readability backplate from obscuring underline in Windows High
+    // Contrast Mode
+    @media (forced-colors: active) {
+      forced-color-adjust: none;
+      color: linktext;
+    }
+  }
+
+  .ccs-footer__logotype-crown {
+    position: relative;
+    top: -1px;
+    margin-right: 1px;
+    fill: currentColor;
+    vertical-align: top;
+  }
+
+  .ccs-footer__logotype-crown-fallback-image {
+    width: 36px;
+    height: 32px;
+    border: 0;
+    vertical-align: bottom;
+  }
+
+  @include govuk-media-query($media-type: print) {
+    // Hide the inverted crown when printing in browsers that don't support SVG.
+    .ccs-footer__logotype-crown-fallback-image {
+      display: none;
+    }
+  }
+
+  .ccs-footer__copyright {
+    margin-left: 0;
+    text-align: center;
   }
 }

@@ -113,7 +113,7 @@ describe('footer', () => {
     it('renders attributes on meta links', () => {
       const $ = render('footer', examples['with meta item attributes'])
 
-      const $metaLink = $('.ccs-footer__meta .ccs-footer__link')
+      const $metaLink = $('.ccs-footer__inline-list .ccs-footer__link')
       expect($metaLink.attr('data-attribute')).toEqual('my-attribute')
       expect($metaLink.attr('data-attribute-2')).toEqual('my-attribute-2')
     })
