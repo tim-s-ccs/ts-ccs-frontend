@@ -7,6 +7,7 @@ const configPaths = require('../config/paths.json')
 const PORT = configPaths.ports.test
 
 const expectedPages = [
+  '',
   'facilities-management'
 ]
 
