@@ -32,11 +32,11 @@ There are 2 ways to start using CCS Frontend in your app.
 
 ### 1. Install with npm (recommended)
 
-We recommend [installing CCS Frontend using node package manager (npm)](docs/instillation/install-with-npm.md).
+We recommend [installing CCS Frontend using node package manager (npm)](https://github.com/tim-s-ccs/ts-ccs-frontend/blob/main/docs/guides/install-with-npm.md).
 
 ### 2. Install using compiled files
 
-You can also install CCS Frontend by [copying our CSS, JavaScript and asset files into your project](docs/instillation/install-using-compiled-files.md).
+You can also install CCS Frontend by [copying our CSS, JavaScript and asset files into your project](https://github.com/tim-s-ccs/ts-ccs-frontend/blob/main/docs/guides/install-using-compiled-files.md).
 
 ## Importing styles, JavaScripts and assets
 
@@ -89,7 +89,7 @@ To be notified when there’s a new release, you can:
 
 - [watch the ts-ccs-frontend Github repository](https://docs.github.com/en/github/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications#configuring-your-watch-settings-for-an-individual-repository)
 
-Find out how to [update with npm](docs/guides/update-with-npm.md).
+Find out how to [update with npm](https://github.com/tim-s-ccs/ts-ccs-frontend/blob/main/docs/guides/update-with-npm.md).
 
 ## Licence
 
@@ -100,7 +100,7 @@ Open Government 3.0 licence.
 
 ## Contributing
 
-[To learn how to help us build CCS Frontend, see our contribution guidelines.](CONTRIBUTING.md)
+[To learn how to help us build CCS Frontend, see our contribution guidelines.](https://github.com/tim-s-ccs/ts-ccs-frontend/blob/main/CONTRIBUTING.md)
 
 The ts-ccs-frontend repository is public and we welcome contributions from anyone.
 

@@ -32,42 +32,6 @@
     border-bottom: $ccs-header-border-width solid $ccs-header-border-color;
   }
 
-  .ccs-header__logotype {
-    display: inline-block;
-
-    // Add a gap after the logo in case it's followed by a product name. This
-    // gets removed later if the logotype is a :last-child.
-    margin-right: govuk-spacing(1);
-
-    // Prevent readability backplate from obscuring underline in Windows High
-    // Contrast Mode
-    @media (forced-colors: active) {
-      forced-color-adjust: none;
-      color: linktext;
-    }
-
-    // Remove the gap after the logo if there's no product name to keep hover
-    // and focus states neat
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  .ccs-header__logotype-crown {
-    position: relative;
-    top: -1px;
-    margin-right: 1px;
-    fill: currentColor;
-    vertical-align: top;
-  }
-
-  .ccs-header__logotype-crown-fallback-image {
-    width: 36px;
-    height: 32px;
-    border: 0;
-    vertical-align: bottom;
-  }
-
   .ccs-header__link {
     // Avoid using the `govuk-link-common` mixin because the links in the header
     // get a special treatment, because:
@@ -318,11 +282,6 @@
       border-bottom-width: 0;
       color: govuk-colour("black");
       background: transparent;
-    }
-
-    // Hide the inverted crown when printing in browsers that don't support SVG.
-    .ccs-header__logotype-crown-fallback-image {
-      display: none;
     }
 
     .ccs-header__link {

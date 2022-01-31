@@ -25,9 +25,36 @@ You’ll not be able to:
 Note, CCS Frontend has a dependency on GOV.UK Frontend so you will need to follow the steps for [downloading the GOVUK Frontend assets](https://frontend.design-system.service.gov.uk/install-using-precompiled-files/#copy-the-files) too before you continue.
 
 ## Check an example page
-<!-- Add templates -->
-1. Create a page in your project using the HTML found in [example-page.html](/docs/examples/pages/example-page.html). 
-   In your live application, you should use the CCS Design System page template, which will be added in the future, instead.
+1. Create a page in your project using the following HTML (in your live application, you should use the [CCS Frontend page template](https://github.com/tim-s-ccs/ts-ccs-frontend/blob/main/package/ccs/template.njk) instead):
+   ```html
+   <!DOCTYPE html>
+   <html lang="en" class="govuk-template ">
+   <head>
+      <title>Example - CCS</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+      <!--[if !IE 8]><!-->
+         <link rel="stylesheet" href="/stylesheets/govuk-frontend-<VERSION-NUMBER>.min.css">
+         <link rel="stylesheet" href="/stylesheets/ts-ccs-frontend-<VERSION-NUMBER>.min.css">
+      <!--<![endif]-->
+      <!--[if IE 8]>
+         <link rel="stylesheet" href="/stylesheets/govuk-frontend-ie8-<VERSION-NUMBER>.min.css">
+         <link rel="stylesheet" href="/stylesheets/ts-ccs-frontend-ie8-<VERSION-NUMBER>.min.css">
+      <![endif]-->
+   </head>
+   <body class="govuk-template__body ">
+      <script>
+         document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+      </script>
+      <script src="/javascript/govuk-frontend-<VERSION-NUMBER>.min.js"></script>
+      <script src="/javascript/ts-ccs-frontend-<VERSION-NUMBER>.min.js"></script>
+      <!-- component HTML -->
+      <script>
+         window.GOVUKFrontend.initAll()
+         window.CCSFrontend.initAll()
+      </script>
+   </body>
+   </html>
+   ```
 
 2. Replace `<VERSION-NUMBER>` so the 3 filenames match the files you [copied from CCS Frontend’s GitHub repo](#copy-the-files).
 

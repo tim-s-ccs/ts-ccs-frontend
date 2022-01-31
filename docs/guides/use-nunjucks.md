@@ -17,7 +17,7 @@ There are more details on [how to use CCS Frontend with GOV.UK Prototype Kit](go
 
 You must first:
 
-- [install CCS Frontend with Node.js package manager (npm)](/docs/instillation/install-with-npm.md)
+- [install CCS Frontend with Node.js package manager (npm)](/docs/guides/install-with-npm.md)
 - make sure you’ve installed Nunjucks so it’s working in your environment
 
 ## Set up Nunjucks and use the page template
@@ -41,7 +41,7 @@ You must first:
 
 <!-- TODO: and example from CCS Design System website -->
 <!-- Go to the [default page template example](#) on the CCS Design System website, then copy the Nunjucks code into your view file. -->
-3.  Copy the Nunjucks code from the [default page template example](/docs/examples/pages/default-page-template-example.html) into your view file.
+3.  Copy the Nunjucks code from the [default page template example](https://github.com/tim-s-ccs/ts-ccs-frontend/blob/main/package/ccs/template.njk) into your view file.
 
 You may need to change the paths in the Nunjucks code to [get the CSS, assets and JavaScript working](/docs/guides/import-assets.md).
 

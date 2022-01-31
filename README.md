@@ -40,11 +40,11 @@ Once installed, you will be able to use the code from the examples in the [CCS F
 
 ### 1. Install with npm (recommended)
 
-We recommend [installing CCS Frontend using node package manager (npm)](docs/instillation/install-with-npm.md).
+We recommend [installing CCS Frontend using node package manager (npm)](docs/guides/install-with-npm.md).
 
 ### 2. Install using compiled files
 
-You can also install CCS Frontend by [copying our CSS, JavaScript and asset files into your project](docs/instillation/install-using-compiled-files.md).
+You can also install CCS Frontend by [copying our CSS, JavaScript and asset files into your project](docs/guides/install-using-compiled-files.md).
 
 ## Browser and assistive technology support
 
