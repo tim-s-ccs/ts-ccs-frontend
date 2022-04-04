@@ -50,7 +50,7 @@
       text-decoration: underline;
       text-decoration-thickness: $ccs-header-link-underline-thickness;
 
-      @if ($govuk-link-underline-offset) {
+      @if $govuk-link-underline-offset {
         text-underline-offset: $govuk-link-underline-offset;
       }
     }
@@ -140,7 +140,7 @@
     &:hover {
       text-decoration: solid underline $ccs-header-link-underline-thickness;
 
-      @if ($govuk-link-underline-offset) {
+      @if $govuk-link-underline-offset {
         text-underline-offset: $govuk-link-underline-offset;
       }
     }
