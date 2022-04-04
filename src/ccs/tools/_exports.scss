@@ -22,7 +22,7 @@ $_ccs-imported-modules: () !default;
 
 @mixin ccs-exports($name) {
   // If the mixin is not in the list of modules already exported...
-  @if (index($_ccs-imported-modules, $name) == null) {
+  @if not index($_ccs-imported-modules, $name) {
     // ... then add it to the list
     $_ccs-imported-modules: append($_ccs-imported-modules, $name) !global;
     // ... and output the CSS for that module
