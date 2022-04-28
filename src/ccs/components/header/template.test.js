@@ -52,7 +52,7 @@ describe('header', () => {
     })
 
     it('renders custom navigation classes', () => {
-      const $ = render('header', examples['full width with navigation'])
+      const $ = render('header', examples['full width with navigation and service authentication'])
 
       const $component = $('.ccs-header')
       const $container = $component.find('.ccs-header__navigation')
@@ -235,6 +235,33 @@ describe('header', () => {
 
         expect($component.hasClass('ccs-header__navigation--no-second-list')).toBeTruthy()
       })
+    })
+  })
+
+  describe('with service name, authentication and navigation', () => {
+    it('passes accessibility tests', async () => {
+      const $ = render('header', examples['with service name, authentication and navigation'])
+
+      const results = await axe($.html())
+      expect(results).toHaveNoViolations()
+    })
+
+    it('renders the service authentication', () => {
+      const $ = render('header', examples['with service name, authentication and navigation'])
+
+      const $component = $('.ccs-header')
+      const $authenticationSection = $component.find('div.ccs-header__service-authentication')
+
+      const $authenticationList = $authenticationSection.find('ul.ccs-header__service-authentication-list')
+
+      const $authenticationItems = $authenticationList.find('li.ccs-header__service-authentication-item')
+
+      const $firstAuthenticationItem = $authenticationItems.find('a.ccs-header__link:first-child')
+
+      expect($authenticationItems.length).toEqual(2)
+
+      expect($firstAuthenticationItem.attr('href')).toEqual('#1')
+      expect($firstAuthenticationItem.text()).toContain('Register')
     })
   })
 })

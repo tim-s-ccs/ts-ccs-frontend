@@ -15,6 +15,27 @@ params:
   type: string
   required: false
   description: URL for the service name anchor.
+- name: serviceAuthentication
+  type: array
+  required: false
+  description: An array of authentication item objects (for example sign-in or register). Is placed at the top of the header.
+  params:
+  - name: text
+    type: string
+    required: true
+    description: Text for the authentication item. If `html` is provided, the `text` argument will be ignored.
+  - name: html
+    type: string
+    required: true
+    description: HTML for the authentication item. If `html` is provided, the `text` argument will be ignored.
+  - name: href
+    type: string
+    required: false
+    description: URL of the authentication item anchor.
+  - name: attributes
+    type: object
+    required: false
+    description: HTML attributes (for example data attributes) to add to the navigation item anchor.
 - name: navigationPrimary
   type: array
   required: false
@@ -122,6 +143,15 @@ examples:
     serviceName: Service Name
     serviceUrl: '/components/ccs-header'
 
+- name: with authentication options
+  description: If your service reuires users to log in to access it, this section can contain the links for the authentication
+  data:
+    serviceAuthentication:
+      - href: '#1'
+        text: Register
+      - href: '#2'
+        text: Sign in
+
 - name: with both navigation
   data:
     navigationPrimary:
@@ -196,11 +226,16 @@ examples:
       - href: '#4'
         text: Navigation item 4
 
-- name: with service name and navigation
+- name: with service name, authentication and navigation
   description: If you need to include basic navigation, contact or account management links.
   data:
     serviceName: Service Name
     serviceUrl: '/components/ccs-header'
+    serviceAuthentication:
+      - href: '#1'
+        text: Register
+      - href: '#2'
+        text: Sign in
     navigationPrimary:
       - href: '#1'
         text: Navigation item 1
@@ -285,10 +320,15 @@ examples:
     containerClasses: ccs-header__container--full-width
     navigationClasses: ccs-header__navigation--end
 
-- name: full width with navigation
+- name: full width with navigation and service authentication
   data:
     containerClasses: ccs-header__container--full-width
     navigationClasses: ccs-header__navigation--end
+    serviceAuthentication:
+      - href: '#1'
+        text: Register
+      - href: '#2'
+        text: Sign in
     navigationPrimary:
       - href: '#1'
         text: Navigation item 1
