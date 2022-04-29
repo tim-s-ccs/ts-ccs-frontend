@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.6.1 (Pre Release)
+  - [Fix some issues with the bottom border](https://github.com/tim-s-ccs/ts-ccs-frontend/pull/51)
+
 ## 0.6.0 (Pre Release)
   - [Update the header banner to match the design from the TDDA](https://github.com/tim-s-ccs/ts-ccs-frontend/pull/49)
 
