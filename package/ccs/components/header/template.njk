@@ -2,6 +2,27 @@
 
 <header class="ccs-header {{ params.classes if params.classes }}" role="banner" data-module="ccs-header"
         {%- for attribute, value in params.attributes %} {{attribute}}="{{value}}"{% endfor %}>
+  {% if params.serviceAuthentication %}
+    <div class="ccs-header__service-authentication">
+      <div class="ccs-header__service-authentication-container {{ params.containerClasses | default('govuk-width-container') }}">
+        <ul class="ccs-header__service-authentication-list">
+          {% for item in params.serviceAuthentication %}
+            {% if item.text or item.html %}
+              <li class="ccs-header__service-authentication-item">
+                {% if item.href %}
+                  <a class="ccs-header__link" href="{{ item.href }}"{% for attribute, value in item.attributes %} {{attribute}}="{{value}}"{% endfor %}>
+                {% endif %}
+                  {{ item.html | safe if item.html else item.text }}
+                {% if item.href %}
+                  </a>
+                {% endif %}
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endif %}
   <div class="ccs-header__container {{ params.containerClasses | default('govuk-width-container') }}">
     <div class="ccs-header__logo">
       <a href="{{ params.homepageUrl | default('https://www.crowncommercial.gov.uk') }}" class="ccs-header__link ccs-header__link--homepage" aria-label="Crown Commercial Service">

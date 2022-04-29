@@ -17,7 +17,7 @@
     and $ccs-image-url-function
     and function-exists($ccs-image-url-function);
 
-  @if ($use-custom-function) {
+  @if $use-custom-function {
     @return call(get-function($ccs-image-url-function), $filename);
   } @else {
     @return url($ccs-images-path + $filename);

@@ -1,7 +1,6 @@
 @include ccs-exports("ccs/component/ccs-header") {
   $ccs-header-background: $ccs-brand-colour;
-  $ccs-header-border-color: ccs-colour("blue");
-  $ccs-header-border-width: govuk-spacing(2);
+  $ccs-header-service-authentication-background: ccs-colour("black");
   $ccs-header-text: ccs-colour("white");
   $ccs-header-link-active-border-color: ccs-colour("white");
   $ccs-header-nav-item-border-color: ccs-colour("dark-red");
@@ -17,19 +16,50 @@
 
   .ccs-header__container--full-width {
     padding: 0 govuk-spacing(3);
-    border-color: $ccs-header-border-color;
 
     .ccs-header__menu-button {
       right: govuk-spacing(3);
     }
   }
 
-  .ccs-header__container {
+  .ccs-header__container,
+  .ccs-header__service-authentication-container {
     @include govuk-clearfix;
     position: relative;
-    margin-bottom: -$ccs-header-border-width;
+  }
+
+  .ccs-header__container {
     padding-top: govuk-spacing(2);
-    border-bottom: $ccs-header-border-width solid $ccs-header-border-color;
+  }
+
+  .ccs-header__service-authentication-container {
+    padding-top: govuk-spacing(1);
+    padding-bottom: govuk-spacing(1);
+  }
+
+  .ccs-header__service-authentication {
+    background: $ccs-header-service-authentication-background;
+    text-align: right;
+  }
+
+  .ccs-header__service-authentication-item {
+    display: inline-block;
+    margin-right: govuk-spacing(3);
+    padding: govuk-spacing(2) 0;
+    border: 0;
+
+    @include govuk-media-query ($from: desktop) {
+      padding: govuk-spacing(1) 0;
+    }
+
+    a {
+      @include govuk-font($size: 16, $weight: regular);
+    }
+  }
+
+  .ccs-header__service-authentication-list .ccs-header__service-authentication-item:last-child {
+    margin-right: 0;
+    border-bottom: 0;
   }
 
   .ccs-header__link {
@@ -50,7 +80,7 @@
       text-decoration: underline;
       text-decoration-thickness: $ccs-header-link-underline-thickness;
 
-      @if ($govuk-link-underline-offset) {
+      @if $govuk-link-underline-offset {
         text-underline-offset: $govuk-link-underline-offset;
       }
     }
@@ -120,10 +150,9 @@
       width: 75%;
       padding-left: $govuk-gutter-half;
       float: left;
-      text-align: right;
     }
   }
-  // text-align: right;
+
   .ccs-header__menu-button {
     @include govuk-font($size: 16);
     display: none;
@@ -141,7 +170,7 @@
       -webkit-text-decoration: solid underline $ccs-header-link-underline-thickness;
               text-decoration: solid underline $ccs-header-link-underline-thickness;
 
-      @if ($govuk-link-underline-offset) {
+      @if $govuk-link-underline-offset {
         text-underline-offset: $govuk-link-underline-offset;
       }
     }
@@ -173,6 +202,7 @@
     }
   }
 
+  .ccs-header__service-authentication-list,
   .ccs-header__navigation-primary-list,
   .ccs-header__navigation-secondary-list {
     // Reset user-agent default list styles
