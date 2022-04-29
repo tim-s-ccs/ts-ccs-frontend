@@ -21,7 +21,17 @@ scenario: >-
 
 {% block header %}
   {{ ccsHeader({
-    serviceName: 'Find a facilities management supplier'
+    serviceName: 'Find a facilities management supplier',
+    serviceAuthentication: [
+      {
+        href: '#1',
+        text: "Register"
+      },
+      {
+        href: '#2',
+        text: 'Sign in'
+      }
+    ]
   }) }}
   <div class="govuk-width-container ">
     {{ govukPhaseBanner({
