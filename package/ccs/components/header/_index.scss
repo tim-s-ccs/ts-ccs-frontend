@@ -9,7 +9,6 @@
   .ccs-header {
     @include govuk-font($size: 16);
 
-    border-bottom: govuk-spacing(2) solid govuk-colour("white");
     color: $ccs-header-text;
     background: $ccs-header-background;
   }
@@ -132,7 +131,7 @@
   }
 
   .ccs-header__logo {
-    @include govuk-responsive-margin(2, "bottom");
+    @include govuk-responsive-padding(2, "bottom");
     padding-right: govuk-spacing(8);
 
     @include govuk-media-query ($from: desktop) {
@@ -212,7 +211,9 @@
   }
 
   .ccs-header__navigation--no-second-list {
-    padding-top: govuk-spacing(7);
+    @include govuk-media-query ($from: desktop) {
+      padding-top: govuk-spacing(7);
+    }
   }
 
   .js-enabled {
@@ -244,7 +245,9 @@
   }
 
   .ccs-header__navigation--no-service-name {
-    padding-top: govuk-spacing(7);
+    @include govuk-media-query ($from: desktop) {
+      padding-top: govuk-spacing(7);
+    }
   }
 
   .ccs-header__navigation-secondary-list {
