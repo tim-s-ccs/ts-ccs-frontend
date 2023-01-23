@@ -211,7 +211,7 @@
 
   .ccs-header__navigation--no-second-list {
     @include govuk-media-query ($from: desktop) {
-      padding-top: govuk-spacing(7);
+      padding-top: govuk-spacing(6);
     }
   }
 
