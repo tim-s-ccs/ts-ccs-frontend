@@ -1,0 +1,118 @@
+params:
+- name: items
+  type: array
+  required: true
+  description: Array of items which form the dashboard panels
+  params:
+  - name: text
+    type: string
+    required: true
+    description: Item text for the dashboard panel.
+  - name: href
+    type: string
+    required: true
+    description: Item href for the dashboard panel.
+  - name: description
+    type: string
+    required: true
+    description: Item description for the dashboard panel.
+  - name: width
+    type: string
+    required: false
+    description: Width of the dashboard panel item. Defaults to one-third
+  - name: attributes
+    type: object
+    required: false
+    description: HTML attributes (for example data attributes) to add to the anchor in the dashboard item section.
+- name: titleText
+  type: string
+  required: false
+  description: Title text for the dashboard panels section
+- name: width
+  type: string
+  required: false
+  description: Width of the dashboard panel container. Defaults to full
+- name: classes
+  type: string
+  required: false
+  description: Classes to add to the footer component container.
+- name: attributes
+  type: object
+  required: false
+  description: HTML attributes (for example data attributes) to add to the footer component container.
+
+examples:
+- name: default
+  data:
+    items:
+      - href: '#1'
+        text: Item 1
+        description: Item 1 long description so very long indeed that you would not believe how long it is
+      - href: '#2'
+        text: Item 2
+        description: Item 2 long description so very long indeed that you would not believe how long it is
+      - href: '#3'
+        text: Item 3
+        description: Item 3 long description so very long indeed that you would not believe how long it is
+
+
+- name: with title text
+  description: With title text
+  data:
+    titleText: Here is my section
+    items:
+      - href: '#1'
+        text: Item 1
+        description: Item 1 long description so very long indeed that you would not believe how long it is
+      - href: '#2'
+        text: Item 2
+        description: Item 2 long description so very long indeed that you would not believe how long it is
+      - href: '#3'
+        text: Item 3
+        description: Item 3 long description so very long indeed that you would not believe how long it is
+
+- name: half width
+  description: only half the width
+  data:
+    width: one-half
+    titleText: Here is my section
+    items:
+      - href: '#1'
+        text: Item 1
+        description: Item 1 long description so very long indeed that you would not believe how long it is
+      - href: '#2'
+        text: Item 2
+        description: Item 2 long description so very long indeed that you would not believe how long it is
+      - href: '#3'
+        text: Item 3
+        description: Item 3 long description so very long indeed that you would not believe how long it is
+
+- name: half width items
+  description: only half the width for the items
+  data:
+    titleText: Here is my section
+    items:
+      - href: '#1'
+        text: Item 1
+        description: Item 1 long description so very long indeed that you would not believe how long it is
+        width: one-half
+      - href: '#2'
+        text: Item 2
+        description: Item 2 long description so very long indeed that you would not believe how long it is
+        width: one-half
+      - href: '#3'
+        text: Item 3
+        description: Item 3 long description so very long indeed that you would not believe how long it is
+        width: one-half
+
+- name: fm example
+  description: example from Facilities Management RM3830 admin section
+  data:
+    titleText: Assessed value
+    items:
+      - href: '#1'
+        text: Average framework rates
+        description: Manage the average framework rates and variances
+      - href: '#2'
+        text: Call-off benchmark rates
+        description: Manage the call-off benchmark rates and variances

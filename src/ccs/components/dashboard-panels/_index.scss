@@ -1,0 +1,34 @@
+@include ccs-exports("ccs/component/ccs-dashboard-panels") {
+  $ccs-dashboard-panel-border-colour: #dee0e2;
+  $ccs-dashboard-panel-background-colour: #f8f8f8;
+
+  .ccs-dashboard-panels {
+    @include govuk-typography-common;
+    @include govuk-typography-responsive($size: 19);
+    @include govuk-typography-weight-regular;
+  }
+
+  .ccs-dashboard-panels__heading {
+    margin-top: govuk-spacing(5);
+    margin-bottom: govuk-spacing(1);
+  }
+
+  .ccs-dashboard-panels__heading-section-break {
+    margin-bottom: govuk-spacing(5);
+  }
+
+  .ccs-dashboard-panels__item {
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px $ccs-dashboard-panel-border-colour solid;
+    background: $ccs-dashboard-panel-background-colour;
+  }
+
+  .ccs-dashboard-panels__item-title-link {
+    @include govuk-typography-weight-bold;
+    @include govuk-link-common;
+
+    color: $govuk-link-colour;
+    text-decoration: none;
+  }
+}

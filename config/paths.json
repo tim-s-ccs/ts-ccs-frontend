@@ -15,7 +15,7 @@
     "components": "src/ccs/components/",
   "govukFrontend": "node_modules/govuk-frontend/",
   "ports": {
-    "app": 3000,
+    "app": 4000,
     "test": 8888
   }
 }
