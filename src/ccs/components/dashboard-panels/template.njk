@@ -1,30 +1,24 @@
-
-
-<div class="ccs-dashboard-panels {{ params.classes if params.classes }}"
+<div class="ccs-dashboard-section {{ params.classes if params.classes }}"
      {%- for attribute, value in params.attributes %} {{attribute}}="{{value}}"{% endfor %}>
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-{{ params.width | default('full') }}">
       {% if params.titleText %}
-        <h2 class="ccs-dashboard-panels__heading govuk-heading-m">
+        <h2 class="ccs-dashboard-section__heading govuk-heading-m">
           {{ params.titleText }}
         </h2>
-        <hr class="ccs-dashboard-panels__heading-section-break govuk-section-break govuk-section-break--visible">
+        <hr class="ccs-dashboard-section__heading-section-break govuk-section-break govuk-section-break--visible">
       {% endif %}
-      <div class="ccs-dashboard-panels__container">
-        <div class="govuk-grid-row">
-          {% for item in params.items %}
-            <div class="govuk-grid-column-{{ item.width | default('one-third') }}">
-              <div class="ccs-dashboard-panels__item">
-                <a class="ccs-dashboard-panels__item-title-link" href="{{ item.href }}"{% for attribute, value in item.attributes %} {{attribute}}="{{value}}"{% endfor %}>
-                  {{ item.text }}
-                </a>
-                <p class="ccs-dashboard-panels__item-description">
-                  {{ item.description }}
-                </p>
-              </div>
-            </div>
-          {% endfor %}
-        </div>
+      <div class="govuk-grid-row ccs-dashboard-section__container">
+        {% for item in params.items %}
+          <div class="ccs-dashboard-section__panel govuk-grid-column-{{ item.width | default('one-third') }}">
+            <a class="ccs-dashboard-section__panel-title" href="{{ item.href }}"{% for attribute, value in item.attributes %} {{attribute}}="{{value}}"{% endfor %}>
+              {{ item.text }}
+            </a>
+            <p class="ccs-dashboard-section__panel-description">
+              {{ item.description }}
+            </p>
+          </div>
+        {% endfor %}
       </div>
     </div>
   </div>
